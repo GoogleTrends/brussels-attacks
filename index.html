@@ -1,0 +1,2589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html 
+      PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:svg="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=4.0">
+<meta property="og:image" content="https://googletrends.github.io/parisattacks/img/brussels-attacks-FB-Twitter-thumb.jpg" />
+<meta property="og:title" content="How The World Searched For The Brussels Attacks" />
+<meta property="og:description" content="Interactive visualization showing how different cities searched to find out what happend in Brussels on Mar 22, 2016" />
+<meta property="og:type" content="article" />
+<meta property="article:author" content="https://www.facebook.com/annavitals" />
+<meta property="article:publisher" content="http://newslab.withgoogle.com" />
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@googletrends">
+<meta name="twitter:creator" content="@annavitals">
+<meta name="twitter:title" content="How The World Searched For The Brussels Attacks">
+<meta name="twitter:description" content="Interactive visualization showing how different cities searched to find out what happend in Brussels on Mar 22, 2016">
+<meta name="twitter:image:src" content="https://googletrends.github.io/parisattacks/img/paris-attacks-FB-Twitter-thumb.jpg">
+
+<meta property="description" content="Interactive visualization showing how different cities searched to find out what happend in Brussels on Mar 22, 2016" />
+
+<title>How The World Searched For The Brussels Attacks</title>
+
+<style>
+body {
+  margin: 0;
+  padding: 0px;
+  background: #1f1e2d;
+}
+
+.brussels-attacks.desktop {
+  display: block;
+}
+.brussels-attacks.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 767px) { 
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .brussels-attacks.desktop {
+    display: none;
+  }
+  .brussels-attacks.mobile {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1025px) and (min-aspect-ratio: 16/10) { 
+  body {
+    padding: 0px 100px;
+  }
+}
+
+@media screen and (min-width: 1921px) and (min-aspect-ratio: 16/10) { 
+  body {
+    padding: 0px 200px;
+  }
+}
+
+
+
+.city circle.Brussels, .city text.Brussels{
+  fill:#E42867;
+}
+.city path.Brussels{
+  stroke:#E42867;
+}
+
+.city circle.Paris, .city text.Paris{
+ fill:#85AF40;
+}
+.city path.Paris{
+ stroke:#85AF40;
+}
+
+.city circle.London, .city text.London{
+ fill:#186C8D;
+}
+.city path.London{
+ stroke:#186C8D;
+}
+
+.city circle.Berlin, .city text.Berlin{
+ fill:#46B9DF;
+}
+.city path.Berlin{
+ stroke:#46B9DF;
+}
+
+.city circle.Madrid, .city text.Madrid{
+ fill:#4A5696;
+}
+.city path.Madrid{
+ stroke:#4A5696;
+}
+
+.city circle.Sydney, .city text.Sydney{
+ fill:#81236B;
+}
+.city path.Sydney{
+ stroke:#81236B;
+}
+
+.city circle.Hong-Kong, .city text.Hong-Kong{
+ fill:#AA74B2;
+}
+.city path.Hong-Kong{
+ stroke:#AA74B2;
+}
+
+.city circle.Tokyo, .city text.Tokyo{
+ fill:#DD5E26;
+}
+.city path.Tokyo{
+ stroke:#DD5E26;
+}
+
+.city circle.New-York, .city text.New-York{
+ fill:#AD9731;
+}
+.city path.New-York{
+ stroke:#AD9731;
+}
+
+.city circle.Delhi, .city text.Delhi{
+ fill:#ABAC86;
+}
+.city path.Delhi{
+ stroke:#ABAC86;
+}
+
+.city circle.San-Francisco, .city text.San-Francisco{
+ fill:#4DBE9B;
+}
+.city path.San-Francisco{
+ stroke:#4DBE9B;
+}
+
+.city circle.Toronto, .city text.Toronto{
+ fill:#E3BC22;
+}
+.city path.Toronto{
+ stroke:#E3BC22;
+}
+
+.city circle.Sao-Paulo, .city text.Sao-Paulo{
+ fill:#EA8266;
+}
+.city path.Sao-Paulo{
+ stroke:#EA8266;
+}
+
+.city circle.Lahore, .city text.Lahore{
+ fill:#84A394;
+}
+.city path.Lahore{
+ stroke:#84A394;
+}
+
+.city circle.Istanbul, .city text.Istanbul{
+ fill:#898e66 ;
+}
+.city path.Istanbul{
+ stroke:#898e66;
+}
+</style>
+
+
+</head>
+<body style="">
+   
+<div id="container" class="height: 100%; width: 100%;">
+<!--[if lte IE 9]><img alt="Brussels Attacks Searches" src="img/paris-attacks-animated.gif" width="100%" height="auto"><![endif]-->
+
+<!-- Generator: Adobe Illustrator 19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg class="brussels-attacks desktop" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 900 600" style="enable-background:new 0 0 900 600;" xml:space="preserve">
+
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+.desktop text {
+  font-family:'Roboto', sans-serif;
+}
+
+.desktop .cities text {
+  fill:#C5C1C6;  
+  font-size:9px;
+}
+
+.desktop .questions text {
+  fill:#C5C1C6;  
+  font-size:10px;
+}
+
+.desktop .questions circle {
+  stroke-width:0.5; stroke-miterlimit:10; stroke:#B7ABB0;
+}
+
+.desktop .questions-circles circle {
+  fill:#C5C1C6; 
+}
+
+.desktop .cities ellipse{
+  stroke-width:3.5; stroke-miterlimit:10; stroke:#B7ABB0;
+}
+
+.city:hover { cursor: pointer; }
+
+.desktop .cities .city ellipse:hover {
+  opacity: 0.7;
+}
+
+
+.question-groups .connectors path{
+  fill:none; stroke:#B7ABB0; stroke-width:0.5; stroke-miterlimit:10;
+}
+
+.desktop #static-connectors {
+  fill:none; stroke: #887E8E;
+}
+
+.desktop #static-connectors .R path{
+  opacity:0.64; stroke-width:0.5; stroke-miterlimit:10;
+}
+
+.desktop #static-connectors .L path{
+  stroke: #887E8E;
+  stroke-width: 0.2;
+}
+
+.desktop .the-attacks .arcs path{
+  stroke-width: 0.3;
+  stroke-miterlimit: 10;
+  fill: none;
+  opacity: 0.64;
+}
+
+.desktop .the-attacks .times text, .desktop .the-attacks text{
+  font-size: 6px;
+}
+
+.desktop .the-attacks .arc-selected {
+ stroke-width: 0.9!important;
+ opacity: 1!important;
+}
+
+.desktop #graph_legend circle{
+  opacity: 0.64;
+}
+
+.desktop .icon {
+ fill: #76768E;
+}
+</style>
+
+<g id="BG">
+	<rect style="fill:#1F1E2D;" width="900" height="600"/>
+	<g id="hour_sectors">
+		<path fill="#1B1E2A" d="M171.3,429.8H54.5c0-64.5,52.3-116.8,116.8-116.8l0,0V429.8z"/>
+		<path fill="#212332" d="M172.3,429.8v116.8c-64.5,0-116.8-52.3-116.8-116.8l0,0H172.3z"/>
+		<path fill="#1B1E2A" d="M171.3,429.8h116.8c0,64.5-52.3,116.8-116.8,116.8l0,0V429.8z"/>
+		<path fill="#212332" d="M172.3,429.8L433.4,279c27.7,48,40.4,95.3,40.4,150.7H172.3z"/>
+		<path fill="#1B1E2A" d="M171.3,429.8l213.2-213.2c19.5,19.5,34.1,38.5,47.9,62.4L171.3,429.8z"/>
+		<path fill="#212332" d="M172.3,429.8l150.7-261.1c23.9,13.8,42.9,28.4,62.4,47.9L172.3,429.8z"/>
+		<path fill="#1B1E2A" d="M171.3,429.8l78-291.2c26.7,7.2,48.8,16.3,72.7,30.1L171.3,429.8z"/>
+		<path fill="#212332" d="M172.3,429.8l52.4-296.9c9,1.6,16.8,3.3,25.7,5.7L172.3,429.8z"/>
+		<path fill="#1B1E2A" d="M171.3,429.8l26.3-300.3c9.1,0.8,17.1,1.8,26.1,3.4L171.3,429.8z"/>
+		<path fill="#212332" d="M172.3,429.8V128.3c9.2,0,17.2,0.3,26.3,1.1L172.3,429.8z"/>
+	</g>
+</g>
+<g id="Footer">
+	<g id="Methodology">
+		<rect x="292.7" y="551.8" fill="none" width="101.6" height="38.5"/>
+		<text transform="matrix(1.0003 0 0 1 292.6851 557.6511)"><tspan x="0" y="0" fill="#5E6272" font-size="7.7714px">Methodology: First minute </tspan><tspan x="0" y="9.3" fill="#5E6272" font-size="7.7714px">searched is defined as the </tspan><tspan x="0" y="18.7" fill="#5E6272" font-size="7.7714px">first minute where a related </tspan><tspan x="0" y="28" fill="#5E6272" font-size="7.7714px">search showed up</tspan></text>
+	</g>
+	<g id="Logo">
+		<polygon fill="#787878" points="835,579.9 833.5,579.9 833.5,570 830.4,570 830.4,568.7 838.1,568.7 838.1,570 835,570 		"/>
+		<path fill="#787878" d="M839.9,579.9h-1.4v-7.7h1.4v1.3h0c0.1-0.4,0.5-0.8,0.9-1c0.5-0.3,0.9-0.4,1.3-0.4c0.4,0,0.8,0,1.1,0.2
+			l-0.5,1.4c-0.2-0.1-0.5-0.1-0.8-0.1c-0.5,0-1,0.2-1.4,0.6c-0.4,0.4-0.6,0.9-0.6,1.6V579.9z"/>
+		<path fill="#787878" d="M847,580.1c-1.2,0-2.1-0.4-2.8-1.2c-0.7-0.8-1.1-1.8-1.1-2.9c0-1.1,0.4-2.1,1-2.9c0.7-0.8,1.6-1.2,2.7-1.2
+			c1.1,0,2.1,0.4,2.8,1.1c0.7,0.7,1,1.8,1,3v0.3h-6.1c0,0.8,0.3,1.4,0.8,1.8c0.5,0.5,1,0.7,1.7,0.7c1,0,1.7-0.5,2.1-1.3l1.3,0.5
+			c-0.3,0.6-0.7,1.1-1.2,1.5C848.6,580,847.9,580.1,847,580.1z M849.1,575.1c0-0.5-0.2-0.9-0.6-1.3c-0.4-0.4-0.9-0.6-1.7-0.6
+			c-0.5,0-1,0.2-1.4,0.5c-0.4,0.3-0.7,0.8-0.8,1.4H849.1z"/>
+		<path fill="#787878" d="M853.5,572.2v1.1h0c0.2-0.4,0.5-0.7,1-0.9c0.5-0.3,0.9-0.4,1.4-0.4c0.9,0,1.7,0.3,2.2,0.9s0.8,1.4,0.8,2.3
+			v4.7h-1.4v-4.5c0-1.4-0.6-2.1-1.9-2.1c-0.6,0-1.1,0.2-1.4,0.7s-0.6,1-0.6,1.7v4.2h-1.4v-7.6H853.5z"/>
+		<path fill="#787878" d="M863.8,580.1c-1,0-1.8-0.4-2.6-1.2c-0.7-0.8-1.1-1.8-1.1-2.9s0.4-2.1,1.1-2.9c0.7-0.8,1.6-1.2,2.6-1.2
+			c0.6,0,1.1,0.1,1.6,0.4c0.5,0.3,0.8,0.6,1,0.9h0l0-1.1v-3.6h1.4v11.2h-1.4v-1.1h0c-0.2,0.4-0.6,0.7-1,0.9
+			C864.9,580.1,864.4,580.1,863.8,580.1 M864,578.8c0.7,0,1.3-0.3,1.7-0.8c0.5-0.5,0.7-1.2,0.7-2s-0.2-1.5-0.7-2s-1-0.8-1.7-0.8
+			s-1.3,0.3-1.7,0.8s-0.7,1.2-0.7,2s0.2,1.5,0.7,2S863.3,578.8,864,578.8"/>
+		<path fill="#787878" d="M872.6,580.1c-0.9,0-1.6-0.2-2.1-0.6c-0.5-0.4-1-0.9-1.2-1.6l1.3-0.5c0.4,0.9,1.1,1.4,2.1,1.4
+			c0.5,0,0.8-0.1,1.1-0.3c0.3-0.2,0.5-0.5,0.5-0.8c0-0.5-0.4-0.9-1-1l-1.5-0.4c-0.5-0.1-0.9-0.4-1.4-0.7c-0.5-0.4-0.7-0.8-0.7-1.4
+			c0-0.7,0.3-1.2,0.9-1.7c0.6-0.4,1.3-0.6,2.1-0.6c0.7,0,1.3,0.1,1.8,0.5c0.5,0.3,0.9,0.8,1.1,1.3l-1.3,0.5c-0.3-0.7-0.9-1-1.8-1
+			c-0.5,0-0.8,0.1-1.1,0.3c-0.3,0.2-0.5,0.4-0.5,0.7c0,0.5,0.4,0.7,1,0.9l1.5,0.4c0.7,0.2,1.3,0.5,1.6,0.9c0.4,0.4,0.5,0.9,0.5,1.4
+			c0,0.7-0.3,1.3-0.9,1.7C874.2,579.9,873.5,580.1,872.6,580.1"/>
+		<path fill="#557EBF" d="M787.6,573h-6.1v1.8h4.3c-0.2,2.5-2.3,3.6-4.3,3.6c-2.6,0-4.8-2-4.8-4.8c0-2.8,2.1-4.9,4.8-4.9
+			c2,0,3.2,1.3,3.2,1.3l1.3-1.3c0,0-1.6-1.8-4.6-1.8c-3.8,0-6.7,3.2-6.7,6.6c0,3.4,2.8,6.7,6.8,6.7c3.6,0,6.2-2.4,6.2-6
+			C787.7,573.4,787.6,573,787.6,573L787.6,573z"/>
+		<path fill="#EA4636" d="M792.6,571.7c-2.5,0-4.3,1.9-4.3,4.2c0,2.3,1.8,4.3,4.3,4.3c2.3,0,4.2-1.8,4.2-4.2
+			C796.9,573.2,794.7,571.7,792.6,571.7 M792.6,573.4c1.2,0,2.4,1,2.4,2.6c0,1.6-1.2,2.6-2.4,2.6c-1.4,0-2.4-1.1-2.4-2.6
+			C790.2,574.5,791.3,573.4,792.6,573.4z"/>
+		<path fill="#F7BB17" d="M802,571.7c-2.5,0-4.3,1.9-4.3,4.2c0,2.3,1.8,4.3,4.3,4.3c2.3,0,4.2-1.8,4.2-4.2
+			C806.3,573.2,804,571.7,802,571.7z M802,573.4c1.2,0,2.4,1,2.4,2.6c0,1.6-1.2,2.6-2.4,2.6c-1.4,0-2.4-1.1-2.4-2.6
+			C799.5,574.5,800.6,573.4,802,573.4z"/>
+		<path fill="#557EBF" d="M811.1,571.7c-2.3,0-4.1,2-4.1,4.3c0,2.6,2.1,4.3,4.1,4.3c1.2,0,1.8-0.5,2.3-1v0.9c0,1.5-0.9,2.3-2.3,2.3
+			c-1.3,0-1.9-1-2.2-1.5l-1.6,0.7c0.6,1.2,1.8,2.5,3.8,2.5c2.3,0,4-1.4,4-4.5v-7.7h-1.8v0.7C812.9,572.1,812.1,571.7,811.1,571.7z
+			 M811.3,573.4c1.1,0,2.3,0.9,2.3,2.6s-1.2,2.6-2.3,2.6c-1.2,0-2.3-1-2.3-2.6C808.9,574.3,810.1,573.4,811.3,573.4z"/>
+		<path fill="#EA4636" d="M823.2,571.7c-2.2,0-4,1.7-4,4.3c0,2.7,2,4.3,4.2,4.3c1.8,0,2.9-1,3.6-1.9l-1.5-1c-0.4,0.6-1,1.2-2.1,1.2
+			c-1.2,0-1.8-0.7-2.1-1.3l5.7-2.4l-0.3-0.7C826.2,572.8,824.9,571.7,823.2,571.7L823.2,571.7z M823.3,573.3c0.8,0,1.4,0.4,1.6,0.9
+			l-3.8,1.6C820.9,574.6,822.1,573.3,823.3,573.3"/>
+		<rect x="816.5" y="567.4" fill="#36A851" width="1.9" height="12.6"/>
+	</g>
+	<g>
+		<rect x="15.2" y="582.7" fill="none" width="101.6" height="8.5"/>
+		<text transform="matrix(1.0003 0 0 1 15.1851 586.4062)" fill="#4C5160" font-size="5px">visualized by Anna Vital</text>
+	</g>
+</g>
+<g id="Main">
+	<g id="clock" transform="translate(85.7143, -78.0765)">
+		<g id="minutes">
+			<polygon fill="#676F82" points="88.2,478.6 87.9,481.6 89.1,481.7 89.1,481.7 89.4,478.7 88.2,478.6 			"/>
+			<polygon fill="#676F82" points="90.6,481.9 90.6,481.9 91.8,482.2 92.4,479.3 92.4,479.3 91.2,479 			"/>
+			<polygon fill="#676F82" points="94.2,479.7 93.3,482.5 93.3,482.6 94.4,482.9 94.5,482.9 95.4,480.1 94.2,479.8 			"/>
+			<polygon fill="#676F82" points="96.9,483.9 98.2,481.3 98.3,481.3 97.2,480.8 97.2,480.7 95.8,483.3 95.8,483.4 96.8,483.9 			
+				"/>
+			<polygon fill="#676F82" points="97.8,489.2 101.3,483.1 101.3,483.1 99.3,481.9 99.3,481.9 95.8,488 95.7,488 97.7,489.2 			"/>
+			<polygon fill="#676F82" points="101.6,486.7 101.6,486.7 103.4,484.3 102.4,483.6 102.4,483.6 100.6,486 			"/>
+			<polygon fill="#676F82" points="103.7,488.5 103.7,488.5 105.7,486.3 104.9,485.5 104.8,485.5 102.8,487.7 			"/>
+			<polygon fill="#676F82" points="104.8,489.6 105.6,490.5 107.8,488.5 107.8,488.5 107,487.6 104.8,489.5 			"/>
+			
+				<rect x="106.7" y="490.6" transform="matrix(0.8462 -0.5329 0.5329 0.8462 -245.1609 133.2039)" fill="#676F82" width="3" height="1.2"/>
+			<polygon fill="#676F82" points="104.2,495.5 105.3,497.5 105.3,497.5 111.4,494.1 111.5,494 110.4,492 110.3,492 104.2,495.5 			
+				"/>
+			
+				<rect x="113" y="508.9" transform="matrix(0.1196 -0.9928 0.9928 0.1196 -406.7022 562.1702)" fill="#676F82" width="1.2" height="3"/>
+			<polygon fill="#676F82" points="111.8,512.3 111.5,513.5 111.5,513.5 114.3,514.2 114.4,514.2 114.7,513.1 114.7,513 
+				111.8,512.3 			"/>
+			
+				<rect x="111.7" y="514.6" transform="matrix(0.3336 -0.9427 0.9427 0.3336 -411.6644 449.7356)" fill="#676F82" width="1.2" height="3"/>
+			
+				<rect x="110.6" y="517.2" transform="matrix(0.4881 -0.8728 0.8728 0.4881 -395.8203 362.6197)" fill="#676F82" width="1.2" height="3"/>
+			<polygon fill="#676F82" points="105.6,517.2 104.4,519.2 104.3,519.3 110.3,523 110.3,523 111.6,521 111.6,521 105.6,517.3 			
+				"/>
+			<polygon fill="#676F82" points="107.1,522.4 106.5,523.4 108.9,525.1 109.6,524.1 107.2,522.5 			"/>
+			<polygon fill="#676F82" points="104.7,525.5 104.7,525.5 106.9,527.5 107.7,526.6 107.7,526.6 105.5,524.6 			"/>
+			<polygon fill="#676F82" points="103.6,526.6 102.7,527.5 104.7,529.6 104.7,529.6 105.6,528.8 103.7,526.7 			"/>
+			<polygon fill="#676F82" points="101.7,528.4 100.7,529.1 102.3,531.5 102.3,531.6 103.3,530.9 101.7,528.5 			"/>
+			<polygon fill="#676F82" points="97.7,526.1 95.7,527.2 95.7,527.3 99.2,533.3 99.2,533.4 101.2,532.2 101.3,532.2 97.7,526.1 			
+				"/>
+			
+				<rect x="62.6" y="490.2" transform="matrix(0.545 -0.8384 0.8384 0.545 -383.4898 276.7229)" fill="#676F82" width="1.2" height="3"/>
+			<polygon fill="#676F82" points="65.7,490.8 66.5,489.9 64.3,488 64.2,488 63.4,488.9 65.7,490.8 			"/>
+			<polygon fill="#676F82" points="67.5,488.7 68.4,487.9 66.4,485.8 66.3,485.8 65.5,486.6 67.5,488.7 			"/>
+			
+				<rect x="68.5" y="483.8" transform="matrix(0.8228 -0.5684 0.5684 0.8228 -263.5996 125.2744)" fill="#676F82" width="1.2" height="3"/>
+			<polygon fill="#676F82" points="73.5,489.1 75.5,487.9 71.8,481.9 71.7,481.9 69.7,483.1 73.4,489.1 			"/>
+			<polygon fill="#676F82" points="59.2,505.8 59.3,504.6 56.4,504.4 56.4,504.3 56.3,505.6 59.2,505.8 			"/>
+			<polygon fill="#676F82" points="59.6,503.1 59.8,502 59.8,501.9 57,501.3 56.9,501.3 56.7,502.4 56.7,502.5 59.5,503.1 			"/>
+			<polygon fill="#676F82" points="60.2,500.4 60.6,499.3 57.8,498.4 57.7,498.4 57.4,499.5 60.2,500.4 			"/>
+			<polygon fill="#676F82" points="61,497.9 61.6,496.8 59,495.5 58.9,495.5 58.4,496.5 61,497.9 			"/>
+			<polygon fill="#676F82" points="65.6,498 66.8,496 66.8,495.9 60.7,492.4 60.7,492.4 59.5,494.4 59.5,494.4 65.6,498 			"/>
+			<polygon fill="#676F82" points="74.3,480.8 73.3,481.3 73.2,481.4 74.5,484 74.5,484.1 75.5,483.6 75.6,483.5 74.3,480.9 			"/>
+			<polygon fill="#676F82" points="77.2,479.8 76.1,480.2 77,483 78.2,482.6 77.3,479.8 			"/>
+			
+				<rect x="79.3" y="479.1" transform="matrix(0.9766 -0.2151 0.2151 0.9766 -101.5029 28.4358)" fill="#676F82" width="1.2" height="3"/>
+			
+				<rect x="82.3" y="478.7" transform="matrix(0.9968 -7.962125e-02 7.962125e-02 0.9968 -37.967 8.1226)" fill="#676F82" width="1.2" height="3"/>
+			<rect x="84.6" y="478.7" fill="#676F82" width="2.3" height="8.8"/>
+			<polygon fill="#676F82" points="109.3,496.3 109.9,497.4 112.5,496.1 112.6,496.1 112,495 109.4,496.3 			"/>
+			<polygon fill="#676F82" points="110.5,498.8 110.9,499.9 113.6,499 113.7,498.9 113.3,497.8 110.5,498.8 			"/>
+			<polygon fill="#676F82" points="111.3,501.4 111.6,502.6 114.5,501.9 114.5,501.9 114.2,500.7 111.4,501.4 			"/>
+			<polygon fill="#676F82" points="111.9,504.1 112,505.3 114.9,505 115,505 114.9,503.8 111.9,504.1 			"/>
+			<polygon fill="#676F82" points="115,506.3 106.2,506.5 106.2,506.5 106.2,508.7 106.2,508.7 115,508.5 115,508.5 115,506.3 			
+				"/>
+			<polygon fill="#676F82" points="82.3,533.9 82.2,536.8 82.2,536.9 83.3,536.9 83.4,536.9 83.5,534 83.5,534 82.4,533.9 			"/>
+			<polygon fill="#676F82" points="79.6,533.5 79.1,536.4 79.1,536.5 80.2,536.7 80.3,536.7 80.8,533.8 80.8,533.7 79.6,533.5 			
+				"/>
+			<polygon fill="#676F82" points="76.9,532.9 76.1,535.7 76.1,535.8 77.3,536.1 77.3,536.1 78.1,533.2 77,532.9 			"/>
+			<polygon fill="#676F82" points="74.4,532 73.2,534.7 73.2,534.7 74.3,535.2 75.5,532.6 75.5,532.5 74.5,532 			"/>
+			<polygon fill="#676F82" points="75.4,527.9 73.3,526.8 70.1,533 70,533.1 72.1,534.2 75.4,527.9 			"/>
+			<polygon fill="#676F82" points="96.8,531.7 95.8,532.2 95.7,532.2 96.9,534.9 97,534.9 98,534.4 98.1,534.4 96.8,531.7 			"/>
+			<polygon fill="#676F82" points="94.3,532.8 93.1,533.1 94,535.9 94.1,536 95.2,535.6 94.3,532.8 			"/>
+			
+				<rect x="90.8" y="533.6" transform="matrix(0.9766 -0.2151 0.2151 0.9766 -112.9619 32.181)" fill="#676F82" width="1.2" height="3"/>
+			
+				<rect x="87.8" y="534.1" transform="matrix(0.9968 -7.964732e-02 7.964732e-02 0.9968 -42.3779 8.7442)" fill="#676F82" width="1.2" height="3"/>
+			<rect x="84.4" y="528.3" fill="#676F82" width="2.3" height="8.8"/>
+			<polygon fill="#676F82" points="70.6,529.7 69.6,529 68,531.5 68,531.5 69,532.2 70.6,529.7 			"/>
+			
+				<rect x="65.5" y="528.2" transform="matrix(0.6463 -0.7631 0.7631 0.6463 -379.856 238.1256)" fill="#676F82" width="3" height="1.2"/>
+			<polygon fill="#676F82" points="65.5,525.4 65.5,525.4 63.3,527.5 64.1,528.3 64.2,528.4 66.3,526.3 			"/>
+			<polygon fill="#676F82" points="64.5,524.4 63.8,523.4 61.4,525 61.3,525.1 62,526.1 64.4,524.4 			"/>
+			<polygon fill="#676F82" points="66.7,520.3 65.5,518.4 65.5,518.3 59.5,522 59.5,522.1 60.7,524 60.7,524.1 66.7,520.4 			"/>
+			<polygon fill="#676F82" points="61.6,519.2 61.1,518.2 61.1,518.1 58.4,519.4 58.4,519.4 58.9,520.5 58.9,520.5 61.6,519.3 			
+				"/>
+			<polygon fill="#676F82" points="60.5,516.7 60.2,515.6 57.4,516.5 57.3,516.5 57.7,517.6 60.5,516.7 			"/>
+			
+				<rect x="56.7" y="513.2" transform="matrix(0.9766 -0.2151 0.2151 0.9766 -109.1372 24.5309)" fill="#676F82" width="3" height="1.2"/>
+			
+				<rect x="56.2" y="510.2" transform="matrix(0.9968 -7.947113e-02 7.947113e-02 0.9968 -40.4158 6.2016)" fill="#676F82" width="3" height="1.2"/>
+			<rect x="56.2" y="506.9" fill="#676F82" width="8.8" height="2.3"/>
+		</g>
+		<g id="rect3263_2_">
+			<path fill="#676F82" d="M81.3,505.1l-0.7,2.1l17.4,6.2l1.4-0.6l-0.8-1.5L81.3,505.1z"/>
+			<path fill="#171F30" d="M98,513.4L98,513.4l-17.5-6.2l0,0l0.8-2.1l0,0l17.3,6.1l0,0l0.8,1.5l0,0L98,513.4z M80.6,507.1l17.4,6.2
+				l1.4-0.6l-0.8-1.4l-17.2-6.1L80.6,507.1z"/>
+		</g>
+		<g id="path3268_2_">
+			<path fill="#676F82" d="M84.1,513.3l-1.4-0.4l8.3-25.3l1.1-0.5l0.6,1.1L84.1,513.3z"/>
+			<path fill="#171F30" d="M84.1,513.3L84.1,513.3l-1.5-0.4l0-0.1l8.3-25.3l0,0l1.2-0.5l0.6,1.2l0,0L84.1,513.3z M82.7,512.9
+				l1.3,0.3l8.5-24.9l-0.6-1l-1.1,0.4L82.7,512.9z"/>
+		</g>
+	</g>
+	<g id="times">
+
+    <text transform="matrix(0.9977 6.769260e-02 -6.769260e-02 0.9977 190.9985 125.1475)" fill="#5D5D7F" font-size="9px">10m</text>			
+    <text transform="matrix(0.988 0.1546 -0.1546 0.988 217.6187 127.9033)" fill="#5D5D7F" font-size="9px">20m</text>
+    <text transform="matrix(0.9705 0.2411 -0.2411 0.9705 243.8901 132.9834)" fill="#5D5D7F" font-size="9px">30m</text>
+    <text transform="matrix(0.8742 0.4856 -0.4856 0.8742 318.29 161.5898)" fill="#5D5D7F" font-size="9px">1hr</text>	
+    <text transform="matrix(0.7543 0.6566 -0.6566 0.7543 370.8589 197.8291)" fill="#5D5D7F" font-size="9px">1hr 30m</text>
+    <text transform="matrix(0.5237 0.8519 -0.8519 0.5237 431.3115 267.9858)" fill="#5D5D7F" font-size="9px">2hrs</text>		
+
+		<g id="inner">
+			<text transform="matrix(1 0 0 1 165.4404 553.5186)" fill="#5D5D7F" font-size="6px">6hrs</text>
+			<text transform="matrix(1 0 0 1 41.0459 428.3915)" fill="#5D5D7F" font-size="6px">9hrs</text>
+			<text transform="matrix(1 0 0 1 290.5459 428.3915)" fill="#5D5D7F" font-size="6px">3hrs</text>
+		</g>
+	</g>
+
+	<g id="city_icon" class="icon">
+		<g>
+			<polygon points="98.6,81 99.4,80.7 100.9,85.2 100.1,85.5 "/>
+			<polygon points="93.1,82.7 93.7,82.1 97.7,85.8 97.1,86.4 "/>
+			<polygon points="91.3,87.4 91.5,86.6 96.6,88.3 96.3,89.1 "/>
+		</g>
+		<g>
+			<path d="M78.7,93.4c0.9,0.2,1.8-0.4,2-1.3c0.2-0.9-0.4-1.8-1.3-2c-0.9-0.2-1.8,0.4-2,1.3
+				C77.2,92.4,77.7,93.3,78.7,93.4"/>
+			<path d="M77.4,96.4l1.5,2.9c0.1,0.3,0.4,0.5,0.7,0.5c0,0,0.1,0,0.1,0c0.4-0.1,0.6-0.3,0.7-0.7l0.2-1.3l1.8,1.8
+				c-0.5,0.6-1.9,2.4-1.9,2.4c-0.2,0.3-0.3,0.8-0.3,1.1l-0.6,4.1c-0.1,0.6,0.1,1.2,0.7,1.3c0.1,0,0.1,0,0.2,0v0h9.2v-0.7h-8.3
+				c0-0.1,0.1-0.2,0.1-0.3l0.8-4.2c0.6-0.8,2.1-2.3,2.1-2.3s0.5,1.9,0.7,2.9c0.1,0.3,0.4,0.9,1.1,1c0.9,0,4.4-0.6,4.4-0.6
+				s1.2-0.1,1-1.1c-0.1-0.5-0.6-0.7-1.1-0.7l-3.2,0.4l-0.6-3.5c-0.2-1-1.2-2-1.4-2.1l-3.7-3.7c-0.2-0.3-0.5-0.4-0.9-0.4
+				c-0.4,0-0.7,0.1-0.9,0.4c0,0-0.2,0.3-0.3,0.5l-0.4,2.1l-0.3-0.7c-0.2-0.4-0.7-0.6-1.1-0.4C77.4,95.4,77.2,96,77.4,96.4z"/>
+		</g>
+		<g>
+			<path d="M107.8,105.6v-6.8h-3.1v-2.3h-3v5.2h-2.5l0,6.8l8.6,0 M101.4,106.4h-1.2v-1.2h1.2V106.4z M101.4,104h-1.2
+				v-1.2h1.2V104z M104.1,106.4h-1.2v-1.2h1.2V106.4z M104.1,104h-1.2v-1.2h1.2V104z M107.1,104H106v-1.2h1.2V104z M107.1,101.5H106
+				v-1.2h1.2V101.5z"/>
+			<path d="M114.7,97.5H112V91h-3v-6.4h-4.5v10.6h1.3v2.2h3.2v7l5.7,0L114.7,97.5z M108,96.2h-1.2V95h1.2V96.2z
+				 M108,93.7h-1.2v-1.2h1.2V93.7z M110.6,93.7h-1.2v-1.2h1.2V93.7z"/>
+			<path d="M98.7,87.9v9.1h-3.5l0,7.5h2.9l0-3.8h2.5v-5.4h2.8v-7.4H98.7z M98.4,99.4h-1.2v-1.2h1.2V99.4z
+				 M101.9,93.9h-1.2v-1.2h1.2V93.9z M101.9,91.5h-1.2v-1.2h1.2V91.5z"/>
+		</g>
+	</g>
+	<g id="Extra_cities">
+		<g>
+			<ellipse fill="#F6A4B7" cx="77.7" cy="325.4" rx="3.3" ry="3.2"/>
+			<text transform="matrix(1 0 0 1 83.4741 328.1855)" fill="#5E6272" font-size="8.8244px">Iskandariya</text>
+			<text transform="matrix(1 0 0 1 136.4261 327.9595)" fill="#FFFFFF" font-size="6.6936px">16:15 GMT</text>
+			<g>
+				<text transform="matrix(1 0 0 1 83.5669 336.5049)" fill="#475055" font-size="6px">March 19, 2016</text>
+			</g>
+		</g>
+		<g>
+			<ellipse fill="#DFEAA7" cx="77.7" cy="265.5" rx="3.3" ry="3.2"/>
+			<text transform="matrix(1 0 0 1 83.4741 267.9513)" fill="#5E6272" font-size="8.8244px">Istanbul</text>
+			<text transform="matrix(1 0 0 1 136.4262 268.019)" fill="#FFFFFF" font-size="6.6936px">09:00 GMT</text>
+			<g>
+				<text transform="matrix(1 0 0 1 83.5669 276.2771)" fill="#475055" font-size="6px">March 25, 2016</text>
+			</g>
+		</g>
+		<g>
+			<ellipse fill="#84A394" cx="77.6" cy="224" rx="3.3" ry="3.2"/>
+			<text transform="matrix(1 0 0 1 83.4741 226.3267)" fill="#5E6272" font-size="8.8244px">Lahore</text>
+			<text transform="matrix(1 0 0 1 136.4262 226.3519)" fill="#FFFFFF" font-size="6.6936px">13:30 GMT</text>
+			<g>
+				<text transform="matrix(1 0 0 1 83.5667 236.0223)" fill="#475055" font-size="6px">March 27, 2016</text>
+			</g>
+		</g>
+		<g>
+			<ellipse fill="#E42468" cx="77.7" cy="144.4" rx="3.3" ry="3.2"/>
+			<text transform="matrix(1 0 0 1 83.4742 146.6909)" fill="#5E6272" font-size="8.8244px">Brussels</text>
+			<text transform="matrix(1 0 0 1 136.4261 146.8635)" fill="#FFFFFF" font-size="6.6936px">6:58 GMT</text>
+			<g>
+				<text transform="matrix(1 0 0 1 83.5668 156.0847)" fill="#475055" font-size="6px">March 22, 2016</text>
+			</g>
+		</g>
+	</g>
+	<g id="search_legend">
+		<g id="icon" fill="#5E6272">
+				<path d="M427.8,198.3c1.2,1.6,3.5,2,5.2,0.8c1.6-1.2,2-3.5,0.8-5.2c-1.2-1.6-3.5-2-5.2-0.8
+						C427,194.4,426.6,196.7,427.8,198.3z"/>
+				<path d="M425.3,205.7C425.3,205.7,425.3,205.7,425.3,205.7l-1.2-1.6l3.7,0.3l0,0c0.3-0.7,0.2-1.4-0.2-2.1
+					c-0.4-0.5-1-0.7-1.6-0.9l-3.6-0.8c1.1-1.4,4.2-5.5,4.6-7.6c0.6-2.8-2-4-3.8-3.8c-6.2,0.3-12.2,3-12.2,3l5.9,8l4.2-7.5
+					c0.1-0.2,0.4-0.3,0.7-0.2c0.2,0.1,0.3,0.4,0.2,0.7l-4.4,7.9l5,6.7c0.6,0.8,1.6,0.9,2.4,0.3C425.8,207.5,425.9,206.4,425.3,205.7
+					z"/>
+				<path d="M426,206.1c-0.1-0.2-0.2-0.4-0.1-0.6c0.1-0.3,0.5-0.5,0.9-0.4l3.2,1.2c0.3,0.1,0.5,0.5,0.4,0.9
+					c-0.1,0.3-0.5,0.5-0.9,0.4l-3.2-1.2C426.2,206.3,426.1,206.2,426,206.1L426,206.1z"/>
+				<path d="M429.1,204.9l9-6.7l0,0c1.6-1.1,3.6-1.6,5.5-1.2c1.9,0.3,3.7,1.4,4.8,2.9c2.5,3.3,1.8,8.1-1.6,10.5
+					c-3.3,2.5-8.1,1.8-10.5-1.6c-1-1.3-1.5-2.9-1.5-4.5L429.1,204.9L429.1,204.9z M438.8,199.1l-5.6,4.2l2.9-0.3l-0.1,0.7
+					c-0.2,1.6,0.3,3.1,1.2,4.4c2.1,2.8,6.1,3.4,8.9,1.3c2.8-2.1,3.4-6.1,1.3-8.9C445.4,197.8,441.6,197.2,438.8,199.1L438.8,199.1z"
+					/>		
+				<circle transform="matrix(0.8025 -0.5966 0.5966 0.8025 -33.303 302.3727)" cx="440.1" cy="201.5" r="1.2"/>				
+				<circle transform="matrix(0.8025 -0.5966 0.5966 0.8025 -34.5745 304.1844)" cx="442.2" cy="204.3" r="1.2"/>				
+				<circle transform="matrix(0.8025 -0.5966 0.5966 0.8025 -35.8464 305.9969)" cx="444.3" cy="207.2" r="1.2"/>
+		</g>
+		<g id="arrow">
+			<polygon fill="#5E6272" points="431.5,233.6 425.6,228.5 429.9,225.9 			"/>
+			<path fill="none" stroke="#5E6272" stroke-width="0.6" stroke-miterlimit="10" d="M318.1,132.8c45.4,21.3,85.3,57.7,110.1,94.8"
+				/>
+		</g>
+		<path id="SVGID_x5F_1_x5F_" fill="none" d="M326.6,114.1c0,0,57.3,27.3,86,64"/>
+		<text>		<textPath  xlink:href="#SVGID_x5F_1_x5F_" startOffset="1.27%">
+<tspan  fill="#5E6272" font-size="7.7714px">What did each city search for</tspan>		</textPath>
+</text>
+		<path id="SVGID_x5F_2_x5F_" fill="none" d="M321.8,123.7c0,0,57.3,27.3,86,64"/>
+		<text>		<textPath  xlink:href="#SVGID_x5F_2_x5F_" startOffset="1.27%">
+<tspan  fill="#5E6272" font-size="7.7714px">to understand what happened?</tspan>		</textPath>
+</text>
+	</g>
+</g>
+<g id="Title">
+	<text transform="matrix(1 0 0 1 152.6409 43.0685)" fill="#C5C1C6" font-size="15.801px">How Fast the News Spread About</text>
+	<text transform="matrix(1 0 0 1 179.265 70.7922)" fill="#C5C1C6" font-size="18.3979px">TERRORIST ATTACKS</text>
+</g>
+<g class="question-groups">
+	<g class="Brussels city">
+		<g class="questions">
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.3513 452.1571)"><tspan x="0" y="0">Who are the Brussels </tspan><tspan x="0" y="12">terrorists?</tspan></text>
+				<circle style="fill:#8D8D8E;" cx="750" cy="453.1" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0173 365.7313)"><tspan x="0" y="0">When is Brussels on </tspan><tspan x="0" y="12">alert level 4 until?</tspan></text>
+				<circle style="fill:#E42868;" cx="750" cy="367.1" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0173 279.9686)"><tspan x="0" y="0">Where to donate blood </tspan><tspan x="0" y="12">in Brussels?</tspan></text>
+				<circle style="fill:#E42868;" cx="750" cy="280.4" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0193 192.8729)"><tspan x="0" y="0">Who are the victims </tspan><tspan x="0" y="12">of the Brussels bombings?</tspan></text>
+				<circle style="fill:#8D8D8E;" cx="750" cy="194" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0144 106.6727)"><tspan x="0" y="0">How to get out </tspan><tspan x="0" y="12">of Brussels?</tspan></text>
+				<circle style="fill:#E42868;" cx="750" cy="107.8" r="3.6" />
+			</g>
+		</g>
+		<g class="connectors">
+			<path d="M608.3,569.4c57.7,0,79.8-116.3,137.5-116.3"/>
+			<path d="M608.3,569.4c57.7,0,79.8-202.3,137.5-202.3"/>
+			<path d="M608.3,569.4c57.7,0,79.8-289,137.5-289"/>
+			<path d="M608.3,569.4c57.7,0,79.8-375.4,137.5-375.4"/>
+			<path d="M608.3,569.4c57.7,0,79.8-461.6,137.5-461.6"/>
+		</g>
+	</g>
+	<g class="Paris city" style="display:none;">
+		<g class="questions">
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.3513 452.1571)"><tspan x="0" y="0">Who are the French victims </tspan><tspan x="0" y="12">of the Brussels attacks?</tspan></text>
+				<circle style="fill:#85AF40;" cx="750" cy="453.1" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0173 365.7313)"><tspan x="0" y="0">Who has claimed </tspan><tspan x="0" y="12">responsibility for the </tspan><tspan x="0" y="24">Brussels attacks?</tspan></text>
+				<circle style="fill:#8D8D8E;" cx="750" cy="367.1" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0173 279.9686)"><tspan x="0" y="0">Who committed </tspan><tspan x="0" y="12">the Brussels attacks?</tspan></text>
+				<circle style="fill:#8D8D8E;" cx="750" cy="280.4" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0193 192.8729)"><tspan x="0" y="0">Why </tspan><tspan x="0" y="12">Brussels?</tspan></text>
+				<circle style="fill:#E2E0E0;" cx="750" cy="194" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0144 106.6727)"><tspan x="0" y="0">Who are the victims of </tspan><tspan x="0" y="12">the Brussels attacks?</tspan></text>
+				<circle style="fill:#8D8D8E;" cx="750" cy="107.8" r="3.6" />
+			</g>
+		</g>
+		<g class="connectors">
+			<path d="M608.3,524.3c57.7,0,79.8-71.2,137.5-71.2"/>
+			<path d="M608.3,524.3c57.7,0,79.8-157.2,137.5-157.2"/>
+			<path d="M608.3,524.3c57.7,0,79.8-243.9,137.5-243.9"/>
+			<path d="M608.3,524.3c57.7,0,79.8-330.3,137.5-330.3"/>
+			<path d="M608.3,524.3c57.7,0,79.8-416.5,137.5-416.5"/>
+		</g>
+	</g>
+	<g class="London city" style="display:none;">
+		<g class="questions">
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.3513 452.1571)"><tspan x="0" y="0">Who bombed </tspan><tspan x="0" y="12">Brussels?</tspan></text>
+				<circle style="fill:#8D8D8E;" cx="750" cy="453.1" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0173 365.7313)"><tspan x="0" y="0">Where is </tspan><tspan x="0" y="12">Brussels airport?</tspan></text>
+				<circle style="fill:#8D8D8E;" cx="750" cy="367.1" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0173 279.9686)"><tspan x="0" y="0">Why </tspan><tspan x="0" y="12">Brussels?</tspan></text>
+				<circle style="fill:#E2E0E0;" cx="750" cy="280.4" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0193 192.8729)"><tspan x="0" y="0">How many died in </tspan><tspan x="0" y="12">the Brussels attacks?</tspan></text>
+				<circle style="fill:#8D8D8E;" cx="750" cy="194" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0144 106.6727)"><tspan x="0" y="0">What happened </tspan><tspan x="0" y="12">in Brussels?</tspan></text>
+				<circle style="fill:#E2E0E0;" cx="750" cy="107.8" r="3.6" />
+			</g>
+		</g>
+		<g class="connectors">
+			<path d="M608.3,479.4c57.7,0,79.8-26.2,137.5-26.2"/>
+			<path d="M608.3,479.4c57.7,0,79.8-112.3,137.5-112.3"/>
+			<path d="M608.3,479.4c57.7,0,79.8-198.9,137.5-198.9"/>
+			<path d="M608.3,479.4c57.7,0,79.8-285.4,137.5-285.4"/>
+			<path d="M608.3,479.4c57.7,0,79.8-371.6,137.5-371.6"/>
+		</g>
+	</g>
+	<g class="Berlin city" style="display:none;">
+		<g class="questions">
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.3513 452.1571)"><tspan x="0" y="0">Who has attacked </tspan><tspan x="0" y="12">Brussels?</tspan></text>
+				<circle style="fill:#8D8D8E;" cx="750" cy="453.1" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0173 365.7313)"><tspan x="0" y="0">How far away from </tspan><tspan x="0" y="12">Brussels is Berlin?</tspan></text>
+				<circle style="fill:#48B9E0;" cx="750" cy="367.1" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0173 279.9686)"><tspan x="0" y="0">Why the attack </tspan><tspan x="0" y="12">on Brussels?</tspan></text>
+				<circle style="fill:#E2E0E0;" cx="750" cy="280.4" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0193 192.8729)"><tspan x="0" y="0">How many died in </tspan><tspan x="0" y="12">the Brussels attacks?</tspan></text>
+				<circle style="fill:#8D8D8E;" cx="750" cy="194" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0144 106.6727)"><tspan x="0" y="0">What happened </tspan><tspan x="0" y="12">in Brussels?</tspan></text>
+				<circle style="fill:#E2E0E0;" cx="750" cy="107.8" r="3.6" />
+			</g>
+		</g>
+		<g class="connectors">
+			<path d="M608.3,434.3c57.7,0,79.8,18.8,137.5,18.8"/>
+			<path d="M608.3,434.3c57.7,0,79.8-67.2,137.5-67.2"/>
+			<path d="M608.3,434.3c57.7,0,79.8-153.9,137.5-153.9"/>
+			<path d="M608.3,434.3c57.7,0,79.8-240.3,137.5-240.3"/>
+			<path d="M608.3,434.3c57.7,0,79.8-326.5,137.5-326.5"/>
+		</g>
+	</g>
+	<g class="Madrid city" style="display:none;">
+		<g class="questions">
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.3513 452.1571)"><tspan x="0" y="0">What do the </tspan><tspan x="0" y="12">jihadis want?</tspan></text>
+				<circle style="fill:#4A5696;" cx="750" cy="453.1" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0173 365.7313)"><tspan x="0" y="0">What is </tspan><tspan x="0" y="12">ISIS?</tspan></text>
+				<circle style="fill:#8D8D8E;" cx="750" cy="367.1" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0173 279.9686)"><tspan x="0" y="0">How is the investigation </tspan><tspan x="0" y="12">into the Brussels attacks?</tspan></text>
+				<circle style="fill:#8D8D8E;" cx="750" cy="280.4" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0193 192.8729)"><tspan x="0" y="0">What about flights to </tspan><tspan x="0" y="12">Brussels tomorrow?</tspan></text>
+				<circle style="fill:#4A5696;" cx="750" cy="194" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0144 106.6727)"><tspan x="0" y="0">What happened </tspan><tspan x="0" y="12">in Brussels?</tspan></text>
+				<circle style="fill:#E2E0E0;" cx="750" cy="107.8" r="3.6" />
+			</g>
+		</g>
+		<g class="connectors">
+			<path d="M608.3,389.3c57.7,0,79.8,63.8,137.5,63.8"/>
+			<path d="M608.3,389.3c57.7,0,79.8-22.2,137.5-22.2"/>
+			<path d="M608.3,389.3c57.7,0,79.8-108.9,137.5-108.9"/>
+			<path d="M608.3,389.3c57.7,0,79.8-195.3,137.5-195.3"/>
+			<path d="M608.3,389.3c57.7,0,79.8-281.5,137.5-281.5"/>
+		</g>
+	</g>
+	<g class="Sydney city" style="display:none;">
+		<g class="questions">
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.3513 452.1571)"><tspan x="0" y="0">How many died in </tspan><tspan x="0" y="12">the Brussels attacks?</tspan></text>
+				<circle style="fill:#8D8D8E;" cx="750" cy="453.1" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0173 365.7313)"><tspan x="0" y="0">Why </tspan><tspan x="0" y="12">Brussels?</tspan></text>
+				<circle style="fill:#E2E0E0;" cx="750" cy="367.1" r="3.6" />
+			</g>
+			<g>
+			  <text transform="matrix(0.9822 0 0 1 762.0173 279.9686)"><tspan x="0" y="0">What is </tspan><tspan x="0" y="12">ISIS?</tspan></text>
+				<circle style="fill:#8D8D8E;" cx="750" cy="280.4" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0193 192.8729)"><tspan x="0" y="0">Where is </tspan><tspan x="0" y="12">Brussels airport?</tspan></text>
+				<circle style="fill:#8D8D8E;" cx="750" cy="194" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0144 106.6727)"><tspan x="0" y="0">What happened </tspan><tspan x="0" y="12">in Brussels?</tspan></text>
+				<circle style="fill:#E2E0E0;" cx="750" cy="107.8" r="3.6" />
+			</g>
+		</g>
+		<g class="connectors">
+			<path d="M608.3,344.3c57.7,0,79.8,108.8,137.5,108.8"/>
+			<path d="M608.3,344.3c57.7,0,79.8,22.8,137.5,22.8"/>
+			<path d="M608.3,344.3c57.7,0,79.8-63.9,137.5-63.9"/>
+			<path d="M608.3,344.3c57.7,0,79.8-150.3,137.5-150.3"/>
+			<path d="M608.3,344.3c57.7,0,79.8-236.5,137.5-236.5"/>
+		</g>
+	</g>
+	<g class="Hong-Kong city" style="display:none;">
+		<g class="questions">
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.3513 452.1571)"><tspan x="0" y="0">Who died in the </tspan><tspan x="0" y="12">Brussels bombings?</tspan></text>
+				<circle style="fill:#8D8D8E;" cx="750" cy="453.1" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0173 365.7313)"><tspan x="0" y="0">When will </tspan><tspan x="0" y="12">Brussels-Midi open?</tspan></text>
+				<circle style="fill:#AA74B2;" cx="750" cy="367.1" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0173 279.9686)"><tspan x="0" y="0">Why </tspan><tspan x="0" y="12">Brussels?</tspan></text>
+				<circle style="fill:#E2E0E0;" cx="750" cy="280.4" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0193 192.8729)"><tspan x="0" y="0">What does </tspan><tspan x="0" y="12">ISIS want?</tspan></text>
+				<circle style="fill:#8D8D8E;" cx="750" cy="194" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0144 106.6727)"><tspan x="0" y="0">What happened</tspan><tspan x="0" y="12">in Brussels?</tspan></text>
+				<circle style="fill:#E2E0E0;" cx="750" cy="107.8" r="3.6" />
+			</g>
+		</g>
+		<g class="connectors">
+			<path d="M608.3,299.7c57.7,0,79.8,153.4,137.5,153.4"/>
+			<path d="M608.3,299.7c57.7,0,79.8,67.4,137.5,67.4"/>
+			<path d="M608.3,299.7c57.7,0,79.8-19.2,137.5-19.2"/>
+			<path d="M608.3,299.7c57.7,0,79.8-105.7,137.5-105.7"/>
+			<path d="M608.3,299.7c57.7,0,79.8-191.9,137.5-191.9"/>
+		</g>
+	</g>
+	<g class="Tokyo city" style="display:none;">
+		<g class="questions">
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.3513 452.1571)"><tspan x="0" y="0">What do </tspan><tspan x="0" y="12">ISIS want?</tspan></text>
+				<circle style="fill:#8D8D8E;" cx="750" cy="453.1" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0173 365.7313)"><tspan x="0" y="0">Why was Brussels </tspan><tspan x="0" y="12">attacked?</tspan></text>
+				<circle style="fill:#E2E0E0;" cx="750" cy="367.1" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0173 279.9686)"><tspan x="0" y="0">Who bombed </tspan><tspan x="0" y="12">Brussels?</tspan></text>
+				<circle style="fill:#8D8D8E;" cx="750" cy="280.4" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0193 192.8729)"><tspan x="0" y="0">Where were the terrorist </tspan><tspan x="0" y="12">attacks in Brussels?</tspan></text>
+				<circle style="fill:#8D8D8E;" cx="750" cy="194" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0144 106.6727)"><tspan x="0" y="0">What happened</tspan><tspan x="0" y="12">in Brussels?</tspan></text>
+				<circle style="fill:#E2E0E0;" cx="750" cy="107.8" r="3.6" />
+			</g>
+		</g>
+		<g class="connectors">
+			<path d="M608.3,254.5c57.7,0,79.8,198.7,137.5,198.7"/>
+			<path d="M608.3,254.5c57.7,0,79.8,112.6,137.5,112.6"/>
+			<path d="M608.3,254.5c57.7,0,79.8,26,137.5,26"/>
+			<path d="M608.3,254.5c57.7,0,79.8-60.5,137.5-60.5"/>
+			<path d="M608.3,254.5c57.7,0,79.8-146.7,137.5-146.7"/>
+		</g>
+	</g>
+	<g class="New-York city" style="display:none;">
+		<g class="questions">
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.3513 452.1571)"><tspan x="0" y="0">What is </tspan><tspan x="0" y="12">ISIS?</tspan></text>
+				<circle style="fill:#8D8D8E;" cx="750" cy="453.1" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0173 365.7313)"><tspan x="0" y="0">How many died in </tspan><tspan x="0" y="12">the Brussels attacks?</tspan></text>
+				<circle style="fill:#8D8D8E;" cx="750" cy="367.1" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0173 279.9686)"><tspan x="0" y="0">Why </tspan><tspan x="0" y="12">Brussels?</tspan></text>
+				<circle style="fill:#E2E0E0;" cx="750" cy="280.4" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0193 192.8729)"><tspan x="0" y="0">Where is </tspan><tspan x="0" y="12">Brussels airport?</tspan></text>
+				<circle style="fill:#8D8D8E;" cx="750" cy="194" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0144 106.6727)"><tspan x="0" y="0">What happened </tspan><tspan x="0" y="12">in Brussels?</tspan></text>
+				<circle style="fill:#E2E0E0;" cx="750" cy="107.8" r="3.6" />
+			</g>
+		</g>
+		<g class="connectors">
+			<path d="M608.3,209.4c57.7,0,79.8,243.7,137.5,243.7"/>
+			<path d="M608.3,209.4c57.7,0,79.8,157.6,137.5,157.6"/>
+			<path d="M608.3,209.4c57.7,0,79.8,71,137.5,71"/>
+			<path d="M608.3,209.4c57.7,0,79.8-15.4,137.5-15.4"/>
+			<path d="M608.3,209.4c57.7,0,79.8-101.6,137.5-101.6"/>
+		</g>
+	</g>
+	<g class="Delhi city" style="display:none;">
+		<g class="questions">
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.3513 452.1571)"><tspan x="0" y="0">How did the suicide </tspan><tspan x="0" y="12">bombers enter departures?</tspan></text>
+				<circle style="fill:#ABAC86;" cx="750" cy="453.1" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0173 365.7313)"><tspan x="0" y="0">How many blasts were </tspan><tspan x="0" y="12">there in Brussels?</tspan></text>
+				<circle style="fill:#ABAC86;" cx="750" cy="367.1" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0173 279.9686)"><tspan x="0" y="0">How many died in </tspan><tspan x="0" y="12">the Brussels attacks?</tspan></text>
+				<circle style="fill:#8D8D8E;" cx="750" cy="280.4" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0193 192.8729)"><tspan x="0" y="0">Why </tspan><tspan x="0" y="12">Brussels?</tspan></text>
+				<circle style="fill:#E2E0E0;" cx="750" cy="194" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0144 106.6727)"><tspan x="0" y="0">What happened</tspan><tspan x="0" y="12">in Brussels?</tspan></text>
+				<circle style="fill:#E2E0E0;" cx="750" cy="107.8" r="3.6" />
+			</g>
+		</g>
+		<g class="connectors">
+			<path d="M608.3,164.4c57.7,0,79.8,288.7,137.5,288.7"/>
+			<path d="M608.3,164.4c57.7,0,79.8,202.7,137.5,202.7"/>
+			<path d="M608.3,164.4c57.7,0,79.8,116,137.5,116"/>
+			<path d="M608.3,164.4c57.7,0,79.8,29.6,137.5,29.6"/>
+			<path d="M608.3,164.4c57.7,0,79.8-56.6,137.5-56.6"/>
+		</g>
+	</g>
+	<g class="San-Francisco city" style="display:none;">
+		<g class="questions">
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.3513 452.1571)"><tspan x="0" y="0">Why the attack </tspan><tspan x="0" y="12">on Brussels?</tspan></text>
+				<circle style="fill:#E2E0E0;" cx="750" cy="453.1" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0173 365.7313)"><tspan x="0" y="0">When did the Brussels </tspan><tspan x="0" y="12">attack happen?</tspan></text>
+				<circle style="fill:#8D8D8E;" cx="750" cy="367.1" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0173 279.9686)"><tspan x="0" y="0">Where is </tspan><tspan x="0" y="12">Brussels airport?</tspan></text>
+				<circle style="fill:#8D8D8E;" cx="750" cy="280.4" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0193 192.8729)"><tspan x="0" y="0">How many died in </tspan><tspan x="0" y="12">the Brussels attacks?</tspan></text>
+				<circle style="fill:#8D8D8E;" cx="750" cy="194" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0144 106.6727)"><tspan x="0" y="0">What happened </tspan><tspan x="0" y="12">in Brussels?</tspan></text>
+				<circle style="fill:#E2E0E0;" cx="750" cy="107.8" r="3.6" />
+			</g>
+		</g>
+		<g class="connectors">
+			<path d="M608.3,119.2c57.7,0,79.8,333.9,137.5,333.9"/>
+			<path d="M608.3,119.2c57.7,0,79.8,247.9,137.5,247.9"/>
+			<path d="M608.3,119.2c57.7,0,79.8,161.2,137.5,161.2"/>
+			<path d="M608.3,119.2c57.7,0,79.8,74.8,137.5,74.8"/>
+			<path d="M608.3,119.2c57.7,0,79.8-11.4,137.5-11.4"/>
+		</g>
+	</g>
+	<g class="Toronto city" style="display:none;">
+		<g class="questions">
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.3513 452.1571)"><tspan x="0" y="0">Why is ISIS </tspan><tspan x="0" y="12">doing this?</tspan></text>
+				<circle style="fill:#8D8D8E;" cx="750" cy="453.1" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0173 365.7313)"><tspan x="0" y="0">What does </tspan><tspan x="0" y="12">ISIS want?</tspan></text>
+				<circle style="fill:#8D8D8E;" cx="750" cy="367.1" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0173 279.9686)"><tspan x="0" y="0">How many died in </tspan><tspan x="0" y="12">the Brussels attacks?</tspan></text>
+				<circle style="fill:#8D8D8E;" cx="750" cy="280.4" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0193 192.8729)"><tspan x="0" y="0">Why the attack </tspan><tspan x="0" y="12">on Brussels?</tspan></text>
+				<circle style="fill:#E2E0E0;" cx="750" cy="194" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0144 106.6727)"><tspan x="0" y="0">What happened </tspan><tspan x="0" y="12">in Brussels?</tspan></text>
+				<circle style="fill:#E2E0E0;" cx="750" cy="107.8" r="3.6" />
+			</g>
+		</g>
+		<g class="connectors">
+			<path d="M608.3,74.2c57.7,0,79.8,378.9,137.5,378.9"/>
+			<path d="M608.3,74.2c57.7,0,79.8,292.9,137.5,292.9"/>
+			<path d="M608.3,74.2c57.7,0,79.8,206.2,137.5,206.2"/>
+			<path d="M608.3,74.2c57.7,0,79.8,119.8,137.5,119.8"/>
+			<path d="M608.3,74.2c57.7,0,79.8,33.6,137.5,33.6"/>
+		</g>
+	</g>
+	<g class="Sao-Paulo city" style="display:none;">
+		<g class="questions">
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.3513 452.1571)"><tspan x="0" y="0">Why the attack </tspan><tspan x="0" y="12">on Brussels?</tspan></text>
+				<circle style="fill:#E2E0E0;" cx="750" cy="453.1" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0173 365.7313)"><tspan x="0" y="0">What was the cause of </tspan><tspan x="0" y="12">the attacks in Brussels?</tspan></text>
+				<circle style="fill:#8D8D8E;" cx="750" cy="367.1" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0173 279.9686)"><tspan x="0" y="0">What is the motive of the </tspan><tspan x="0" y="12">bombings in Brussels?</tspan></text>
+				<circle style="fill:#8D8D8E;" cx="750" cy="280.4" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0193 192.8729)"><tspan x="0" y="0">What happened </tspan><tspan x="0" y="12">in Brussels?</tspan></text>
+				<circle style="fill:#E2E0E0;" cx="750" cy="194" r="3.6" />
+			</g>
+			<g>
+				<text transform="matrix(0.9822 0 0 1 762.0144 106.6727)"><tspan x="0" y="0">Who is the ex-player </tspan><tspan x="0" y="12">injured in Brussels?</tspan></text>
+				<circle style="fill:#EA8266;" cx="750" cy="107.8" r="3.6" />
+			</g>
+		</g>
+		<g class="connectors">`
+			<path d="M608.3,29.2c57.7,0,79.8,423.9,137.5,423.9"/>
+			<path d="M608.3,29.2c57.7,0,79.8,337.9,137.5,337.9"/>
+			<path d="M608.3,29.2c57.7,0,79.8,251.3,137.5,251.3"/>
+			<path d="M608.3,29.2c57.7,0,79.8,164.8,137.5,164.8"/>
+			<path d="M608.3,29.2c57.7,0,79.8,78.6,137.5,78.6"/>
+		</g>
+	</g>
+</g>
+<g class="cities">
+  <g id="Brussels" class="city">
+    <text transform="matrix(0.9822 0 0 1 581.8446 585.1776)">Brussels </text>
+    <ellipse style="fill:#E42468;stroke:#913356;" cx="600.2" cy="569.3" rx="5.3" ry="5.4"/>
+  </g>
+  <g id="Paris" class="city">
+    <text transform="matrix(0.982 -2.235578e-02 2.196000e-02 0.9998 588.7687 540.4397)">Paris </text>
+    <ellipse style="fill:#85B040;stroke:#5C7243;" cx="600.2" cy="524.3" rx="5.3" ry="5.4"/>
+  </g>
+  <g id="London" class="city">
+    <text transform="matrix(0.9822 0 0 1 583.9901 495.0985)">London </text>
+    <ellipse style="fill:#236E8E;stroke:#2A5267;" cx="600.2" cy="479.3" rx="5.3" ry="5.4"/>
+  </g>
+  <g id="Berlin" class="city">
+    <text transform="matrix(0.9822 0 0 1 588.702 450.0583)">Berlin</text>
+    <ellipse style="fill:#43BAE2;stroke:#42788E;" cx="600.2" cy="434.2" rx="5.3" ry="5.4"/>
+  </g>
+  <g id="Madrid" class="city">
+    <text transform="matrix(0.9822 0 0 1 586.058 405.0185)">Madrid</text>
+    <ellipse style="fill:#4A5798;stroke:#3F456E;" cx="600.2" cy="389.2" rx="5.3" ry="5.4"/>
+  </g>
+  <g id="Sydney" class="city">
+    <text transform="matrix(0.9822 0 0 1 585.7958 359.9792)">Sydney</text>
+    <ellipse style="fill:#82236B;stroke:#5D2B56;" cx="600.2" cy="344.2" rx="5.3" ry="5.4"/>
+  </g>
+  <g id="Hong-Kong" class="city">
+    <text transform="matrix(0.9822 0 0 1 577.9794 314.9389)">Hong Kong</text>
+    <ellipse style="fill:#AA74B1;stroke:#72557A;" cx="600.2" cy="299.2" rx="5.3" ry="5.4"/>
+  </g>
+  <g id="Tokyo" class="city">
+    <text transform="matrix(0.9822 0 0 1 587.8636 269.8991)">Tokyo</text>
+    <ellipse style="fill:#DF5E26;stroke:#8D4A33;" cx="600.2" cy="254.1" rx="5.3" ry="5.4"/>
+  </g>
+  <g id="New-York" class="city">
+    <text transform="matrix(0.9822 0 0 1 581.0555 224.8599)">New York</text>
+    <ellipse style="fill:#AE9831;stroke:#70643B;" cx="600.2" cy="209.1" rx="5.3" ry="5.4"/>
+  </g>
+  <g id="Delhi" class="city">
+    <text transform="matrix(0.9822 0 0 1 590.0551 179.8201)">Delhi</text>
+    <ellipse style="fill:#ACAD87;stroke:#6E6E64;" cx="600.2" cy="164.1" rx="5.3" ry="5.4"/>
+  </g>
+  <g id="San-Francisco" class="city">
+    <text transform="matrix(0.9822 0 0 1 572.0336 134.7798)">San Francisco</text>
+    <ellipse style="fill:#4ABD9A;stroke:#407C6F;" cx="600.2" cy="119.1" rx="5.3" ry="5.4"/>
+
+  </g>
+  <g id="Toronto" class="city">
+    <text transform="matrix(0.9822 0 0 1 584.2968 89.7401)">Toronto</text>
+    <ellipse style="fill:#E3BC23;stroke:#8A753B;" cx="600.2" cy="74" rx="5.3" ry="5.4"/>
+  </g>
+  <g id="Sao-Paulo" class="city">
+    <text transform="matrix(0.9822 0 0 1 578.9164 44.7005)">Sao Paulo </text>
+    <ellipse style="fill:#EA8267;stroke:#925956;" cx="600.2" cy="29" rx="5.4" ry="5.5"/>
+  </g>
+</g>
+<g id="static-connectors">
+	<g class="R">
+		<path d="M450.3,300c79.3-6.2,60.3,269.7,139.9,269.7"/>
+		<path d="M450.3,300c79.3-6.2,60.3,224.7,139.9,224.7"/>
+		<path d="M450.3,300c79.3-6.2,60.3,179.7,139.9,179.7"/>
+		<path d="M450.3,300c79.3-6.2,60.3,134.7,139.9,134.7"/>
+		<path d="M450.3,300c79.3-6.2,60.3,89.7,139.9,89.7"/>
+		<path d="M450.3,300c79.3-6.2,60.3,44.6,139.9,44.6"/>
+		<path d="M450.3,300c79.3-6.2,60.3-0.4,139.9-0.4"/>
+		<path d="M450.3,300c79.3-6.2,60.3-45.4,139.9-45.4"/>
+		<path d="M450.3,300c79.3-6.2,60.3-90.4,139.9-90.4"/>
+		<path d="M450.3,300c79.3-6.2,60.3-135.4,139.9-135.4"/>
+		<path d="M450.3,300c79.3-6.2,60.3-180.5,139.9-180.5"/>
+		<path d="M450.3,300c79.3-6.2,60.3-225.5,139.9-225.5"/>
+		<path d="M450.3,300c79.3-6.2,60.3-270.5,139.9-270.5"/>
+	</g>
+	<g class="L">
+		<g id="brussels-arcs">
+			<path d="M172,199.8c0.1,0,0.3,0,0.4,0c63.3,0,120.6,25.7,162,67.2c14.1,14.1,34,63.7,116.3,33"/>
+			<path d="M172,195c0.1,0,0.3,0,0.4,0c64.6,0,123.1,26.2,165.4,68.6c14.5,14.5,33.1,61.7,112.9,36.4"/>
+			<path d="M184.6,190.6c61.1,3.1,116.1,29.1,156.6,69.7c14.7,14.8,33.2,60.4,109.5,39.7"/>
+			<path d="M206,187.8c53.8,7.4,102,32.5,138.5,69.1c15,15,32.8,59.5,106.1,43.1"/>
+			<path d="M211,183.7c53.1,8.3,100.6,33.4,136.9,69.8c15.3,15.3,36.9,60,102.7,46.5"/>
+			<path d="M220.5,180.5c50.3,9.7,95.4,34.3,130.3,69.1c15.9,15.8,40.3,61.8,99.9,50.4"/>
+			<path d="M225.7,176.7c49.8,10.5,94.3,35.3,129,70.1c16,16,43,62.3,96,53.3"/>
+			<path d="M235.6,174c47.1,11.7,89.2,36,122.5,69.3c16.2,16.3,43.8,63.4,92.6,56.6"/>
+			<path d="M245.9,171.8c44.3,12.6,83.9,36.4,115.6,68.2c16.5,16.5,44.3,64.1,89.2,60"/>
+			<path d="M265.3,173.1c37.8,13.7,71.9,35.4,99.6,63.5c29.5,29.9,43.2,63.4,85.9,63.4"/>
+			<path d="M280.1,173.8c33.2,14,63.2,34.1,88.1,59.4c34.3,34.9,43.1,65.3,82.5,66.8"/>
+			<path d="M450.7,300c-37.7-2.9-49.8-40.3-79.1-70.2c-21.8-22.2-47.7-40.4-76-54.3"/>
+		</g>
+		<path id="sao-paulo-connector" d="M422.2,569c-12.6,26.5,64.1,56.1,68.8-88.7c1.4-44.7-2.7-139.1-40-155.3c-30.8-13.4-7.1-22.6-0.3-25"/>
+	</g>
+</g>
+
+<g class="the-attacks">
+	<g class="Iskandariya city">
+		<g class="circles">			
+				<circle class="New-York" cx="234.8" cy="395.4" r="1.2"/>		
+				<circle class="Paris" cx="241.7" cy="407.4" r="1.2"/>		
+				<circle class="London" cx="244.5" cy="410.8" r="1.2"/>			
+				<circle class="Toronto" cx="248.4" cy="434.1" r="1.2"/>			
+				<circle class="Sydney" cx="156.7" cy="505.9" r="1.2"/>			
+				<circle class="San-Francisco" cx="92.1" cy="433.2" r="1.2"/>			
+				<circle class="Tokyo" cx="106.8" cy="380.1" r="1.2"/>			
+				<circle class="Sao-Paulo" cx="119.3" cy="364.5" r="1.2"/>			
+				<circle class="Delphi" cx="244.8" cy="483.8" r="1.2"/>			
+				<circle class="Hong-Kong" cx="88.5" cy="474.7" r="1.2"/>			
+				<circle class="Brussels" cx="138.6" cy="516.4" r="1.2"/>			
+				<circle class="Madrid" cx="230.8" cy="392.1" r="1.2"/>			
+				<circle class="Berlin" cx="228.6" cy="392" r="1.2"/>
+		</g>
+		<g class="arcs">
+			<path class="Berlin" d="M172,361.5c23.7,0,44.5,12.1,56.6,30.6"/>
+			<path class="Madrid" d="M172,359.8c24.3,0,45.7,12.5,58.1,31.3c0.3,0.4,0.6,0.8,0.8,1.3"/>
+			<path class="New-York" d="M172,358c24.9,0,46.8,12.8,59.5,32.1c1.1,1.7,2.1,3.4,3.1,5.1"/>
+			<path class="Paris" d="M172,356.3c25.5,0,48,13.1,61,32.9c3.7,5.6,6.6,11.7,8.6,18.2"/>
+			<path class="London" d="M172,354.5c26.1,0,49.1,13.4,62.5,33.7c4.5,6.9,8,14.6,10,22.8"/>
+			<path class="Toronto" d="M172,352.8c26.7,0,50.2,13.7,63.9,34.5c7.9,12,12.5,26.5,12.5,42c0,1.7-0.1,3.4-0.2,5"/>
+			<path class="Sydney" d="M172,351c27.3,0,51.4,14,65.4,35.3c8.1,12.3,12.8,27.1,12.8,42.9c0,43.2-35,78.2-78.2,78.2c-5.3,0-10.4-0.5-15.4-1.5"/>
+			<path class="San-Francisco" d="M172,349.3c27.9,0,52.5,14.3,66.8,36.1c8.3,12.6,13.1,27.7,13.1,43.9c0,44.1-35.8,79.9-79.9,79.9c-42.8,0-77.8-33.7-79.8-76"/>
+			<path class="Tokyo" d="M172,347.5c28.6,0,53.7,14.7,68.3,36.9c8.5,12.9,13.4,28.3,13.4,44.8c0,45.1-36.6,81.7-81.7,81.7s-81.7-36.6-81.7-81.7c0-18.5,6.1-35.5,16.4-49.2"/>
+			<path class="Sao-Paulo" d="M172,345.8c29.2,0,54.8,15,69.7,37.6c8.6,13.1,13.7,28.9,13.7,45.8c0,46.1-37.4,83.4-83.4,83.4s-83.4-37.4-83.4-83.4c0-26.2,12.1-49.5,30.9-64.8"/>
+			<path class="Delhi" d="M172.1,344c29.8,0,56,15.3,71.2,38.4c8.8,13.4,14,29.5,14,46.7c0,47-38.1,85.2-85.2,85.2s-85.2-38.1-85.2-85.2s38.1-90.4,85.2-90.4l0,0c31.8,0,59.4,16.3,75.7,41c9.4,14.3,14.9,31.4,14.9,49.9c0,20.2-6.6,38.9-17.7,53.9"/>
+			<path class="Brussels" d="M172.2,342.3c48,0,86.9,39,86.9,87c0,48-38.9,87-87,87s-87-38.9-87-87s38.6-92.3,86.7-92.3l0,0c51.2,0,92.8,41.5,92.8,92.8s-41.5,92.8-92.8,92.8c-11.7,0-22.9-2.2-33.2-6.1"/>
+			<path class="Hong-Kong" d="M172.1,340.6c48.9,0,88.6,39.7,88.6,88.7c0,49-39.7,88.7-88.7,88.7s-88.7-39.7-88.7-88.7s39.4-94.1,88.4-94.1l0,0c52.2,0,94.6,42.3,94.6,94.6s-42.3,94.6-94.6,94.6c-35.9,0-67.1-20-83.2-49.5"/>
+		</g>
+		<g class="times">				
+				<text class="Brussels" style="display:none;" transform="matrix(0.8794 0.476 -0.476 0.8794 122.0257 521.7944)">18h 43m</text>			
+				<text class="Delhi" style="display:none;" transform="matrix(0.6886 -0.7252 0.7252 0.6886 247.2661 500.5735)">16h 14m</text>
+				<text class="Sao-Paulo" style="display:none;" transform="matrix(0.6917 -0.7222 0.7222 0.6917 116.9478 378.8486)">10h 42m</text>
+				<text class="Tokyo" style="display:none;" transform="matrix(0.4975 -0.8675 0.8675 0.4975 108.0322 394.8486)">10h 14m</text>
+				<text class="San-Francisco" style="display:none;" transform="matrix(-8.220387e-02 0.9966 -0.9966 -8.220387e-02 96.3092 421.9319)">8h 55m</text>				
+				<text class="Sydney" style="display:none;" transform="matrix(0.9529 0.3033 -0.3033 0.9529 148.5376 500.5439)">6h 22m</text>
+				<text class="Toronto" style="display:none;" transform="matrix(1.620825e-02 0.9999 -0.9999 1.620825e-02 239.6245 427.6104)" style="display:none;">3h 9m</text>
+        <text class="London" style="display:none;" transform="matrix(0.3449 0.9351 -0.9382 0.3461 233.8242 404.975)">2h 33m</text>
+				<text class="Paris" style="display:none;" transform="matrix(0.4091 0.9088 -0.9119 0.4105 230.5894 401.4297)">2h 27m</text>
+        <text class="New-York" style="display:none;" transform="matrix(0.5812 0.8137 -0.8137 0.5812 221.1189 392.2211)">2h 05m</text>
+        <text class="Madrid" style="display:none;" transform="matrix(0.6183 0.786 -0.786 0.6183 219.4206 389.9856)">1h 56m</text>
+        <text class="Berlin" style="display:none;" transform="matrix(0.657 0.7539 -0.7539 0.657 216.7114 388.2363)">1h 54m</text>	
+	  </g>
+		<text class="Hong-Kong" transform="matrix(0.404 0.9148 -0.9148 0.404 76.9339 469.3604)">20h 3m</text>	
+		<rect id="start_line" x="171.2" y="340" fill="#FFFFFF" width="0.9" height="22.2"/>
+	</g>
+	
+	<g class="Istanbul city">
+		<g class="circles">		
+			<circle class="Madrid" cx="215.3" cy="302.4" r="1.4"/>
+			<circle class="Sydney" cx="220.4" cy="302.5" r="1.4"/>
+			<circle class="Tokyo" cx="227.6" cy="303.8" r="1.4"/>
+			<circle class="Toronto" cx="268.2" cy="329.2" r="1.4"/>
+  		<circle class="Istanbul" cx="158.8" cy="304.2" r="1.4"/>
+			<circle class="Brussels" cx="285.8" cy="346.7" r="1.4"/>		
+			<circle class="Delhi" cx="287" cy="345.9" r="1.4"/>		
+			<circle class="Hong-Kong" cx="300" cy="363.9" r="1.4"/>			
+			<circle class="San-Francisco" cx="305.9" cy="372.3" r="1.4"/>
+			<circle class="Sao-Paulo" cx="175.2" cy="280.4" r="1.4"/>
+			<circle class="Paris" cx="199.5" cy="299.9" r="1.4"/>
+			<circle class="New-York" cx="197.3" cy="301" r="1.4"/>
+			<circle class="London" cx="185.4" cy="300.9" r="1.4"/>
+			<circle class="Berlin" cx="180.8" cy="302.1" r="1.4"/>
+		</g>
+		<g class="arcs">
+			<path class="Istanbul" d="M159,304.2c4.3-0.4,8.7-0.7,13.1-0.7"/>
+			<path class="Berlin" d="M172,301.9c2.9,0,5.8,0.1,8.7,0.3" />
+			<path class="London" d="M172,300.3c4.4,0,8.8,0.2,13.2,0.7" />
+			<path class="New-York" d="M172,298.6c8.5,0,16.8,0.8,24.9,2.4"/>
+			<path class="Paris" d="M172,297c9.4,0,18.6,1,27.5,2.9" />
+			<path class="Madrid" d="M172,295.3c15.1,0,29.6,2.5,43.1,7.1"/>
+			<path class="Sydney" d="M172,293.7c17,0,33.2,3.1,48.2,8.8"/>
+			<path class="Tokyo" d="M172,292c19.7,0,38.4,4.2,55.4,11.6"/>
+			<path class="Toronto" d="M172,290.4c37.3,0,71.2,14.7,96.2,38.7"/>
+			<path class="Brussels" d="M172,288.7c46.7,0,88.2,22.8,113.7,58"/>
+			<path class="San-Francisco" d="M172,283.8c60,0,111.6,36.4,133.8,88.3"/>
+			<path class="Delhi" d="M172,287.1c47.3,0,89.2,23.1,115,58.6"/>
+			<path class="Hong-Kong" d="M172,285.5c55.8,0,104.2,31.8,128,78.3"/>
+			<path class="Sao-Paulo" d="M171.3,282.1c81.9,0,148.2,66.4,148.2,148.2s-66.4,148.2-148.2,148.2S23,512.2,23,430.3c0-81.7,70.6-149.6,152.2-149.8"/>
+		</g>
+		<g class="times">
+      <text class="San-Francisco" style="display:none;" transform="matrix(0.4338 0.896 -0.9001 0.4357 293.7261 367.7793)">2h 13m</text>		
+      <text class="Hong-Kong" style="display:none;" transform="matrix(0.5012 0.8601 -0.864 0.5035 288.563 358.3555)">2h 6m</text>				
+      <text class="Delhi" style="display:none;" transform="matrix(0.6071 0.7946 -0.7946 0.6071 274.3936 344.6562)">1h 48m</text>				
+      <text class="Brussels" style="display:none;" transform="matrix(0.6071 0.7946 -0.7946 0.6071 274.3936 344.6562)">1h 48m</text>
+      <text class="Toronto" style="display:none;" transform="matrix(0.7545 0.6563 -0.6563 0.7545 256.1689 328.5117)">1h 27m</text>
+      <text class="Tokyo" style="display:none;" transform="matrix(0.9361 0.3518 -0.3518 0.9361 218.5654 311.0088)">47m</text>	
+      <text class="Sydney" style="display:none;" transform="matrix(0.955 0.2966 -0.2966 0.955 212.2642 308.9521)">41m</text>
+      <text class="Madrid" style="display:none;" transform="matrix(0.9659 0.259 -0.259 0.9659 207.9634 307.7764)">38m</text>
+      <text class="Paris" style="display:none;" transform="matrix(1.0017 0.1891 -0.1855 0.9826 192.7505 306.9189)">22m</text>
+      <text class="New-York" style="display:none;" transform="matrix(1.0056 0.1674 -0.1642 0.9864 189.9365 306.9639)">21m</text>	
+      <text class="London" style="display:none;" transform="matrix(0.9979 9.004191e-02 -8.986846e-02 0.996 179.7261 309.0098)">12m</text>		
+			<text class="Berlin" style="display:none;" transform="matrix(0.9961 5.812870e-02 -5.825803e-02 0.9983 175.8149 308.915)">8m</text>
+    </g>
+    <text class="end-time Sao-Paulo" transform="matrix(0.9974 2.848870e-02 -2.855209e-02 0.9996 173.1436 276.6816)">12h 14m</text>
+    <text class="start-time Istanbul" transform="matrix(0.9928 -0.1198 0.1198 0.9928 155.7124 313.1948)">13m</text>
+		<rect id="start_line_1_" x="171.2" y="281.9" fill="#FFFFFF" width="0.9" height="22.6"/>
+	</g>
+	
+	<g class="Lahore city">
+		<g class="circles">
+			<circle class="Lahore" cx="205.7" cy="254.9" r="1.5"/>
+			<circle class="London" cx="233.3" cy="260" r="1.5"/>
+			<circle class="New-York" cx="273.7" cy="278" r="1.5"/>
+			<circle class="Sydney" cx="277.5" cy="278" r="1.5"/>
+			<circle class="Delhi" cx="286.8" cy="281.9" r="1.5"/>
+			<circle class="Toronto" cx="320.7" cy="312.7" r="1.5"/>
+			<circle class="Hong-Kong" cx="343.8" cy="345.1" r="1.5"/>
+			<circle class="Paris" cx="347.3" cy="347.2" r="1.5"/>
+			<circle class="Sao-Paulo" cx="350.8" cy="349.2" r="1.5"/>
+			<circle class="Tokyo" cx="355.6" cy="354.8" r="1.5"/>
+			<circle class="Berlin" cx="359" cy="357" r="1.5"/>
+			<circle class="Brussels" cx="361.2" cy="356.2" r="1.5"/>
+			<circle class="San-Francisco" cx="364.8" cy="359.1" r="1.5"/>
+			<circle class="Madrid" cx="368.2" cy="361.2" r="1.5"/>
+		</g>
+		<g class="arcs">
+			<path class="Lahore" d="M171.7,251.6c11.6,0,23,1.1,33.9,3.2"/>
+			<path class="London" d="M171.7,249.3c21.6,0,42.4,3.8,61.6,10.8"/>
+			<path class="New-York" d="M172.7,246.5c37.7,0,72.8,11.6,101.9,31.6"/>
+			<path class="Sydney" d="M171.7,244.6c39.4,0,75.8,12.3,105.8,33.3"/>
+			<path class="Delhi" d="M171.7,242.3c43.3,0,83.2,14.7,114.9,39.5"/>
+			<path class="Toronto" d="M171.7,240c60.5,0,114.3,28.4,149,72.6"/>
+			<path class="Hong-Kong" d="M171.7,237.7c75.6,0,140.9,43.8,172.1,107.3"/>
+			<path class="Paris" d="M171.7,235.3c77.6,0,144.6,45.6,175.5,111.5"/>
+			<path class="Sao-Paulo" d="M171.7,233c79.9,0,148.6,47.8,179.2,116.3"/>
+			<path class="Tokyo" d="M171.7,230.7c83.2,0,154.5,51.2,184,123.9"/>
+			<path class="Berlin" d="M171.7,228.4c85.4,0,158.4,53.4,187.4,128.6"/>
+			<path class="Brussels" d="M171.7,226c86.5,0,160.4,54.1,189.7,130.2"/>
+			<path class="San-Francisco" d="M171.7,223.7c88.8,0,164.4,56.3,193.1,135.2"/>
+			<path class="Madrid" d="M171.7,221.3c89.9,0,169.1,58.8,196.5,139.9"/>
+		</g>
+		<g class="times">
+      <text class="San-Francisco" style="display:none;" transform="matrix(0.3187 0.8846 -0.9408 0.3389 347.5161 355.7529)">2h 18m</text>			
+      <text class="Brussels" style="display:none;" transform="matrix(0.3592 0.8939 -0.9279 0.3729 343.8003 352.8643)">2h 17m</text>
+      <text class="Berlin" style="display:none;" transform="matrix(0.3592 0.8939 -0.9279 0.3729 343.8003 352.8643)">2h 17m</text>
+      <text class="Tokyo" style="display:none;" transform="matrix(0.3875 0.8989 -0.904 0.3939 341.8285 351.6072)">2h 16m</text>
+      <text class="Sao-Paulo" style="display:none;" transform="matrix(0.418 0.8858 -0.8955 0.427 335.1312 346.8959)">2h 15m</text>
+      <text class="Paris" style="display:none;" transform="matrix(0.4356 0.8804 -0.8963 0.4435 333.5947 344.3271)">2h 11m</text>
+      <text class="Hong-Kong" style="display:none;" transform="matrix(0.4356 0.8943 -0.899 0.4379 331.4072 342.5566)">2h 9m</text>
+      <text class="Toronto" style="display:none;" transform="matrix(0.6349 0.7658 -0.7698 0.6382 307.3438 309.9697)">1h 45m</text>
+      <text class="Delhi" style="display:none;" transform="matrix(0.8082 0.5799 -0.5829 0.8125 273.7725 283.3955)">1h 16m</text>	
+      <text class="Sydney" style="display:none;" transform="matrix(0.8377 0.5336 -0.5308 0.8421 264.6334 280.9395)">1h 11m</text>
+      <text class="New-York" style="display:none;" transform="matrix(0.8505 0.516 -0.5187 0.855 261.0903 279.9336)">1h 8m</text>			
+      <text class="London" style="display:none;" transform="matrix(0.9514 0.2906 -0.2921 0.9564 224.3384 265.9253)">40m</text>
+		</g>
+		<text class="start-time Lahore" transform="matrix(0.9809 0.1652 -0.166 0.9861 197.8818 262.022)">23m</text>
+		<text class="end-time Madrid" transform="matrix(0.3035 0.9638 -0.9538 0.3004 369.1206 366.9932)">2h 19m</text>
+		<rect id="start_line_2_" x="171.1" y="219.9" fill="#FFFFFF" width="1" height="32.1"/>
+	</g>
+	
+	<g class="Brussels city">
+		<g class="circles">
+			<circle class="Brussels" fill="#E42867" cx="159.9" cy="200.1" r="1.4"/>
+			<circle class="Paris" fill="#85AF40" cx="167.8" cy="195.1" r="1.4"/>
+			<circle class="London" fill="#186C8D" cx="184.3" cy="190.6" r="1.4"/>
+			<circle class="Berlin" fill="#46B9DF" cx="205.9" cy="187.9" r="1.4"/>
+			<circle class="Madrid" fill="#4A5696" cx="210.8" cy="183.7" r="1.4"/>
+			<circle class="Sydney" fill="#81236B" cx="220.2" cy="180.5" r="1.4"/>
+			<circle class="Hong-Kong" fill="#AA74B2" cx="225.6" cy="176.8" r="1.4"/>
+			<circle class="Tokyo" fill="#DD5E26" cx="235.5" cy="174.1" r="1.4"/>
+			<circle class="New-York" fill="#AD9731" cx="245.7" cy="171.9" r="1.4"/>
+			<circle class="Delhi" fill="#ABAC86" cx="265" cy="173.1" r="1.4"/>
+			<circle class="San-Francisco" fill="#4CBD9A" cx="280.2" cy="174" r="1.4"/>
+			<circle class="Toronto" fill="#E3BC22" cx="295.5" cy="175.7" r="1.4"/>
+			<circle class="Sao-Paulo" fill="#EA8267" cx="422.7" cy="567.8" r="1.4"/>
+		</g>
+		<g class="arcs">
+			<path class="Brussels" fill="none" stroke="#E42867" d="M160.1,200.1c3.7-0.2,7.5-0.3,11.2-0.3"/>
+			<path class="Paris" fill="none" stroke="#85AF40" d="M168,195.1c1.1,0,2.2,0,3.4,0"/>
+			<path class="London" fill="none" stroke="#186C8D" d="M172.2,190.3c4.1,0,8.1,0.1,12.2,0.3"/>
+			<path class="Berlin" fill="none" stroke="#46B9DF" d="M172.2,185.5c11.5,0,22.7,0.8,33.7,2.3"/>
+			<path class="Madrid" fill="none" stroke="#4A5696" d="M172.2,180.7c13.2,0,26.2,1,38.8,3"/>
+			<path class="Sydney" fill="none" stroke="#81236B" d="M172.2,175.9c16.4,0,32.5,1.6,48,4.6"/>
+			<path class="Hong-Kong" fill="none" stroke="#AA74B2" d="M172.2,171.2c18.3,0,36.2,1.9,53.5,5.6"/>
+			<path class="Tokyo" fill="none" stroke="#DD5E26" d="M172.2,166.4c21.9,0,43.2,2.7,63.5,7.7"/>
+			<path class="New-York" fill="none" stroke="#AD9731" d="M172.2,161.6c25.5,0,50.2,3.6,73.5,10.2"/>
+			<path class="Delhi" fill="none" stroke="#ABAC86" d="M172.2,156.8c32.6,0,63.9,5.7,92.8,16.3"/>
+			<path class="San-Francisco" fill="none" stroke="#4DBE9B" d="M172.2,152.1c38.2,0,74.6,7.7,107.7,21.7"/>
+			<path class="Toronto" fill="none" stroke="#E3BC22" d="M172.2,147.3c44.4,0,86.5,10.3,123.8,28.6"/>
+			<path class="Sao-Paulo" fill="none" stroke="#EA8266" d="M172.2,142.5c158,0,286.6,128.3,286.6,286.3c0,50.4-8.5,86.7-35.9,138.9"/>
+		</g>
+		<g class="times">			
+					<text class="Toronto" style="display:none;" transform="matrix(0.903 0.4297 -0.4297 0.903 294.3341 166.5712)" fill="#E3BC22" font-size="5.9764px">51m</text>					
+					<text class="San-Francisco" style="display:none;" transform="matrix(0.9248 0.3805 -0.3805 0.9248 280.1294 160.3736)" fill="#4CBD9A" font-size="5.9764px">46m</text>			
+					<text class="Delhi" style="display:none;" transform="matrix(0.943 0.3328 -0.3328 0.943 266.3817 155.2153)" fill="#ABAC86" font-size="5.9764px">40m</text>
+					<text class="New-York" style="display:none;" transform="matrix(0.965 0.2623 -0.2623 0.965 246.0974 149.0186)" fill="#AD9731" font-size="5.9764px">32m</text>
+					<text class="Tokyo" style="display:none;" transform="matrix(0.9748 0.2233 -0.2233 0.9748 234.8493 146.2728)" fill="#DD5E26" font-size="5.9764px">27m</text>
+					<text class="Hong-Kong" style="display:none;" transform="matrix(0.9824 0.1871 -0.1871 0.9824 211.7758 210.0416)" fill="#AA74B2">24m</text>
+					<text class="Sydney" style="display:none;" transform="matrix(0.9856 0.169 -0.169 0.9856 207.7679 209.3475)" fill="#81236B">22m</text>
+					<text class="Madrid" style="display:none;" transform="matrix(0.99 0.1412 -0.1412 0.99 201.5916 208.4255)" fill="#4A5696">18m</text>
+					<text class="Berlin" style="display:none;" transform="matrix(0.993 0.1184 -0.1184 0.993 196.4969 207.7979)" fill="#46B9DF">16m</text>
+					<text class="London" style="display:none;" transform="matrix(0.9991 4.205808e-02 -4.205808e-02 0.9991 178.8919 208.5562)" fill="#186C8D">6m</text>
+					<text class="Paris" style="display:none;" transform="matrix(0.9993 -3.872778e-02 3.872778e-02 0.9993 160.4058 189.9727)" fill="#85AF40">2m</text>
+		</g>		
+		<text class="end-Sao-Paulo" transform="matrix(-0.4012 0.916 -0.916 -0.4012 441.6876 545.2971)" fill="#EA8267">3h 57m</text>
+		<text class="start-Brussels" transform="matrix(0.9981 -6.187707e-02 6.187707e-02 0.9981 156.0615 208.958)" fill="#E42867" font-size="5.7605px">7m</text>	
+		
+		<rect id="start_line_3_" x="171.2" y="141.1" fill="#FFFFFF" width="0.9" height="63.6"/>
+	</g>
+</g>
+
+<g id="graph_legend">
+	<g id="unique_circles">
+		<circle fill="#85AF40" cx="833" cy="25.7" r="5.1"/>
+		<circle fill="#E42868" cx="825.3" cy="25.7" r="5.1"/>
+		<circle fill="#EA8266" cx="856.1" cy="25.7" r="5.1"/>
+		<circle fill="#ABAC86" cx="840.7" cy="25.7" r="5.1"/>
+		<circle fill="#AA74B2" cx="871.6" cy="25.7" r="5.1"/>
+		<circle fill="#4A5696" cx="863.9" cy="25.7" r="5.1"/>
+		<circle fill="#48B9E0" cx="848.4" cy="25.7" r="5.1"/>
+	</g>
+	<g id="legend_1_">
+		<g>
+			<circle fill="#D9D3D3" cx="728" cy="25.7" r="5.4"/>
+			<text transform="matrix(1 0 0 1 722.6149 43.4825)" fill="#D9D3D3" font-size="7px"><tspan x="0" y="0">universally</tspan><tspan x="0" y="8.4">asked </tspan><tspan x="0" y="16.8">questions</tspan></text>
+		</g>
+		<g>
+			<circle fill="#878686" cx="779.6" cy="25.7" r="5.4"/>
+			<text transform="matrix(1 0 0 1 774.8522 43.4825)" fill="#D9D3D3" font-size="7px"><tspan x="0" y="0">common</tspan><tspan x="0" y="8.4">questions</tspan></text>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 821.5261 41.9454)" fill="#D9D3D3" font-size="7px"><tspan x="0" y="0" >unique</tspan><tspan x="0" y="8.4">questions</tspan></text>
+		</g>
+	</g>
+</g>
+</svg>
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg class="brussels-attacks mobile" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 600 969.7" style="enable-background:new 0 0 600 969.7;" xml:space="preserve">
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.mobile text {
+  font-family:'Roboto', sans-serif;
+}
+
+.mobile .cities text {
+  fill:#C5C1C6; 
+  font-size:12.39px;
+}
+
+.mobile .questions text {
+  fill:#C5C1C6;
+  font-size:14px;
+}
+
+.city:hover {
+  cursor: pointer;
+}
+
+.mobile .question-groups ellipse {
+ fill:#C5C1C6; stroke-width:0.5; stroke-miterlimit:10;
+}
+
+.mobile .question-groups .connectors path, .question-groups .extra-connector{
+ fill:none; stroke:#B7ABB0; stroke-width:0.5; stroke-miterlimit:10;
+}
+
+.mobile #static-connectors path {
+ opacity:0.64; fill:none; stroke:#887E8E; stroke-width:0.5; stroke-miterlimit:10;
+}
+
+.mobile .the-attacks .times text, .mobile .the-attacks text{
+  font-size: 10px;
+}
+
+.mobile .the-attacks .city path{
+  fill:none;
+  opacity:0.64;
+  stroke-width: 0.3;
+}
+
+.mobile .the-attacks .Brussels.city path{
+ stroke-width: 3.0;
+ opacity:0.34;
+}
+
+.mobile .the-attacks .arc-selected {
+ stroke-width: 1!important;
+ opacity: 1!important;
+ z-index: 1000;
+}
+
+.mobile .the-attacks .Brussels .arc-selected {
+ stroke-width: 3!important;
+ opacity: 1!important;
+}
+
+</style>
+
+<g id="BG">
+	<rect x="-0.5" style="fill:#1F1E2D;" width="600" height="969.7"/>
+	<g id="hour-sector">
+		<path style="fill:#1C1D2A;" d="M299.1,299.1H196.8c0-56.5,45.8-102.3,102.3-102.3l0,0V299.1z"/>
+		<path style="fill:#222232;" d="M299.1,299.1v102.3c-56.5,0-102.3-45.8-102.3-102.3l0,0H299.1z"/>
+		<path style="fill:#1C1D2A;" d="M299.1,299.1h102.3c0,56.5-45.8,102.3-102.3,102.3l0,0V299.1z"/>
+		<path style="fill:#222232;" d="M299.1,299.1l228.6-132c24.3,42,35.4,83.4,35.4,132H299.1z"/>
+		<path style="fill:#1C1D2A;" d="M299.1,299.1l186.6-186.6c17.1,17.1,29.8,33.7,41.9,54.7L299.1,299.1z"/>
+		<path style="fill:#222232;" d="M299.1,299.1l132-228.6c21,12.1,37.6,24.8,54.7,41.9L299.1,299.1z"/>
+		<path style="fill:#1C1D2A;" d="M299.1,299.1l68.3-255c23.4,6.3,42.7,14.3,63.7,26.4L299.1,299.1z"/>
+		<path style="fill:#222232;" d="M299.1,299.1l45.8-260c7.9,1.4,14.7,2.9,22.5,5L299.1,299.1z"/>
+		<path style="fill:#1C1D2A;" d="M299.1,299.1l23-263c8,0.7,14.9,1.6,22.8,3L299.1,299.1z"/>
+		<path style="fill:#222232;" d="M299.1,299.1v-264c8,0,15,0.3,23,1L299.1,299.1z"/>
+	</g>
+</g>
+<g id="Footer">
+	<g id="Logo_1_">
+		<polygon style="fill:#787878;" points="533.9,943.8 532.4,943.8 532.4,933.5 529.1,933.5 529.1,932.1 537.1,932.1 537.1,933.5 
+			533.9,933.5 		"/>
+		<path style="fill:#787878;" d="M539,943.8h-1.5v-8h1.4v1.3h0c0.1-0.4,0.5-0.8,0.9-1.1c0.5-0.3,0.9-0.4,1.4-0.4s0.8,0,1.1,0.2
+			l-0.6,1.4c-0.2-0.1-0.5-0.1-0.8-0.1c-0.6,0-1,0.2-1.4,0.7c-0.4,0.4-0.6,1-0.6,1.7V943.8z"/>
+		<path style="fill:#787878;" d="M546.4,944c-1.2,0-2.2-0.4-2.9-1.2c-0.7-0.8-1.1-1.8-1.1-3c0-1.2,0.4-2.1,1.1-3
+			c0.7-0.8,1.7-1.3,2.8-1.3c1.2,0,2.1,0.4,2.8,1.2c0.7,0.7,1.1,1.8,1.1,3.1v0.3h-6.3c0,0.8,0.3,1.4,0.8,1.9c0.5,0.5,1.1,0.7,1.7,0.7
+			c1.1,0,1.8-0.5,2.2-1.4l1.4,0.6c-0.3,0.6-0.7,1.1-1.3,1.5C548,943.8,547.2,944,546.4,944z M548.5,938.8c0-0.5-0.2-0.9-0.6-1.3
+			c-0.4-0.4-0.9-0.6-1.7-0.6c-0.6,0-1,0.2-1.4,0.5c-0.4,0.3-0.7,0.8-0.8,1.4H548.5z"/>
+		<path style="fill:#787878;" d="M553,935.8v1.1h0c0.2-0.4,0.6-0.7,1-1c0.5-0.3,1-0.4,1.5-0.4c1,0,1.7,0.3,2.2,0.9s0.8,1.4,0.8,2.4
+			v4.9h-1.5V939c0-1.5-0.7-2.2-2-2.2c-0.6,0-1.1,0.2-1.5,0.7s-0.6,1.1-0.6,1.7v4.4h-1.5v-7.9H553z"/>
+		<path style="fill:#787878;" d="M563.7,944c-1,0-1.9-0.4-2.7-1.2c-0.7-0.8-1.1-1.8-1.1-3c0-1.2,0.4-2.2,1.1-3
+			c0.7-0.8,1.6-1.2,2.7-1.2c0.6,0,1.2,0.1,1.6,0.4c0.5,0.3,0.8,0.6,1.1,1h0l0-1.1V932h1.5v11.6h-1.4v-1.1h0c-0.2,0.4-0.6,0.7-1.1,1
+			C564.8,943.9,564.3,944,563.7,944 M563.9,942.6c0.7,0,1.3-0.3,1.8-0.8c0.5-0.5,0.7-1.2,0.7-2.1c0-0.9-0.2-1.6-0.7-2.1
+			c-0.5-0.5-1.1-0.8-1.8-0.8c-0.7,0-1.3,0.3-1.8,0.8s-0.7,1.2-0.7,2.1c0,0.9,0.2,1.5,0.7,2.1C562.7,942.4,563.2,942.6,563.9,942.6"
+			/>
+		<path style="fill:#787878;" d="M572.8,944c-0.9,0-1.6-0.2-2.2-0.7c-0.6-0.4-1-1-1.3-1.6l1.4-0.6c0.4,1,1.1,1.5,2.1,1.5
+			c0.5,0,0.8-0.1,1.2-0.3c0.3-0.2,0.5-0.5,0.5-0.8c0-0.5-0.4-0.9-1.1-1.1l-1.6-0.4c-0.5-0.1-1-0.4-1.4-0.7s-0.7-0.8-0.7-1.4
+			c0-0.7,0.3-1.3,0.9-1.7c0.6-0.4,1.4-0.7,2.2-0.7c0.7,0,1.4,0.1,1.9,0.5c0.6,0.3,0.9,0.8,1.2,1.4l-1.3,0.5
+			c-0.3-0.7-0.9-1.1-1.8-1.1c-0.5,0-0.8,0.1-1.1,0.3c-0.3,0.2-0.5,0.4-0.5,0.7c0,0.5,0.4,0.7,1.1,0.9l1.6,0.4
+			c0.7,0.2,1.3,0.5,1.6,0.9c0.4,0.4,0.5,0.9,0.5,1.4c0,0.7-0.3,1.3-0.9,1.8C574.5,943.8,573.7,944,572.8,944"/>
+		<path style="fill:#557EBF;" d="M484.9,936.6h-6.3v1.9h4.5c-0.2,2.6-2.4,3.7-4.5,3.7c-2.7,0-4.9-2.1-4.9-5c0-2.8,2.2-5,4.9-5
+			c2.1,0,3.4,1.4,3.4,1.4l1.3-1.4c0,0-1.7-1.9-4.8-1.9c-3.9,0-7,3.3-7,6.9c0,3.5,2.8,6.9,7,6.9c3.7,0,6.4-2.5,6.4-6.3
+			C485,937,484.9,936.6,484.9,936.6L484.9,936.6z"/>
+		<path style="fill:#EA4636;" d="M490.1,935.2c-2.6,0-4.4,2-4.4,4.4c0,2.4,1.8,4.5,4.5,4.5c2.4,0,4.4-1.9,4.4-4.4
+			C494.6,936.8,492.2,935.2,490.1,935.2 M490.1,937c1.3,0,2.5,1,2.5,2.7c0,1.6-1.2,2.7-2.5,2.7c-1.4,0-2.5-1.1-2.5-2.7
+			C487.6,938.1,488.7,937,490.1,937z"/>
+		<path style="fill:#F7BB17;" d="M499.8,935.2c-2.6,0-4.4,2-4.4,4.4c0,2.4,1.8,4.5,4.5,4.5c2.4,0,4.4-1.9,4.4-4.4
+			C504.2,936.8,501.9,935.2,499.8,935.2z M499.8,937c1.3,0,2.5,1,2.5,2.7c0,1.6-1.2,2.7-2.5,2.7c-1.4,0-2.5-1.1-2.5-2.7
+			C497.3,938.1,498.4,937,499.8,937z"/>
+		<path style="fill:#557EBF;" d="M509.3,935.2c-2.4,0-4.2,2.1-4.2,4.4c0,2.7,2.1,4.4,4.2,4.4c1.3,0,1.9-0.5,2.4-1.1v0.9
+			c0,1.5-0.9,2.4-2.3,2.4c-1.4,0-2-1-2.2-1.6l-1.7,0.7c0.6,1.3,1.8,2.6,4,2.6c2.4,0,4.2-1.5,4.2-4.6v-7.9h-1.9v0.7
+			C511.1,935.6,510.3,935.2,509.3,935.2z M509.4,937c1.2,0,2.4,1,2.4,2.7c0,1.7-1.2,2.7-2.4,2.7c-1.3,0-2.4-1-2.4-2.7
+			C507,938,508.2,937,509.4,937z"/>
+		<path style="fill:#EA4636;" d="M521.7,935.2c-2.2,0-4.1,1.8-4.1,4.4c0,2.8,2.1,4.4,4.3,4.4c1.9,0,3-1,3.7-2l-1.5-1
+			c-0.4,0.6-1.1,1.2-2.1,1.2c-1.3,0-1.8-0.7-2.1-1.4l5.9-2.5l-0.3-0.7C524.8,936.4,523.5,935.2,521.7,935.2L521.7,935.2z
+			 M521.8,936.9c0.8,0,1.4,0.4,1.6,0.9l-4,1.6C519.3,938.3,520.5,936.9,521.8,936.9"/>
+		<rect x="514.8" y="930.8" style="fill:#36A851;" width="2" height="13"/>
+	</g>
+	<g id="Graph_Legend">
+		<g id="legend_3_">
+			<g>
+				<circle style="fill:#D9D3D3;" cx="238.7" cy="926.9" r="4.1"/>
+				<text transform="matrix(1 0 0 1 234.5933 940.3226)" style="fill:#D9D3D3; font-size:5.2873px;"><tspan x="0" y="0">universally</tspan><tspan x="0" y="6.3">asked </tspan><tspan x="0" y="12.7">questions</tspan></text>
+			</g>
+			<g>
+				<circle style="fill:#878686;" cx="277.6" cy="926.9" r="4.1"/>
+				<text transform="matrix(1 0 0 1 274.0504 940.3226)"style="fill:#D9D3D3; font-size:5.2873px;"><tspan x="0" y="0">common</tspan><tspan x="0" y="6.3">questions</tspan></text>
+			</g>
+			<g>
+				<text transform="matrix(1 0 0 1 309.3043 939.1614)" style="fill:#D9D3D3; font-size:5.2873px;"><tspan x="0" y="0">unique</tspan><tspan x="0" y="6.3">questions</tspan></text>
+			</g>
+		</g>
+		<g id="Methodology_1_">
+			<rect x="28" y="923.6" style="fill:none;" width="123.3" height="29.1"/>
+			<text transform="matrix(1.0003 0 0 1 28.0096 928.8553)" style="fill:#5E6272; font-size:7px;"><tspan x="0" y="0">Methodology: First minute searched is </tspan><tspan x="0" y="8.4">defined as the first minute where a </tspan><tspan x="0" y="16.8">related search showed up.</tspan></text>
+		</g>
+		<g id="circles_3_">
+			<circle style="opacity:0.61;fill:#85AF40;" cx="318" cy="926.9" r="3.9"/>
+			<circle style="opacity:0.61;fill:#E42868;" cx="312.1" cy="926.9" r="3.9"/>
+			<circle style="opacity:0.61;fill:#EA8266;" cx="335.4" cy="926.9" r="3.9"/>
+			<circle style="opacity:0.61;fill:#ABAC86;" cx="323.8" cy="926.9" r="3.9"/>
+			<circle style="opacity:0.61;fill:#AA74B2;" cx="347.1" cy="926.9" r="3.9"/>
+			<circle style="opacity:0.61;fill:#4A5696;" cx="341.3" cy="926.9" r="3.9"/>
+			<circle style="opacity:0.61;fill:#48B9E0;" cx="329.6" cy="926.9" r="3.9"/>
+		</g>
+		<g>
+			<rect x="27.7" y="956.2" style="fill:none;" width="62.1" height="8.5"/>
+			<text transform="matrix(1.0003 0 0 1 27.6851 959.9062)" style="fill:#4C5160; font-size:5px;">visualized by Anna Vital</text>
+		</g>
+	</g>
+</g>
+<g id="Main">
+	<g>
+		<g>
+			<text transform="matrix(1 0 0 1 288.1445 415.6172)" style="fill:#5D5D7F; font-size:11.5914px;">6hrs</text>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 172.1181 298.9492)" style="fill:#5D5D7F; font-size:11.5914px;">9hrs</text>
+		</g>
+	</g>
+	<g id="Clock" style="fill:#676F82;">	
+    <rect x="300.3" y="277.2" transform="matrix(8.824808e-02 -0.9961 0.9961 8.824808e-02 -1.7479 553.4794)" width="2.3" height="0.9"/>		
+    <rect x="302.6" y="277.6" transform="matrix(0.2101 -0.9777 0.9777 0.2101 -31.9081 516.6034)" width="2.3" height="0.9"/>		
+    <rect x="304.9" y="278.2" transform="matrix(0.3036 -0.9528 0.9528 0.3036 -52.3737 485.6029)" width="2.3" height="0.9"/>		
+    <rect x="307" y="279" transform="matrix(0.4602 -0.8878 0.8878 0.4602 -81.723 424.4276)" width="2.3" height="0.9"/>	
+    <rect x="306.6" y="281.1" transform="matrix(0.5014 -0.8652 0.8652 0.5014 -89.7102 408.275)" width="5.6" height="1.8"/>	
+    <rect x="311" y="281.2" transform="matrix(0.5803 -0.8144 0.8144 0.5803 -98.3835 372.4076)" width="2.3" height="0.9"/>	
+    <rect x="312.8" y="282.7" transform="matrix(0.6761 -0.7368 0.7368 0.6761 -106.928 323.0207)" width="2.3" height="0.9"/>	
+    <rect x="314.4" y="284.3" transform="matrix(0.7442 -0.668 0.668 0.7442 -109.4855 283.6667)" width="2.3" height="0.9"/>	
+    <rect x="315.9" y="286.1" transform="matrix(0.8463 -0.5327 0.5327 0.8463 -103.9081 212.9089)" width="2.3" height="0.9"/>	
+    <rect x="314" y="288.4" transform="matrix(0.8704 -0.4924 0.4924 0.8704 -101.4137 193.5123)" width="5.6" height="1.8"/>	
+    <rect x="321" y="300.7" transform="matrix(0.1198 -0.9928 0.9928 0.1198 -16.7338 584.8026)" width="0.9" height="2.3"/>	
+    <rect x="320.6" y="303" transform="matrix(0.241 -0.9705 0.9705 0.241 -51.5138 542.385)" width="0.9" height="2.3"/>
+    <rect x="319.9" y="305.2" transform="matrix(0.3336 -0.9427 0.9427 0.3336 -75.3238 506.1354)" width="0.9" height="2.3"/>
+    <rect x="319" y="307.3" transform="matrix(0.4881 -0.8728 0.8728 0.4881 -105.699 436.7461)" width="0.9" height="2.3"/>
+    <rect x="316" y="306.8" transform="matrix(0.5285 -0.8489 0.8489 0.5285 -113.4094 415.0183)" width="1.8" height="5.6"/>	
+    <rect x="316.5" y="311.4" transform="matrix(0.5699 -0.8217 0.8217 0.5699 -120.4789 394.8625)" width="0.9" height="2.3"/>
+    <rect x="315.1" y="313.2" transform="matrix(0.6667 -0.7454 0.7454 0.6667 -129.1281 339.9455)" width="0.9" height="2.3"/>
+    <rect x="313.4" y="314.9" transform="matrix(0.7356 -0.6775 0.6775 0.7356 -131.0726 296.2106)" width="0.9" height="2.3"/>
+    <rect x="311.7" y="316.3" transform="matrix(0.8395 -0.5434 0.5434 0.8395 -122.4205 220.5872)" width="0.9" height="2.3"/>
+    <rect x="308.4" y="314.5" transform="matrix(0.864 -0.5035 0.5035 0.864 -117.6746 198.8918)" width="1.8" height="5.6"/>
+    <rect x="280.7" y="285.8" transform="matrix(0.545 -0.8384 0.8384 0.545 -112.6225 366.2854)" width="0.9" height="2.3"/>
+    <rect x="282.1" y="283.9" transform="matrix(0.644 -0.765 0.765 0.644 -117.4726 317.6487)" width="0.9" height="2.3"/>
+    <rect x="283.7" y="282.2" transform="matrix(0.7149 -0.6992 0.6992 0.7149 -117.1119 279.4462)" width="0.9" height="2.3"/>		
+    <rect x="285.4" y="280.6" transform="matrix(0.8228 -0.5684 0.5684 0.8228 -109.505 212.3991)" width="0.9" height="2.3"/>	
+    <rect x="287.8" y="279.1" transform="matrix(0.8485 -0.5292 0.5292 0.8485 -105.4661 195.4656)" width="1.8" height="5.6"/>	
+    <rect x="276.4" y="296.4" transform="matrix(8.723886e-02 -0.9962 0.9962 8.723886e-02 -43.7651 547.4166)" width="0.9" height="2.3"/>
+    <rect x="276.7" y="294.1" transform="matrix(0.2091 -0.9779 0.9779 0.2091 -69.5314 504.6085)" width="0.9" height="2.3"/>
+    <rect x="277.3" y="291.9" transform="matrix(0.3027 -0.9531 0.9531 0.3027 -85.605 469.0944)" width="0.9" height="2.3"/>
+    <rect x="278.1" y="289.7" transform="matrix(0.4594 -0.8882 0.8882 0.4594 -107.78 404.6863)" width="0.9" height="2.3"/>	
+    <rect x="280.2" y="286.9" transform="matrix(0.5005 -0.8658 0.8658 0.5005 -110.3714 388.0769)" width="1.8" height="5.6"/>	
+    <rect x="289.6" y="278.4" transform="matrix(0.9061 -0.4231 0.4231 0.9061 -91.0131 148.982)" width="0.9" height="2.3"/>
+    <rect x="291.8" y="277.5" transform="matrix(0.9513 -0.3084 0.3084 0.9513 -71.691 103.711)" width="0.9" height="2.3"/>
+    <rect x="294" y="276.9" transform="matrix(0.9766 -0.215 0.215 0.9766 -52.9026 69.836)" width="0.9" height="2.3"/>
+    <rect x="296.4" y="276.5" transform="matrix(0.9968 -7.960784e-02 7.960784e-02 0.9968 -21.1629 24.5137)" width="0.9" height="2.3"/>
+    <rect x="298.3" y="276.5" width="1.7" height="7"/>
+    <rect x="318.1" y="290" transform="matrix(0.8962 -0.4437 0.4437 0.8962 -95.7322 171.8255)" width="2.3" height="0.9"/>
+    <rect x="319" y="292.2" transform="matrix(0.944 -0.3301 0.3301 0.944 -78.6413 122.0833)" width="2.3" height="0.9"/>
+    <rect x="319.7" y="294.4" transform="matrix(0.9714 -0.2373 0.2373 0.9714 -60.7943 84.5512)" width="2.3" height="0.9"/>
+    <rect x="320.1" y="296.7" transform="matrix(0.9947 -0.1024 0.1024 0.9947 -28.7489 34.4681)" width="2.3" height="0.9"/>
+    <rect x="315.5" y="298.7" transform="matrix(0.9997 -2.296872e-02 2.296872e-02 0.9997 -6.7956 7.406)" width="7" height="1.7"/>
+    <rect x="295.7" y="321.4" transform="matrix(4.657692e-02 -0.9989 0.9989 4.657692e-02 -38.4548 603.3441)" width="2.3" height="0.9"/>
+    <rect x="293.4" y="321.1" transform="matrix(0.1692 -0.9856 0.9856 0.1692 -72.2191 557.4471)" width="2.3" height="0.9"/>
+    <rect x="291.1" y="320.6" transform="matrix(0.2636 -0.9646 0.9646 0.2636 -94.4937 518.3649)" width="2.3" height="0.9"/>
+    <rect x="288.9" y="319.9" transform="matrix(0.4228 -0.9062 0.9062 0.4228 -122.8981 447.7995)" width="2.3" height="0.9"/>
+    <rect x="286" y="317" transform="matrix(0.4648 -0.8854 0.8854 0.4648 -126.9015 425.8121)" width="5.6" height="1.8"/>		
+    <rect x="307.6" y="319" transform="matrix(0.9061 -0.4231 0.4231 0.9061 -106.5089 160.3963)" width="0.9" height="2.3"/>
+    <rect x="305.4" y="319.8" transform="matrix(0.9513 -0.3084 0.3084 0.9513 -84.0717 109.9722)" width="0.9" height="2.3"/>
+    <rect x="303.2" y="320.4" transform="matrix(0.9766 -0.215 0.215 0.9766 -62.0534 72.8266)" width="0.9" height="2.3"/>
+    <rect x="300.8" y="320.8" transform="matrix(0.9968 -7.960573e-02 7.960573e-02 0.9968 -24.6737 25.0066)" width="0.9" height="2.3"/>
+    <rect x="298.1" y="316.1" width="1.7" height="7"/>
+    <rect x="284.9" y="317.5" transform="matrix(0.5476 -0.8367 0.8367 0.5476 -136.663 383.1508)" width="2.3" height="0.9"/>
+    <rect x="283" y="316.1" transform="matrix(0.6464 -0.763 0.763 0.6464 -141.0631 328.757)" width="2.3" height="0.9"/>
+    <rect x="281.3" y="314.5" transform="matrix(0.7171 -0.6969 0.6969 0.7171 -139.6379 285.9548)" width="2.3" height="0.9"/>
+    <rect x="279.8" y="312.8" transform="matrix(0.8246 -0.5658 0.5658 0.8246 -127.9624 213.8948)" width="2.3" height="0.9"/>
+    <rect x="278.3" y="309.6" transform="matrix(0.8502 -0.5265 0.5265 0.8502 -121.3531 194.5039)" width="5.6" height="1.8"/>
+    <rect x="277.4" y="308.5" transform="matrix(0.9061 -0.4231 0.4231 0.9061 -104.5577 146.8917)" width="2.3" height="0.9"/>
+    <rect x="276.6" y="306.3" transform="matrix(0.9513 -0.3084 0.3084 0.9513 -81.0789 100.6154)" width="2.3" height="0.9"/>
+    <rect x="276" y="304.1" transform="matrix(0.9766 -0.215 0.215 0.9766 -58.9977 66.701)" width="2.3" height="0.9"/>
+    <rect x="275.6" y="301.8" transform="matrix(0.9968 -7.963848e-02 7.963848e-02 0.9968 -23.1876 23.0006)" width="2.3" height="0.9"/>
+    <rect x="275.6" y="299" width="7" height="1.7"/>
+		<polygon points="308.9,304.2 310.1,303.7 309.4,302.5 299.6,299 304.7,284.2 304.2,283.3 303.3,283.7 
+			298.4,298.6 295.6,297.6 295,299.2 297.9,300.3 296.7,303.8 297.8,304.1 299,300.7 		"/>
+	</g>
+	<g id="Attack_start_times" style="fill:#FFFFFF; font-size:8px;">
+		<text transform="matrix(1 0 0 1 281.0424 74.1678)">6:58</text>
+		<text transform="matrix(1 0 0 1 274.5694 131.9974)">13:30 </text>
+		<text transform="matrix(1 0 0 1 281.0424 182.0908)">9:00</text>
+		<text transform="matrix(1 0 0 1 276.5493 235.2062)">16:15</text>
+		<g>
+			<text transform="matrix(1 0 0 1 270.3904 47.7893)">in GMT</text>
+		</g>
+	</g>
+	<g id="outer-arc-times" fill="#5D5D7F" font-size="10.2462px">
+		<path fill="none" d="M297.5,33c148.2,0,268.3,120.1,268.3,268.3"/>
+			<text transform="matrix(0.9982 6.029474e-02 -6.029474e-02 0.9982 311.0391 33.3301)">10m</text>
+			<text transform="matrix(0.9881 0.1541 -0.1541 0.9881 336.3057 35.7822)">20m</text>
+			<text transform="matrix(0.969 0.2472 -0.2472 0.969 361.2207 40.6099)">30m</text>
+			<text transform="matrix(0.8703 0.4926 -0.4926 0.8703 426.9443 66.2363)">1hr</text>
+			<text transform="matrix(0.7395 0.6731 -0.6731 0.7395 475.9043 100.9097)">1.5hrs</text>
+			<text transform="matrix(0.5221 0.8529 -0.8529 0.5221 524.9805 158.98)">2hrs</text>
+			<text transform="matrix(6.897520e-02 0.9976 -0.9976 6.897520e-02 564.9414 279.6655)">3hrs</text>
+	</g>
+	<g id="Extra_cities">
+		<g>
+			<g>
+				<text transform="matrix(1 0 0 1 66.3981 236.3946)" style="fill:#7D858E; font-size:17.5343px;">Iskandariya</text>
+			</g>
+			<text transform="matrix(1 0 0 1 66.865 251.0242)" style="fill:#434356; font-size:11px;">March 19, 2016</text>
+			<ellipse style="fill:#F6A4B7;" cx="51.1" cy="229.6" rx="4.8" ry="4.9"/>
+		</g>
+		<g>
+			<g>
+				<text transform="matrix(1 0 0 1 66.3981 190.2467)" style="fill:#7D858E; font-size:17.5343px;">Istanbul</text>
+			</g>
+			<text transform="matrix(1 0 0 1 66.8654 204.6985)" style="fill:#434356; font-size:11px;">March 25, 2016</text>
+			<g>
+				<ellipse style="fill:#DFEAA7;" cx="51.1" cy="184.5" rx="4.8" ry="4.9"/>
+			</g>
+		</g>
+		<g>
+			<ellipse style="fill:#84A394;" cx="51.1" cy="138.7" rx="4.8" ry="4.9"/>
+			<text transform="matrix(1 0 0 1 66.8652 158.3253)" style="fill:#434356; font-size:11px;">March 27, 2016</text>
+			<g>
+				<text transform="matrix(1 0 0 1 66.3985 143.7797)" style="fill:#7D858E; font-size:17.5343px;">Lahore</text>
+			</g>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 66.8647 113.932)" style="fill:#434356; font-size:11px;">March 22, 2016</text>
+			<ellipse style="fill:#E42468;" cx="51.1" cy="94.3" rx="4.8" ry="4.9"/>
+			<g>
+				<text transform="matrix(1 0 0 1 66.3984 99.4158)" style="fill:#7D858E; font-size:17.5343px;">Brussels</text>
+			</g>
+		</g>
+	</g>
+	<g id="search_legend_2_">
+    <g>
+      <path style="fill:none;stroke:#5E6272;stroke-width:0.6;stroke-miterlimit:10;" d="M426.6,45.5c54.7,28.7,101.8,75.8,130.3,122.8"
+        />
+      <polygon style="fill:#5E6272;" points="560.7,175.9 553.6,169.2 559,166.4 		"/>
+    </g>
+		<g id="icon">
+			<g>
+				<g>
+					<path style="fill:#5E6272;" d="M558.1,132.3c1.4,2.1,4.2,2.6,6.3,1.2c2.1-1.4,2.6-4.2,1.2-6.3c-1.4-2.1-4.2-2.6-6.3-1.2
+						C557.2,127.4,556.7,130.2,558.1,132.3z"/>
+				</g>
+				<path style="fill:#5E6272;" d="M554.6,141.2C554.6,141.2,554.6,141.2,554.6,141.2l-1.4-2.1l4.5,0.6l0,0c0.4-0.8,0.4-1.8-0.1-2.5
+					c-0.4-0.7-1.1-0.9-1.9-1.2l-4.4-1.2c1.5-1.7,5.4-6.5,6.1-9.1c0.9-3.4-2.3-5-4.5-5c-7.6,0-15.2,3-15.2,3l6.9,10.2l5.5-9.1
+					c0.2-0.3,0.5-0.4,0.8-0.2c0.3,0.2,0.4,0.5,0.2,0.8l-5.8,9.5l5.8,8.6c0.7,1,2,1.2,2.9,0.6C555,143.5,555.2,142.1,554.6,141.2z"/>
+			</g>
+			<g>
+				<path style="fill:#5E6272;" d="M555.4,141.7c-0.1-0.2-0.2-0.5-0.1-0.8c0.2-0.4,0.7-0.6,1.1-0.4l3.9,1.7c0.4,0.2,0.6,0.7,0.4,1.1
+					c-0.2,0.4-0.7,0.6-1.1,0.4l-3.9-1.7C555.6,142,555.5,141.9,555.4,141.7L555.4,141.7z"/>
+				<path style="fill:#5E6272;" d="M559.2,140.4l11.4-7.8l0,0c2-1.3,4.5-1.7,6.9-1.2c2.4,0.5,4.4,1.9,5.8,3.9
+					c2.9,4.2,1.7,10-2.5,12.9c-4.2,2.9-10,1.7-12.9-2.5c-1.1-1.7-1.7-3.7-1.6-5.7L559.2,140.4L559.2,140.4z M571.5,133.9l-7.1,4.8
+					l3.6-0.2l-0.1,0.9c-0.3,1.9,0.2,3.9,1.3,5.5c2.4,3.6,7.3,4.5,10.9,2.1c3.6-2.4,4.5-7.3,2.1-10.9
+					C579.7,132.6,575.1,131.6,571.5,133.9L571.5,133.9z"/>
+				<g>
+					
+						<ellipse transform="matrix(0.8288 -0.5595 0.5595 0.8288 21.5083 344.0465)" style="fill:#5E6272;" cx="573" cy="136.9" rx="1.4" ry="1.4"/>
+					
+						<ellipse transform="matrix(0.8288 -0.5595 0.5595 0.8288 19.9115 346.0208)" style="fill:#5E6272;" cx="575.5" cy="140.5" rx="1.4" ry="1.4"/>
+					
+						<ellipse transform="matrix(0.8288 -0.5595 0.5595 0.8288 18.314 347.9958)" style="fill:#5E6272;" cx="577.9" cy="144.1" rx="1.4" ry="1.4"/>
+				</g>
+			</g>
+		</g>
+
+
+    <path id="legend-up-text-path" style="fill:none;" d="M438.2,22.9c0,0,69,36.8,102.3,83.6"/>
+    <text>
+      <textPath  xlink:href="#legend-up-text-path" startOffset="1.27%">
+        <tspan  style="fill:#5E6272; font-size:9.5755px;">What did each city search for</tspan>
+      </textPath>
+    </text>
+    <path id="SVGID_x5F_3_x5F_" style="fill:none;" d="M431.7,34.5c0,0,69,36.8,102.3,83.6"/>
+    <text>
+      <textPath  xlink:href="#SVGID_x5F_3_x5F_" startOffset="1.27%">
+        <tspan  style="fill:#5E6272; font-size:9.5755px;">to understand what happened?</tspan>
+      </textPath>
+    </text>
+
+</text>
+	</g>
+</g>
+<g id="Title">
+	<text transform="matrix(1 0 0 1 42.9326 29.7395)" style="fill:#C5C1C6; font-size:12.7516px;">How Fast the News Spread About</text>
+	<text transform="matrix(1 0 0 1 43.7119 56.0757)" style="fill:#C5C1C6; font-size:19.0313px;">TERRORIST ATTACKS</text>
+</g>
+<g id="static-connectors">
+	<g id="bottom">
+		<path d="M298.9,450c0.6,73.9-248,58-248,131.9"/>
+		<path d="M298.9,450c0.6,73.8-206.4,58.1-207,131.8c0,0.1,0,73.7,0,73.9"/>
+		<path d="M298.9,450c0.6,73.9-165.9,58-165.9,131.9"/>
+		<path d="M298.9,450c0.6,73.9-124.7,58-124.8,131.8c0,0,0,73.7,0,73.7"/>
+		<path d="M298.9,450c0.6,73.9-83.7,58-83.7,131.9"/>
+		<path d="M298.9,450c0.6,73.8-42.6,58-42.7,131.7c0,0.1,0,73.9,0,74"/>
+		<path d="M298.9,450c0.6,73.9-1.6,58-1.6,131.9"/>
+		<path d="M298.9,450c0.6,73.9,39.5,58,39.5,131.8c0,0,0,73.8,0,73.9"/>
+		<path d="M298.9,450c0.6,73.9,80.6,58,80.6,131.9"/>
+		<path d="M298.9,450c0.6,73.9,121.6,63,121.6,136.9c0,0,0,68.4,0,68.4"/>
+		<path d="M298.9,450c0.6,73.9,162.7,58,162.7,131.9"/>
+		<path d="M298.9,450c0.6,73.9,203.7,58,203.8,131.9c0,0,0,73.2,0,73.2"/>
+		<path d="M298.9,450c0.6,73.9,244.9,58,244.9,131.9"/>
+	</g>
+	<g id="Top">
+		<path style="stroke-width:0.3;" d="M357.5,428.7c-1.5-3.3-2.1-6.8-2.1-10.7
+			c0-15,12.2-27.2,27.2-27.2c5.2,0,10,1.4,14.1,4c13.4,7.3,39,18.1,55.3,18.1c52.4,0,95.1-61.6,95.1-114
+			c0-136.5-110.7-246.8-247.2-246.8"/>
+		<path style="stroke-width:0.3;" d="M356.9,427.2c-1.5-3.4-2.1-7-2.1-11
+			c0-15.3,12.4-27.6,27.6-27.6c5.2,0,10.2,1.5,14.3,4c13,7.1,38.5,18,54.4,18c50.8,0,92-61.1,92-111.9
+			C543,164.5,434.2,56.1,300,56.1"/>
+		<path style="stroke-width:0.3;" d="M356.3,425.6c-1.5-3.4-2.1-7.1-2.1-11.1
+			c0-15.5,12.5-28,28-28c5.3,0,10.3,1.5,14.5,4.1c12.6,6.9,38.1,18,53.4,18c49.2,0,88.8-60.7,88.8-109.9h0
+			c0-132-107-238.5-238.9-238.5"/>
+		<path style="stroke-width:0.3;" d="M355.7,424c-1.5-3.5-2.2-7.2-2.2-11.3
+			c0-15.7,12.7-28.4,28.4-28.4c5.4,0,10.4,1.5,14.7,4.1c12.2,6.6,37.6,18,52.5,18c47.6,0,85.6-60.2,85.6-107.8h0
+			C534.8,169,429.6,64.4,300,64.4"/>
+		<path style="stroke-width:0.3;" d="M355.2,422.4c-1.6-3.5-2.2-7.3-2.2-11.4
+			c0-15.9,12.9-28.7,28.7-28.7c5.5,0,10.6,1.5,14.9,4.2c11.8,6.4,37.2,18,51.6,18c46,0,82.4-59.8,82.4-105.8h0
+			c0-127.4-103.3-230.1-230.7-230.1"/>
+		<path style="stroke-width:0.3;" d="M354.6,420.8c-1.6-3.6-2.2-7.4-2.2-11.6
+			c0-16.1,13-29.1,29.1-29.1c5.5,0,10.7,1.5,15.1,4.2c11.4,6.2,36.8,17.9,50.6,17.9c44.4,0,79.2-59.3,79.2-103.7h0
+			c0-125.1-101.4-225.9-226.5-225.9"/>
+		<path style="stroke-width:0.3;" d="M354,419.2c-1.6-3.6-2.2-7.5-2.2-11.7
+			c0-16.3,13.2-29.5,29.5-29.5c5.6,0,10.8,1.6,15.3,4.3c11,6,36.3,17.9,49.7,17.9c42.8,0,76.1-58.9,76.1-101.7h0
+			c0-122.8-99.6-221.7-222.4-221.7"/>
+		<path style="stroke-width:0.3;" d="M353.5,417.6c-1.6-3.7-2.3-7.6-2.3-11.9
+			c0-16.5,13.4-29.9,29.9-29.9c5.7,0,11,1.6,15.5,4.3c10.6,5.7,35.9,17.9,48.7,17.9c41.2,0,72.9-58.4,72.9-99.6h0
+			c0-120.5-97.7-217.5-218.2-217.5"/>
+		<path style="stroke-width:0.3;" d="M352.9,416c-1.6-3.7-2.3-7.7-2.3-12
+			c0-16.7,13.5-30.2,30.2-30.2c5.7,0,11.1,1.6,15.7,4.4c10.2,5.5,35.4,17.8,47.8,17.8c39.6,0,69.7-58,69.7-97.6h0
+			C514,180.2,418.2,85.1,300,85.1"/>
+		<path style="stroke-width:0.3;" d="M352.3,414.4c-1.7-3.8-2.3-7.8-2.3-12.2
+			c0-16.9,13.7-30.6,30.6-30.6c5.8,0,11.3,1.6,15.9,4.4c9.7,5.3,35,17.8,46.9,17.8c38,0,66.5-57.5,66.5-95.5h0
+			c0-115.9-94-209.1-209.9-209.1"/>
+		<path style="stroke-width:0.3;" d="M351.8,412.8c-1.7-3.8-2.4-7.9-2.4-12.3
+			c0-17.1,13.9-31,31-31c5.9,0,11.4,1.6,16.1,4.5c9.3,5.1,34.6,17.8,45.9,17.8c36.4,0,63.4-57.1,63.4-93.5h0
+			c0-113.7-92.1-204.9-205.8-204.9"/>
+		<path style="stroke-width:0.3;" d="M351.2,411.2c-1.7-3.9-2.4-8-2.4-12.5
+			c0-17.3,14-31.4,31.4-31.4c6,0,11.5,1.7,16.3,4.6c8.9,4.8,34.1,17.7,45,17.7c34.8,0,60.2-56.6,60.2-91.4h0
+			c0-111.4-90.3-200.8-201.7-200.8"/>
+		<path style="stroke-width:0.3;" d="M519.3,419.9c-6.8,14.3-20.5,30.2-37,34.5
+			c-22.1,5.8-44.7-2.8-57.8-19.9l0,0c-8.9-12.8-25.2-19.4-41.3-15.3c-12.3,3.2-21.7,11.9-26.1,22.8"/>
+		<path id="wave-connector" style="stroke-width:0.5;" d="M357.4,428.7c1.1,2.5,1,4.6,1,6.8
+			c0,10.1-8.1,18.2-18.2,18.2c-7.5,0-14-4.6-16.8-11.1l0,0c-1.8-4.8-6.4-8.3-11.9-8.3c-7,0-12.7,5.2-12.7,15.6"/>
+	</g>
+</g>
+<g class="question-groups">
+	<g class="Brussels city">
+		<g class="connectors">
+			<path d="M52,708.3c0,53.4,16.2,32.3,16.2,85.6"/>
+			<path d="M52,708.3c0,53.4,132.2,32.3,132.2,85.6"/>
+			<path d="M52,708.3c0,53.4,249.1,32.3,249.1,85.6"/>
+			<path d="M52,708.3c0,53.4,365.6,32.3,365.6,85.6"/>
+			<path d="M52,708.3c0,50.9,481.8,34.7,481.8,85.6"/>
+		</g>	
+		<line class="extra-connector" x1="52" y1="710" x2="52" y2="635"/>
+		<g class="questions">
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 45.8994 821.75)"><tspan x="0" y="0">How to </tspan><tspan x="-6" y="16.8">get out of</tspan><tspan x="-6.1" y="33.6">Brussels?</tspan></text>
+				</g>
+				<circle style="fill:#E42868;stroke:#B7ABB0;" cx="68.3" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 157.0664 821.3994)"><tspan x="0" y="0">Who are </tspan><tspan x="-6.7" y="16.8">the victims</tspan><tspan x="-20.9" y="33.6">of the Brussels </tspan><tspan x="-7" y="50.4">bombings?</tspan></text>
+				</g>
+				<circle style="fill:#8D8D8E;stroke:#B7ABB0;" cx="184.5" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 271.8145 821.3945)"><tspan x="0" y="0">Where to </tspan><tspan x="-11.3" y="16.8">donate blood</tspan><tspan x="-7.8" y="33.6">in Brussels?</tspan></text>
+				</g>
+				<circle style="fill:#E42868;stroke:#B7ABB0;" cx="301.1" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 391.3398 821.3945)"><tspan x="0" y="0">When is </tspan><tspan x="-11.7" y="16.8">Brussels on </tspan><tspan x="-10.8" y="33.6">alert level 4 </tspan><tspan x="9.7" y="50.4">until?</tspan></text>
+				</g>
+				<circle style="fill:#E42868;stroke:#B7ABB0;" cx="417.6" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 506.2812 821.3906)"><tspan x="0" y="0">Who are </tspan><tspan x="-12.7" y="16.8">the Brussels </tspan><tspan x="-4.2" y="33.6">terrorists?</tspan></text>
+				</g>
+				<circle style="fill:#8D8D8E;stroke:#B7ABB0;" cx="534.1" cy="800.7" r="5.1"/>
+			</g>
+		</g>
+	</g>
+	<g class="Paris city" style="display:none;">
+		<g class="connectors">
+			<path d="M93,708.6c0,53.4-24.8,32-24.8,85.4"/>
+			<path d="M93,708.6c0,53.4,91.2,32,91.2,85.4"/>
+			<path d="M93,708.6c0,53.4,208,32,208,85.4"/>
+			<path d="M93,708.6c0,53.4,324.5,32,324.5,85.4"/>
+			<path d="M93,708.6c0,50.9,440.8,34.5,440.8,85.4"/>
+		</g>
+		<g class="questions">
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 54.0957 821.75)"><tspan x="0" y="0">Who </tspan><tspan x="-31.6" y="16.8">are the victims </tspan><tspan x="-32.5" y="33.6">of the Brussels </tspan><tspan x="-10.5" y="50.4">attacks?</tspan></text>
+				</g>
+				<circle style="fill:#8D8D8E;stroke:#B7ABB0;" cx="68.3" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 169.3633 821.3994)"><tspan x="0" y="0">Why </tspan><tspan x="-15" y="16.8">Brussels?</tspan></text>
+				</g>
+				<circle style="fill:#E2E0E0;stroke:#B7ABB0;" cx="184.5" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 283.8867 821.3945)"><tspan x="0" y="0"> Who </tspan><tspan x="-18.1" y="16.8">committed </tspan><tspan x="-22.6" y="33.6">the Brussels </tspan><tspan x="-8.8" y="50.4">attacks?</tspan></text>
+				</g>
+				<circle style="fill:#8D8D8E;stroke:#B7ABB0;" cx="301.1" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 401.96 821.3945)"><tspan x="0" y="0">Who </tspan><tspan x="-23.6" y="16.8">has claimed </tspan><tspan x="-27.3" y="33.6">responsibility </tspan><tspan x="-34.9" y="50.4">for the Brussels </tspan><tspan x="-10.5" y="67.2">attacks?</tspan></text>
+				</g>
+				<circle style="fill:#8D8D8E;stroke:#B7ABB0;" cx="417.6" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 517.8994 821.3906)"><tspan x="0" y="0">Who </tspan><tspan x="-30.5" y="16.8">are the French </tspan><tspan x="-28.2" y="33.6">victims of the </tspan><tspan x="-12.8" y="50.4">Brussels </tspan><tspan x="-10.5" y="67.2">attacks?</tspan></text>
+				</g>
+				<circle style="fill:#85AF40;stroke:#B7ABB0;" cx="534.1" cy="800.7" r="5.1"/>
+			</g>
+		</g>
+	</g>
+	<g class="London city" style="display:none;">
+		<g class="connectors">
+			<path d="M134.3,708.6c0,53.4-66.1,32-66.1,85.4"/>
+			<path d="M134.3,708.6c0,53.4,49.9,32,49.9,85.4"/>
+			<path d="M134.3,708.6c0,53.4,166.8,32,166.8,85.4"/>
+			<path d="M134.3,708.6c0,53.4,283.3,32,283.3,85.4"/>
+			<path d="M134.3,708.6c0,50.9,399.5,34.5,399.5,85.4"/>
+		</g>
+		<g class="questions">
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 51.9937 821.75)"><tspan x="0" y="0">What </tspan><tspan x="-21.9" y="16.8">happened in </tspan><tspan x="-12.2" y="33.6">Brussels?</tspan></text>
+				</g>
+				<circle style="fill:#E2E0E0;stroke:#B7ABB0;" cx="68.3" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 149.6484 821.3994)"><tspan x="0" y="0">How many </tspan><tspan x="0.9" y="16.8">died in the </tspan><tspan x="6.3" y="33.6">Brussels </tspan><tspan x="8.5" y="50.4">attacks?</tspan></text>
+				</g>
+				<circle style="fill:#8D8D8E;stroke:#B7ABB0;" cx="184.5" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 286.3008 821.3945)"><tspan x="0" y="0">Why </tspan><tspan x="-15" y="16.8">Brussels?</tspan></text>
+				</g>
+				<circle style="fill:#E2E0E0;stroke:#B7ABB0;" cx="301.1" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 396.166 821.3945)"><tspan x="0" y="0">Where </tspan><tspan x="-14" y="16.8">is Brussels </tspan><tspan x="-2.2" y="33.6">airport?</tspan></text>
+				</g>
+				<circle style="fill:#8D8D8E;stroke:#B7ABB0;" cx="417.6" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 517.8994 821.3906)"><tspan x="0" y="0">Who </tspan><tspan x="-11.6" y="16.8">bombed </tspan><tspan x="-14.3" y="33.6">Brussels?</tspan></text>
+				</g>
+				<circle style="fill:#8D8D8E;stroke:#B7ABB0;" cx="534.1" cy="800.7" r="5.1"/>
+			</g>
+		</g>
+		<line class="extra-connector" x1="134.3" y1="710" x2="134.3" y2="635"/>
+	</g>
+	<g class="Berlin city" style="display:none;">
+		<g class="connectors">
+			<path d="M175.2,708.3c0,53.4-107,32.3-107,85.6"/>
+			<path d="M175.2,708.3c0,53.4,9,32.3,9,85.6"/>
+			<path d="M175.2,708.3c0,53.4,125.9,32.3,125.9,85.6"/>
+			<path d="M175.2,708.3c0,53.4,242.4,32.3,242.4,85.6"/>
+			<path d="M175.2,708.3c0,50.9,358.6,34.7,358.6,85.6"/>
+		</g>
+		<g class="questions">
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 51.9937 821.75)"><tspan x="0" y="0">What </tspan><tspan x="-21.9" y="16.8">happened in </tspan><tspan x="-12.2" y="33.6">Brussels?</tspan></text>
+				</g>
+				<circle style="fill:#E2E0E0;stroke:#B7ABB0;" cx="68.3" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 149.6484 821.3994)"><tspan x="0" y="0">How many </tspan><tspan x="0.9" y="16.8">died in the </tspan><tspan x="6.3" y="33.6">Brussels </tspan><tspan x="8.5" y="50.4">attacks?</tspan></text>
+				</g>
+				<circle style="fill:#8D8D8E;stroke:#B7ABB0;" cx="184.5" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 286.3008 821.3945)"><tspan x="0" y="0">Why </tspan><tspan x="-27.2" y="16.8">the attack on </tspan><tspan x="-15" y="33.6">Brussels?</tspan></text>
+				</g>
+				<circle style="fill:#E2E0E0;stroke:#B7ABB0;" cx="301.1" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 391.4355 821.3945)"><tspan x="0" y="0">How far </tspan><tspan x="-8.3" y="16.8">away from </tspan><tspan x="-2.2" y="33.6">Brussels </tspan><tspan x="-1.7" y="50.4">is Berlin?</tspan></text>
+				</g>
+				<circle style="fill:#48B9E0;stroke:#B7ABB0;" cx="417.6" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 517.8994 821.3906)"><tspan x="0" y="0">Who </tspan><tspan x="-26" y="16.8">has attacked </tspan><tspan x="-14.3" y="33.6">Brussels?</tspan></text>
+				</g>
+				<circle style="fill:#8D8D8E;stroke:#B7ABB0;" cx="534.1" cy="800.7" r="5.1"/>
+			</g>
+		</g>
+	</g>
+	<g class="Madrid city" style="display:none;">
+		<g class="connectors">
+			<path d="M216.3,708.3c0,53.4-148.1,32.3-148.1,85.6"/>
+			<path d="M216.3,708.3c0,53.4-32.1,32.3-32.1,85.6"/>
+			<path d="M216.3,708.3c0,53.4,84.8,32.3,84.8,85.6"/>
+			<path d="M216.3,708.3c0,53.4,201.3,32.3,201.3,85.6"/>
+			<path d="M216.3,708.3c0,50.9,317.6,34.7,317.6,85.6"/>
+		</g>
+		<line class="extra-connector" x1="216.3" y1="710" x2="216.2" y2="635"/>
+		<g class="questions">
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 51.9937 821.75)"><tspan x="0" y="0">What </tspan><tspan x="-21.9" y="16.8">happened in </tspan><tspan x="-12.2" y="33.6">Brussels?</tspan></text>
+				</g>
+				<circle style="fill:#E2E0E0;stroke:#B7ABB0;" cx="68.3" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 166.582 821.3994)"><tspan x="0" y="0">What </tspan><tspan x="-23" y="16.8">about flights </tspan><tspan x="-18.7" y="33.6">to Brussels </tspan><tspan x="-15.8" y="50.4">tomorrow?</tspan></text>
+				</g>
+				<circle style="fill:#4A5696;stroke:#B7ABB0;" cx="184.5" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 285.4355 821.3945)"><tspan x="0" y="0">How </tspan><tspan x="-44.2" y="16.8">is the investigation </tspan><tspan x="-37.7" y="33.6">into the Brussels </tspan><tspan x="-10.3" y="50.4">attacks?</tspan></text>
+				</g>
+				<circle style="fill:#8D8D8E;stroke:#B7ABB0;" cx="301.1" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 399.8574 821.3945)"><tspan x="0" y="0">What </tspan><tspan x="-4.6" y="16.8">is ISIS?</tspan></text>
+				</g>
+				<circle style="fill:#8D8D8E;stroke:#B7ABB0;" cx="417.6" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 515.7969 821.3906)"><tspan x="0" y="0">What </tspan><tspan x="-23.7" y="16.8">do the jihadis</tspan><tspan x="-2.4" y="33.6"> want?</tspan></text>
+				</g>
+				<circle style="fill:#4A5696;stroke:#B7ABB0;" cx="534.1" cy="800.7" r="5.1"/>
+			</g>
+		</g>
+	</g>
+	<g class="Sydney city" style="display:none;">
+		<g class="connectors">
+			<path d="M257.4,708.5c0,53.4-189.1,32.1-189.1,85.4"/>
+			<path d="M257.4,708.5c0,53.4-73.1,32.1-73.1,85.4"/>
+			<path d="M257.4,708.5c0,53.4,43.7,32.1,43.7,85.4"/>
+			<path d="M257.4,708.5c0,53.4,160.2,32.1,160.2,85.4"/>
+			<path d="M257.4,708.7c0,50.9,276.5,34.4,276.5,85.3"/>
+		</g>
+		<g class="questions">
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 51.9937 821.75)"><tspan x="0" y="0">What </tspan><tspan x="-21.9" y="16.8">happened in </tspan><tspan x="-12.2" y="33.6">Brussels?</tspan></text>
+				</g>
+				<circle style="fill:#E2E0E0;stroke:#B7ABB0;" cx="68.3" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 162.8906 821.3994)"><tspan x="0" y="0">Where </tspan><tspan x="-14" y="16.8">is Brussels </tspan><tspan x="-2.2" y="33.6">airport?</tspan></text>
+				</g>
+				<circle style="fill:#8D8D8E;stroke:#B7ABB0;" cx="184.5" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 283.5176 821.3945)"><tspan x="0" y="0">What </tspan><tspan x="-4.6" y="16.8">is ISIS?</tspan></text>
+				</g>
+				<circle style="fill:#8D8D8E;stroke:#B7ABB0;" cx="301.1" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 402.6406 821.3945)"><tspan x="0" y="0">Why </tspan><tspan x="-15" y="16.8">Brussels?</tspan></text>
+				</g>
+				<circle style="fill:#E2E0E0;stroke:#B7ABB0;" cx="417.6" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 498.8652 821.3906)"><tspan x="0" y="0">How many </tspan><tspan x="0.9" y="16.8">died in the </tspan><tspan x="6.3" y="33.6">Brussels </tspan><tspan x="8.5" y="50.4">attacks?</tspan></text>
+				</g>
+				<circle style="fill:#8D8D8E;stroke:#B7ABB0;" cx="534.1" cy="800.7" r="5.1"/>
+			</g>
+		</g>
+	</g>
+	<g class="Hong-Kong city" style="display:none;">
+		<g class="connectors">
+			<path d="M298.4,708.6c0,53.4-230.2,32-230.2,85.4"/>
+			<path d="M298.4,708.6c0,53.4-114.2,32-114.2,85.4"/>
+			<path d="M298.4,708.6c0,53.4,2.6,32,2.6,85.4"/>
+			<path d="M298.4,708.6c0,53.4,119.2,32,119.2,85.4"/>
+			<path d="M298.4,708.6c0,50.9,235.4,34.5,235.4,85.4"/>
+		</g>
+		<g class="questions">
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 51.9937 821.75)"><tspan x="0" y="0">What </tspan><tspan x="-21.9" y="16.8">happened in </tspan><tspan x="-12.2" y="33.6">Brussels?</tspan></text>
+				</g>
+				<circle style="fill:#E2E0E0;stroke:#B7ABB0;" cx="68.3" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 166.582 821.3994)"><tspan x="0" y="0">What </tspan><tspan x="-12.9" y="16.8">does ISIS </tspan><tspan x="-0.6" y="33.6">want?</tspan></text>
+				</g>
+				<circle style="fill:#8D8D8E;stroke:#B7ABB0;" cx="184.5" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 286.3008 821.3945)"><tspan x="0" y="0">Why </tspan><tspan x="-15" y="16.8">Brussels?</tspan></text>
+				</g>
+				<circle style="fill:#E2E0E0;stroke:#B7ABB0;" cx="301.1" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 398.3809 821.3945)"><tspan x="0" y="0">When </tspan><tspan x="7.3" y="16.8">will </tspan><tspan x="-24.6" y="33.6">Brussels-Midi </tspan><tspan x="0.6" y="50.4">open?</tspan></text>
+				</g>
+				<circle style="fill:#AA74B2;stroke:#B7ABB0;" cx="417.6" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 517.8994 821.3906)"><tspan x="0" y="0">Who </tspan><tspan x="-18.1" y="16.8">died in the </tspan><tspan x="-11" y="33.6">Brussels</tspan><tspan x="-20.3" y="50.4"> bombings?</tspan></text>
+				</g>
+				<circle style="fill:#8D8D8E;stroke:#B7ABB0;" cx="534.1" cy="800.7" r="5.1"/>
+			</g>
+		</g>
+		<line class="extra-connector" x1="298.4" y1="710" x2="298.4" y2="651.8"/>
+	</g>
+	<g class="Tokyo city" style="display:none;">
+		<g class="connectors">
+			<path d="M339.5,708.5c0,53.4-271.3,32.1-271.3,85.4"/>
+			<path d="M339.5,708.5c0,53.4-155.3,32.1-155.3,85.4"/>
+			<path d="M339.5,708.5c0,53.4-38.4,32.1-38.4,85.4"/>
+			<path d="M339.5,708.5c0,53.4,78.1,32.1,78.1,85.4"/>
+			<path d="M339.5,708.7c0,50.9,194.3,34.4,194.3,85.3"/>
+		</g>
+		<g class="questions">
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 51.9937 821.75)"><tspan x="0" y="0">What </tspan><tspan x="-21.9" y="16.8">happened in </tspan><tspan x="-12.2" y="33.6">Brussels?</tspan></text>
+				</g>
+				<circle style="fill:#E2E0E0;stroke:#B7ABB0;" cx="68.3" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 162.8906 821.3994)"><tspan x="0" y="0">Where </tspan><tspan x="-6.8" y="16.8">were the </tspan><tspan x="-29.6" y="33.6">terrorist attacks </tspan><tspan x="-15.8" y="50.4">in Brussels?</tspan></text>
+				</g>
+				<circle style="fill:#8D8D8E;stroke:#B7ABB0;" cx="184.5" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 285.6201 821.3945)"><tspan x="0" y="0">Who </tspan><tspan x="-11.6" y="16.8">bombed </tspan><tspan x="-14.3" y="33.6">Brussels?</tspan></text>
+				</g>
+				<circle style="fill:#8D8D8E;stroke:#B7ABB0;" cx="301.1" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 402.6406 821.3945)"><tspan x="0" y="0">Why </tspan><tspan x="-27.9" y="16.8">was Brussels </tspan><tspan x="-15.3" y="33.6">attacked?</tspan></text>
+				</g>
+				<circle style="fill:#E2E0E0;stroke:#B7ABB0;" cx="417.6" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 515.7969 821.3906)"><tspan x="0" y="0">What </tspan><tspan x="-5.6" y="16.8">do ISIS </tspan><tspan x="-0.6" y="33.6">want?</tspan></text>
+				</g>
+				<circle style="fill:#8D8D8E;stroke:#B7ABB0;" cx="534.1" cy="800.7" r="5.1"/>
+			</g>
+		</g>
+	</g>
+	<g class="New-York city" style="display:none;">
+		<g class="connectors">
+			<path d="M380.6,708.3c0,53.4-312.4,32.3-312.4,85.6"/>
+			<path d="M380.6,708.3c0,53.4-196.4,32.3-196.4,85.6"/>
+			<path d="M380.6,708.3c0,53.4-79.5,32.3-79.5,85.6"/>
+			<path d="M380.6,708.3c0,53.4,37,32.3,37,85.6"/>
+			<path d="M380.6,708.4c0,50.9,153.3,34.6,153.3,85.5"/>
+		</g>
+		<g class="questions">
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 51.9937 821.75)"><tspan x="0" y="0">What </tspan><tspan x="-21.9" y="16.8">happened in </tspan><tspan x="-12.2" y="33.6">Brussels?</tspan></text>
+				</g>
+				<circle style="fill:#E2E0E0;stroke:#B7ABB0;" cx="68.3" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 162.8906 821.3994)"><tspan x="0" y="0">Where </tspan><tspan x="-14" y="16.8">is Brussels </tspan><tspan x="-2.2" y="33.6">airport?</tspan></text>
+				</g>
+				<circle style="fill:#8D8D8E;stroke:#B7ABB0;" cx="184.5" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 286.3008 821.3945)"><tspan x="0" y="0">Why </tspan><tspan x="-15" y="16.8">Brussels?</tspan></text>
+				</g>
+				<circle style="fill:#E2E0E0;stroke:#B7ABB0;" cx="301.1" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 382.9258 821.3945)"><tspan x="0" y="0">How many </tspan><tspan x="0.9" y="16.8">died in the </tspan><tspan x="6.3" y="33.6">Brussels </tspan><tspan x="8.5" y="50.4">attacks?</tspan></text>
+				</g>
+				<circle style="fill:#8D8D8E;stroke:#B7ABB0;" cx="417.6" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 515.7969 821.3906)"><tspan x="0" y="0">What </tspan><tspan x="-4.6" y="16.8">is ISIS?</tspan></text>
+				</g>
+				<circle style="fill:#8D8D8E;stroke:#B7ABB0;" cx="534.1" cy="800.7" r="5.1"/>
+			</g>
+		</g>
+		<line class="extra-connector" x1="380.6" y1="710" x2="380.5" y2="651.8"/>
+	</g>
+	<g class="Delhi city" style="display:none;">
+		<g class="connectors">
+			<path d="M421.7,708.3c0,53.4-353.4,32.3-353.4,85.7"/>
+			<path d="M421.7,708.3c0,53.4-237.4,32.3-237.4,85.7"/>
+			<path d="M421.7,708.3c0,53.4-120.6,32.3-120.6,85.7"/>
+			<path d="M421.7,708.3c0,53.4-4.1,32.3-4.1,85.7"/>
+			<path d="M421.7,708.4c0,50.9,112.2,34.6,112.2,85.6"/>
+		</g>
+		<g class="questions">
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 51.9937 821.75)"><tspan x="0" y="0">What </tspan><tspan x="-21.9" y="16.8">happened in </tspan><tspan x="-12.2" y="33.6">Brussels?</tspan></text>
+				</g>
+				<circle style="fill:#E2E0E0;stroke:#B7ABB0;" cx="68.3" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 169.3633 821.3994)"><tspan x="0" y="0">Why </tspan><tspan x="-15" y="16.8">Brussels?</tspan></text>
+				</g>
+				<circle style="fill:#E2E0E0;stroke:#B7ABB0;" cx="184.5" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 266.5859 821.3945)"><tspan x="0" y="0">How many </tspan><tspan x="0.9" y="16.8">died in the </tspan><tspan x="6.3" y="33.6">Brussels </tspan><tspan x="8.5" y="50.4">attacks?</tspan></text>
+				</g>
+				<circle style="fill:#8D8D8E;stroke:#B7ABB0;" cx="301.1" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 382.9258 821.3945)"><tspan x="0" y="0">How many </tspan><tspan x="-2.6" y="16.8">blasts were </tspan><tspan x="9.9" y="33.6">there in </tspan><tspan x="4.7" y="50.4">Brussels?</tspan></text>
+				</g>
+				<circle style="fill:#ABAC86;stroke:#B7ABB0;" cx="417.6" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 519.4473 821.3906)"><tspan x="0" y="0">How</tspan><tspan x="-34.3" y="16.8"> did the suicide </tspan><tspan x="-32.8" y="33.6">bombers enter </tspan><tspan x="-22.7" y="50.4">departures?</tspan></text>
+				</g>
+				<circle style="fill:#ABAC86;stroke:#B7ABB0;" cx="534.1" cy="800.7" r="5.1"/>
+			</g>
+		</g>
+	</g>
+	<g class="San-Francisco city" style="display:none;">
+		<g class="connectors">
+			<path d="M462.7,708.3c0,53.4-394.5,32.3-394.5,85.7"/>
+			<path d="M462.7,708.3c0,53.4-278.5,32.3-278.5,85.7"/>
+			<path d="M462.7,708.3c0,53.4-161.7,32.3-161.7,85.7"/>
+			<path d="M462.7,708.3c0,53.4-45.1,32.3-45.1,85.7"/>
+			<path d="M462.7,708.4c0,50.9,71.1,34.6,71.1,85.6"/>
+		</g>
+		<line class="extra-connector" x1="462.7" y1="710" x2="462.7" y2="651.8"/>
+		<g class="questions">
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 51.9937 821.75)"><tspan x="0" y="0">What </tspan><tspan x="-21.9" y="16.8">happened in </tspan><tspan x="-12.2" y="33.6">Brussels?</tspan></text>
+				</g>
+				<circle style="fill:#E2E0E0;stroke:#B7ABB0;" cx="68.3" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 149.6484 821.3994)"><tspan x="0" y="0">How many </tspan><tspan x="0.9" y="16.8">died in the </tspan><tspan x="6.3" y="33.6">Brussels </tspan><tspan x="8.5" y="50.4">attacks?</tspan></text>
+				</g>
+				<circle style="fill:#8D8D8E;stroke:#B7ABB0;" cx="184.5" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 279.8262 821.3945)"><tspan x="0" y="0">Where </tspan><tspan x="-14" y="16.8">is Brussels </tspan><tspan x="1.1" y="33.6">airport</tspan></text>
+				</g>
+				<circle style="fill:#8D8D8E;stroke:#B7ABB0;" cx="301.1" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 398.3809 821.3945)"><tspan x="0" y="0">When </tspan><tspan x="-32.1" y="16.8">did the Brussels </tspan><tspan x="-28.2" y="33.6">attack happen?</tspan></text>
+				</g>
+				<circle style="fill:#8D8D8E;stroke:#B7ABB0;" cx="417.6" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 518.5801 821.3906)"><tspan x="0" y="0">Why </tspan><tspan x="-27.2" y="16.8">the attack on </tspan><tspan x="-15" y="33.6">Brussels?</tspan></text>
+				</g>
+				<circle style="fill:#E2E0E0;stroke:#B7ABB0;" cx="534.1" cy="800.7" r="5.1"/>
+			</g>
+		</g>
+	</g>
+	<g class="Toronto city" style="display:none;">
+		<g class="connectors">
+			<path d="M503.8,708.5c0,53.4-435.6,32.1-435.6,85.4"/>
+			<path d="M503.8,708.5c0,53.4-319.6,32.1-319.6,85.4"/>
+			<path d="M503.8,708.5c0,53.4-202.7,32.1-202.7,85.4"/>
+			<path d="M503.8,708.5c0,53.4-86.2,32.1-86.2,85.4"/>
+			<path d="M503.8,708.7c0,50.9,30,34.4,30,85.3"/>
+		</g>
+		<g class="questions">
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 51.9937 821.75)"><tspan x="0" y="0">What </tspan><tspan x="-21.9" y="16.8">happened in </tspan><tspan x="-12.2" y="33.6">Brussels?</tspan></text>
+				</g>
+				<circle style="fill:#E2E0E0;stroke:#B7ABB0;" cx="68.3" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 169.3633 821.3994)"><tspan x="0" y="0">Why </tspan><tspan x="-17.6" y="16.8">the attack </tspan><tspan x="-24.6" y="33.6">on Brussels?</tspan></text>
+				</g>
+				<circle style="fill:#E2E0E0;stroke:#B7ABB0;" cx="184.5" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 266.5859 821.3945)"><tspan x="0" y="0">How many </tspan><tspan x="0.9" y="16.8">died in the </tspan><tspan x="6.3" y="33.6">Brussels </tspan><tspan x="8.5" y="50.4">attacks?</tspan></text>
+				</g>
+				<circle style="fill:#8D8D8E;stroke:#B7ABB0;" cx="301.1" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 398.125 821.3945)"><tspan x="0" y="0"> What </tspan><tspan x="-11.2" y="16.8">does ISIS </tspan><tspan x="1.1" y="33.6">want?</tspan></text>
+				</g>
+				<circle style="fill:#8D8D8E;stroke:#B7ABB0;" cx="417.6" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 518.5801 821.3906)"><tspan x="0" y="0">Why </tspan><tspan x="-5.8" y="16.8">is ISIS </tspan><tspan x="-18.8" y="33.6">doing this?</tspan></text>
+				</g>
+				<circle style="fill:#8D8D8E;stroke:#B7ABB0;" cx="534.1" cy="800.7" r="5.1"/>
+			</g>
+		</g>
+	</g>
+	<g class="Sao-Paulo city" style="display:none;">
+		<g class="connectors">
+			<path d="M544.8,708.4c0,53.4-476.6,32.2-476.6,85.6"/>
+			<path d="M544.8,708.4c0,53.4-360.6,32.2-360.6,85.6"/>
+			<path d="M544.8,708.4c0,53.4-243.8,32.2-243.8,85.6"/>
+			<path d="M544.8,708.4c0,53.4-127.2,32.2-127.2,85.6"/>
+			<path d="M544.8,708.5c0,50.9-11,34.6-11,85.5"/>
+		</g>
+    <line class="extra-connector" x1="544.9" y1="710" x2="544.8" y2="651.8"/>
+		<g class="questions">
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 54.0957 821.75)"><tspan x="0" y="0"> Who</tspan><tspan x="-34.2" y="16.8"> is the ex-player </tspan><tspan x="-14.4" y="33.6">injured in </tspan><tspan x="-14.3" y="50.4">Brussels?</tspan></text>
+				</g>
+				<circle style="fill:#EA8266;stroke:#B7ABB0;" cx="68.3" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 166.582 821.3994)"><tspan x="0" y="0">What </tspan><tspan x="-21.9" y="16.8">happened in </tspan><tspan x="-12.2" y="33.6">Brussels?</tspan></text>
+				</g>
+				<circle style="fill:#E2E0E0;stroke:#B7ABB0;" cx="184.5" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 283.5176 821.3945)"><tspan x="0" y="0">What </tspan><tspan x="-23.7" y="16.8">is the motive </tspan><tspan x="-34.7" y="33.6">of the bombings </tspan><tspan x="-19.5" y="50.4">in Brussels?</tspan></text>
+				</g>
+				<circle style="fill:#8D8D8E;stroke:#B7ABB0;" cx="301.1" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 399.8574 821.3945)"><tspan x="0" y="0">What </tspan><tspan x="-28.5" y="16.8">was the cause </tspan><tspan x="-26.6" y="33.6">of the attacks </tspan><tspan x="-19.5" y="50.4">in Brussels?</tspan></text>
+				</g>
+				<circle style="fill:#8D8D8E;stroke:#B7ABB0;" cx="417.6" cy="800.7" r="5.1"/>
+			</g>
+			<g>
+				<g>
+					<text transform="matrix(1 0 0 1 518.5801 821.3906)"><tspan x="0" y="0">Why </tspan><tspan x="-27.2" y="16.8">the attack on </tspan><tspan x="-15" y="33.6">Brussels?</tspan></text>
+				</g>
+				<circle style="fill:#E2E0E0;stroke:#B7ABB0;" cx="534.1" cy="800.7" r="5.1"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g class="cities">
+	<g id="Brussels" class="city">
+		<text transform="matrix(1 0 0 1 28.5756 630.6384)">Brussels </text>
+		<g>
+			<circle style="fill:#E42867;" cx="52" cy="601.1" r="9"/>
+			<circle style="opacity:0.64;fill:#E42867;" cx="52" cy="600.6" r="18"/>
+		</g>
+	</g>
+	<g id="Paris" class="city">
+		<text transform="matrix(1 0 0 1 77.3769 706.1992)">Paris </text>
+		<g>
+			<circle style="fill:#85AF40;" cx="93.2" cy="674.9" r="9"/>
+			<circle style="opacity:0.64;fill:#85AF40;" cx="93.2" cy="674.9" r="18"/>
+		</g>
+	</g>
+	<g id="London" class="city">
+		<text transform="matrix(1 0 0 1 115.1923 631.5641)">London</text>
+		<g>
+			<circle style="fill:#186C8D;" cx="134.3" cy="600.9" r="9"/>
+			<circle style="opacity:0.64;fill:#186C8D;" cx="134.3" cy="600.9" r="18"/>
+		</g>
+	</g>
+	<g id="Berlin" class="city">
+		<text transform="matrix(1 0 0 1 160.4052 705.8896)">Berlin</text>
+		<g>
+			<circle style="fill:#46B9DF;" cx="175.5" cy="674.9" r="9"/>
+			<circle style="opacity:0.64;fill:#46B9DF;" cx="175.5" cy="674.9" r="18"/>
+		</g>
+	</g>
+	<g id="Madrid" class="city">
+		<text transform="matrix(1 0 0 1 195.745 631.5641)">Madrid </text>
+		<g>
+			<circle style="fill:#4A5696;" cx="216.6" cy="600.9" r="9"/>
+			<circle style="opacity:0.64;fill:#4A5696;" cx="216.6" cy="600.9" r="18"/>
+		</g>
+	</g>
+	<g id="Sydney" class="city">
+		<text transform="matrix(1 0 0 1 237.705 705.8896)">Sydney</text>
+		<g>
+			<circle style="fill:#81236B;" cx="257.7" cy="674.9" r="9"/>
+			<circle style="opacity:0.64;fill:#81236B;" cx="257.7" cy="674.9" r="18"/>
+		</g>
+	</g>
+	<g id="Hong-Kong" class="city">
+		<text transform="matrix(1 0 0 1 284.1386 631.569)"><tspan x="0" y="0">Hong</tspan><tspan x="0.5" y="14.9">Kong</tspan></text>
+		<g>
+			<circle style="fill:#AA74B2;" cx="298.8" cy="600.9" r="9"/>
+			<circle style="opacity:0.64;fill:#AA74B2;" cx="298.8" cy="600.9" r="18"/>
+		</g>
+	</g>
+	<g id="Tokyo" class="city">
+		<text transform="matrix(1 0 0 1 323.4804 705.8896)">Tokyo</text>
+		<g>
+			<circle style="fill:#DD5E26;" cx="339.9" cy="674.9" r="9"/>
+			<circle style="opacity:0.64;fill:#DD5E26;" cx="339.9" cy="674.9" r="18"/>
+		</g>
+	</g>
+	<g id="New-York" class="city">
+		<text transform="matrix(1 0 0 1 368.8134 631.5661)"><tspan x="0" y="0">New</tspan><tspan x="-0.1" y="14.9">York</tspan></text>
+		<g>
+			<circle style="fill:#AD9731;" cx="381.1" cy="600.9" r="9"/>
+			<circle style="opacity:0.64;fill:#AD9731;" cx="381.1" cy="600.9" r="18"/>
+		</g>
+	</g>
+	<g id="Delhi" class="city">
+		<text transform="matrix(1 0 0 1 408.1151 705.8896)">Delhi </text>
+		<g>
+			<circle style="fill:#ABAC86;" cx="422.2" cy="674.9" r="9"/>
+			<circle style="opacity:0.64;fill:#ABAC86;" cx="422.2" cy="674.9" r="18"/>
+		</g>
+	</g>
+	<g id="San-Francisco" class="city">
+		<text transform="matrix(1 0 0 1 453.3759 631.5661)"><tspan x="0" y="0">San</tspan><tspan x="-18.1" y="14.9">Francisco </tspan></text>
+		<g>
+			<circle style="fill:#4CBD9A;" cx="463.3" cy="601" r="9"/>
+			<circle style="opacity:0.64;fill:#4CBD9A;" cx="463.3" cy="601" r="18"/>
+		</g>
+	</g>
+	<g id="Toronto" class="city">
+		<text transform="matrix(1 0 0 1 482.9511 705.8896)">Toronto</text>
+		<g>
+			<circle style="fill:#E3BC22;" cx="504.4" cy="674.9" r="9"/>
+			<circle style="opacity:0.64;fill:#E3BC22;" cx="504.4" cy="674.9" r="18"/>
+		</g>
+	</g>
+	<g id="Sao-Paulo" class="city">
+		<text transform="matrix(1 0 0 1 532.9033 631.5661)"><tspan x="0" y="0">Sao </tspan><tspan x="-5.2" y="14.9">Paulo </tspan></text>
+		<g>
+			<circle style="fill:#EA8267;" cx="545" cy="600.9" r="9"/>
+			<circle style="opacity:0.64;fill:#EA8267;" cx="545" cy="600.9" r="18"/>
+		</g>
+	</g>
+</g>
+<g class="the-attacks">
+	<g class="Iskandaria city">
+		<g class="arcs">
+			<path class="Berlin" style="fill:none;" d="M299.7,239.4c20.7,0,39,10.6,49.6,26.7"/>
+			<path class="Madrid" style="fill:none;" d="M299.7,237.9c21.3,0,40,10.9,50.8,27.4c0.2,0.4,0.5,0.7,0.7,1.1"/>
+			<path class="New-York" d="M299.7,236.3c21.8,0,41,11.2,52.1,28.1c1,1.5,1.9,3,2.7,4.5"/>
+			<path class="Paris" d="M299.7,234.8c22.3,0,42,11.5,53.4,28.8c3.2,4.9,5.8,10.3,7.6,16"/>
+			<path class="London" d="M299.7,233.3c22.9,0,43,11.7,54.7,29.5c4,6,7,12.8,8.8,20"/>
+			<path class="Toronto" d="M299.7,231.7c23.4,0,44,12,56,30.2c6.9,10.5,11,23.2,11,36.7c0,1.5,0,2.9-0.1,4.4"/>
+			<path class="Sydney" d="M299.7,230.2c23.9,0,45,12.3,57.2,30.9c7.1,10.8,11.2,23.7,11.2,37.6c0,37.8-30.6,68.5-68.5,68.5c-4.6,0-9.1-0.5-13.5-1.3"/>
+			<path class="San-Francisco" d="M299.7,228.7c24.5,0,46,12.6,58.5,31.6c7.3,11,11.5,24.2,11.5,38.4c0,38.7-31.3,70-70,70c-37.5,0-68.1-29.5-69.9-66.5"/>
+			<path class="Tokyo" d="M299.7,227.2c25,0,47,12.8,59.8,32.3c7.4,11.3,11.7,24.8,11.7,39.3c0,39.5-32,71.5-71.5,71.5s-71.5-32-71.5-71.5c0-16.2,5.4-31.1,14.4-43"/>
+			<path class="Sao-Paulo" d="M299.7,225.6c25.5,0,48,13.1,61.1,33c7.6,11.5,12,25.3,12,40.1c0,40.3-32.7,73-73,73s-73-32.7-73-73c0-22.9,10.6-43.4,27.1-56.8"/>
+			<path class="Delhi" d="M299.8,224.1c26.1,0,49,13.4,62.3,33.6c7.7,11.7,12.2,25.8,12.2,40.9c0,41.2-33.4,74.6-74.6,74.6s-74.6-33.4-74.6-74.6s33.2-79.1,74.4-79.1c27.8,0,52.2,14.3,66.4,35.9
+				c8.2,12.5,13,27.5,13,43.7c0,17.7-5.8,34-15.5,47.2"/>
+			<path class="Brussels" d="M299.7,222.6c26.6,0,50,13.7,63.6,34.3c7.9,12,12.5,26.3,12.5,41.8c0,42-34.1,76.1-76.1,76.1s-76.1-34.1-76.1-76.1s33.9-80.7,76-80.7c28.4,0,53.2,14.6,67.7,36.6c8.4,12.8,13.3,28.1,13.3,44.6c0,44.8-36.3,81.2-81.2,81.2c-10.3,0-20.1-1.9-29.2-5.4"/>
+
+			<path class="Hong-Kong" d="M299.8,221c42.8,0,77.6,34.8,77.6,77.6c0,42.9-34.8,77.6-77.6,77.6s-77.6-34.8-77.6-77.6s34.6-82.3,77.5-82.3v0c45.7,0,82.7,37.1,82.7,82.8s-37.1,82.8-82.8,82.8c-31.4,0-58.8-17.5-72.8-43.3"/>
+		</g>
+		<g class="circles">			
+				<circle class="Berlin" style="fill:#46B9DF;" cx="349.3" cy="266.1" r="1"/>
+				<circle class="Madrid" style="fill:#4A5696;" cx="351.2" cy="266.2" r="1"/>
+				<circle class="New-York" style="fill:#AD9731;" cx="354.7" cy="269.1" r="1"/>
+				<circle class="Paris" style="fill:#85AF40;" cx="360.6" cy="279.6" r="1"/>
+				<circle class="London" style="fill:#186C8D;" cx="363.1" cy="282.5" r="1"/>
+				<circle class="Toronto" style="fill:#E3BC22;" cx="366.4" cy="303" r="1"/>
+				<circle class="Sydney" style="fill:#81236B;" cx="286.3" cy="365.8" r="1"/>
+				<circle class="San-Francisco" style="fill:#4CBD9A;" cx="229.9" cy="302.2" r="1"/>
+				<circle class="Toronto" style="fill:#DD5E26;" cx="242.6" cy="255.7" r="1"/>
+				<circle class="Sao-Paulo" style="fill:#EA8267;" cx="253.6" cy="242" r="1"/>
+				<circle class="Delhi" style="fill:#ABAC86;" cx="363.4" cy="346.5" r="1"/>
+				<circle class="Brussels" style="fill:#E42867;" cx="270.3" cy="374.8" r="1"/>
+				<circle class="Hong-Kong" style="fill:#AA74B2;" cx="226.6" cy="338.5" r="1"/>
+		</g>
+		<g class="times">
+			<text class="Brussels" transform="matrix(0.9294 0.3691 -0.3691 0.9294 246.658 381.8053)" style="display:none;fill:#E42867; font-size:10px;">18h 43m</text>
+			<text class="Delhi" transform="matrix(0.5332 -0.846 0.846 0.5332 370.7687 366.0144)" style="display:none;fill:#ABAC86; font-size:10px;">16h 14m</text>
+			<text class="Sao-Paulo" transform="matrix(0.6514 -0.7587 0.7587 0.6514 244.4809 274.4068)" style="display:none;fill:#EA8267; font-size:10px;">10h 42m</text>
+			<text class="Tokyo" transform="matrix(0.5566 -0.8308 0.8308 0.5566 242.7844 279.2657)" style="display:none;fill:#DD5E26; font-size:10px;">10h 14m</text>
+      <text class="San-Francisco" transform="matrix(0 1 -1 0 236.2446 283.6143)" style="display:none;fill:#4CBD9A; font-size:10px;">8h 55m</text>
+			<text class="Sydney" transform="matrix(1 0 0 1 275.6143 358.7554)" style="display:none;fill:#81236B; font-size:10px;">6h 22m</text>
+			<text class="Toronto" transform="matrix(0 1 -1 0 353.3281 291.5884)" style="display:none;fill:#E3BC22; font-size:10px;">3h 9m</text>		
+			<text class="London" transform="matrix(0.1894 0.9785 -0.9818 0.19 344.6782 275.4571)" style="display:none;fill:#186C8D; font-size:10px;">2h 33m</text>
+			<text class="Paris" transform="matrix(0.4795 0.8738 -0.8767 0.4811 340.1561 272.8482)" style="display:none;;fill:#85AF40; font-size:10px;">2h 27m</text>
+			<text class="New-York" transform="matrix(0.5464 0.8375 -0.8375 0.5464 334.2507 265.4094)" style="display:none;fill:#AD9731; font-size:10px;">2h 05m</text>
+			<text class="Madrid" transform="matrix(0.5023 0.8647 -0.8647 0.5023 331.0177 260.275)" style="display:none;fill:#4A5696; font-size:10px;">1h 56m</text>
+			<text class="Berlin" transform="matrix(0.7071 0.7071 -0.7071 0.7071 327.5593 261.573)" style="display:block;fill:#46B9DF; font-size:10px;">1h 54m</text>
+		</g>
+		
+		<rect id="start_line_2_" x="299" y="220.5" style="fill:#FFFFFF;" width="0.8" height="19.5"/>
+		<g id="end_20h_3m">
+				<text transform="matrix(0.4552 0.8904 -0.8904 0.4552 207.8271 329.7538)" style="fill:#AA74B2; font-size:10px;">20h 3m</text>
+		</g>
+	</g>
+	<g class="Istanbul city">
+		<g class="arcs">
+			<path class="Sao-Paulo" d="M299,169.9c71.7,0,129.8,58.1,129.8,129.8
+				S370.7,429.5,299,429.5s-129.8-58.1-129.8-129.8c0-71.5,61.8-131,133.3-131.2"/>
+			<path class="San-Francisco" d="M299.7,171.4
+				c52.6,0,97.7,31.9,117.1,77.3"/>
+			<path class="Hong-Kong" d="M299.7,172.8c48.9,0,91.2,27.8,112.1,68.5"/>
+			<path class="Delhi" d="M299.7,174.2c41.4,0,78.1,20.2,100.7,51.3"/>
+			<path class="Brussels" d="M299.7,175.7c40.9,0,77.2,20,99.5,50.7"/>
+			<path class="Toronto" d="M299.7,177.1c32.7,0,62.3,12.9,84.2,33.9"/>
+			<path class="Tokyo" d="M299.7,178.6c17.3,0,33.7,3.6,48.5,10.2"/>
+			<path class="Sydney" d="M299.7,180c14.8,0,29.1,2.7,42.2,7.7"/>
+			<path class="Madrid" d="M299.7,181.5c13.2,0,25.9,2.2,37.8,6.2"/>
+			<path class="Paris" d="M299.7,182.9c8.3,0,16.3,0.9,24.1,2.5"/>
+			<path class="New-York" d="M299.7,184.3c7.5,0,14.7,0.7,21.8,2.1"/>
+			<path class="London" d="M299.7,185.8c3.9,0,7.7,0.2,11.5,0.6"/>
+			<path class="Berlin" d="M299.7,187.2c2.6,0,5.1,0.1,7.6,0.3"/>
+			<path class="Istanbul" d="M288.3,189.3c3.8-0.4,7.6-0.6,11.5-0.6"/>
+		</g>
+		<g class="times">
+				<text class="San-Francisco" style="display:none;" transform="matrix(0.4348 0.9005 -0.9005 0.4348 395.0283 245.0764)">2h 13m</text>
+				<text class="Hong-Kong" style="display:none;" transform="matrix(0.4914 0.8709 -0.8709 0.4914 391.6755 238.1981)">2h 6m</text>
+  			<text class="Brussels" style="display:none;" transform="matrix(0.6974 0.7167 -0.7167 0.6974 374.2979 224.5566)">1h 48m</text>
+			  <text class="Delhi" style="display:none;" transform="matrix(0.6974 0.7167 -0.7167 0.6974 374.2979 224.5566)" font-size="10px">1h 48m</text>
+        <text class="Toronto" style="display:none;" transform="matrix(0.8122 0.5833 -0.5833 0.8122 358.2578 213.5474)">1h 27m</text>	
+				<text class="Tokyo" style="display:none;" transform="matrix(0.9419 0.3359 -0.3359 0.9419 331.2988 200.7827)">47m</text>
+				<text class="Sydney" style="display:none;" transform="matrix(0.9579 0.287 -0.287 0.9579 325.7704 199.3289)">41m</text>	
+				<text class="Madrid" style="display:none;" transform="matrix(0.9662 0.2579 -0.2579 0.9662 322.8991 198.4127)">38m</text>
+				<text class="Paris" style="display:none;" transform="matrix(0.9822 0.1877 -0.1877 0.9822 312.1123 196.5465)">22m</text>		
+				<text class="New-York" style="display:none;" transform="matrix(0.9849 0.1729 -0.1729 0.9849 309.6529 196.3864)">21m</text>
+        <text class="London" style="display:none;" transform="matrix(0.9956 9.411229e-02 -9.411229e-02 0.9956 304.4778 197.8899)">12m</text>
+				<text class="Berlin" style="display:none;" transform="matrix(0.9964 8.524001e-02 -8.524001e-02 0.9964 302.5634 198.953)">8m</text>
+		</g>
+		<g class="circles">
+			
+				<circle class="Sao-Paulo" transform="matrix(0.7663 -0.6425 0.6425 0.7663 -37.4789 233.669)" style="fill:#EA8267;" cx="302.5" cy="168.4" r="1.2"/>
+			
+				<circle class="San-Francisco" transform="matrix(0.7663 -0.6425 0.6425 0.7663 -62.4351 326.0003)" style="fill:#4CBD9A;" cx="416.9" cy="248.8" r="1.2"/>
+			
+				<circle class="Hong-Kong" transform="matrix(0.5463 -0.8376 0.8376 0.5463 -15.4751 454.4537)" style="fill:#AA74B2;" cx="411.8" cy="241.5" r="1.2"/>
+			
+				<circle class="Brussels" transform="matrix(0.5463 -0.8376 0.8376 0.5463 -8.4958 437.1953)" style="fill:#E42867;" cx="399.3" cy="226.4" r="1.2"/>
+			
+				<circle class="Delhi" transform="matrix(0.5463 -0.8376 0.8376 0.5463 -7.418 437.7543)" style="fill:#ABAC86;" cx="400.4" cy="225.7" r="1.2"/>
+			
+				<circle class="Toronto" transform="matrix(0.5463 -0.8376 0.8376 0.5463 -2.6482 417.3407)" style="fill:#E3BC22;" cx="383.9" cy="211.1" r="1.2"/>
+			
+				<circle class="Tokyo" transform="matrix(0.2245 -0.9745 0.9745 0.2245 86.1272 485.9551)" style="fill:#DD5E26;" cx="348.4" cy="188.9" r="1.2"/>
+			
+				<circle class="Sydney" transform="matrix(0.1741 -0.9847 0.9847 0.1741 97.617 491.9167)" style="fill:#81236B;" cx="342.1" cy="187.8" r="1.2"/>
+			
+				<circle class="Madrid" transform="matrix(0.1402 -0.9901 0.9901 0.1402 104.4556 495.5671)" style="fill:#4A5696;" cx="337.6" cy="187.6" r="1.2"/>
+			<circle class="Paris_6" style="fill:#85AF40;" cx="323.7" cy="185.4" r="1.2"/>
+			<circle class="New-York" style="fill:#AD9731;" cx="321.8" cy="186.3" r="1.2"/>
+			
+				<circle class="London" transform="matrix(0.866 -0.5 0.5 0.866 -51.4457 180.6515)" style="fill:#186C8D;" cx="311.4" cy="186.3" r="1.2"/>
+			
+				<circle class="Berlin" transform="matrix(0.9925 -0.1224 0.1224 0.9925 -20.6286 39.0388)" style="fill:#46B9DF;" cx="307.4" cy="187.4" r="1.2"/>
+			<circle class="Istanbul" style="fill:#DFEAA7;" cx="288.2" cy="189.2" r="1.2"/>
+		</g>
+		<path id="end_x5F_12h_x5F_14m_x5F_1_x5F_" style="fill:none;" d="M215.8,196.9c22.4-19.7,51.7-31.9,83.9-32.5
+			c21.8-0.4,42.5,4.6,60.7,13.7"/>
+		<text id="end_12h_14m">		<textPath  xlink:href="#end_x5F_12h_x5F_14m_x5F_1_x5F_" startOffset="32.373%">
+<tspan  style="fill:#EA8267; font-size:10px;">12h 14m</tspan>		</textPath>
+</text>
+		<path id="start_x5F_13m_x5F_1_x5F_" style="fill:none;" d="M236.1,221.3c12.7-10.4,28.1-17.8,45.3-20.9
+			c23.4-4.2,46.3,0.1,65.6,10.7"/>
+		<text id="start_13m">		<textPath  xlink:href="#start_x5F_13m_x5F_1_x5F_" startOffset="40.088%">
+<tspan  style="fill:#DFEAA7; font-size:10px;">13m</tspan>		</textPath>
+</text>
+		<rect id="start_line_3_" x="299" y="169.3" style="fill:#FFFFFF;" width="0.8" height="20.1"/>
+	</g>
+	<g class="Lahore city">
+		<g class="arcs">
+			<path class="Madrid" d="M299.9,116.6c78.7,0,146.7,51.3,171.1,121.7"/>
+			<path class="San-Francisco" d="M299.4,118.7c77.7,0,143.8,49.2,169,118.1"/>
+			<path class="Brussels" d="M299.4,120.8c75.7,0,140.3,47.3,166,113.9"/>
+			<path class="Berlin" d="M299.4,122.8c74.8,0,138.7,46.7,164.1,112.6"/>
+			<path class="Tokyo" d="M299.4,124.9c72.9,0,135.3,44.9,161.1,108.5"/>
+			<path class="Sao-Paulo" d="M299.4,126.9c69.9,0,130.1,41.8,156.9,101.8"/>
+			<path class="Paris" d="M299.4,128.9c68,0,126.6,40,153.7,97.7"/>
+			<path class="Hong-Kong" d="M299.4,131c66.2,0,123.4,38.3,150.6,94"/>
+			<path class="Toronto" d="M299.4,133c53,0,100.1,24.9,130.4,63.5"/>
+			<path class="Delhi" d="M299.4,135c37.9,0,72.8,12.9,100.6,34.5"/>
+			<path class="Sydney" d="M299.4,137.1c34.5,0,66.4,10.8,92.6,29.2"/>
+			<path class="New-York" d="M299.3,139.2c33.1,0,63.8,9.9,89.4,27"/>
+			<path class="London" d="M299.4,141.1c19,0,37.1,3.3,53.9,9.5"/>
+			<path class="Lahore" d="M299.4,143.2c10.2,0,20.1,1,29.7,2.8"/>
+		</g>
+		<g class="circles">
+			<circle class="Madrid" cx="471.4" cy="239.1" r="1.3"/>
+			<circle class="San-Francisco" cx="468.3" cy="236.9" r="1.3"/>
+			<circle class="Brussels" cx="465.5" cy="234.6" r="1.3"/>
+			<circle class="Berlin" cx="463.4" cy="235.5" r="1.3"/>
+			<circle class="Tokyo" cx="460.5" cy="233.5" r="1.3"/>
+			<circle class="Sao-Paulo" cx="456.2" cy="228.7" r="1.3"/>
+			<circle class="Paris" cx="453.2" cy="226.8" r="1.3"/>
+			<circle class="Hong-Kong" cx="450.1" cy="225" r="1.3"/>
+			<circle class="Toronto" cx="429.9" cy="196.7" r="1.3"/>
+			<circle class="Delhi" cx="400.2" cy="169.7" r="1.3"/>
+			<circle class="Sydney" cx="392.1" cy="166.3" r="1.3"/>
+			<circle class="New-York" cx="388.7" cy="166.3" r="1.3"/>
+			<circle class="London" cx="353.4" cy="150.5" r="1.3"/>
+			<circle class="Lahore" cx="329.2" cy="146.1" r="1.3"/>
+		</g>
+		<g class="times">				
+			<text class="San-Francisco" style="display:none;" transform="matrix(0.3136 0.8865 -0.9428 0.3335 449.2621 235.2009)">2h 18m</text>
+			<text class="Brussels" style="display:none;" transform="matrix(0.3537 0.8961 -0.9302 0.3671 448.9915 235.4528)">2h 17m</text>
+			<text class="Berlin" style="display:none;" transform="matrix(0.3537 0.8961 -0.9302 0.3671 448.9915 235.4528)">2h 17m</text>
+			<text class="Tokyo" style="display:none;" transform="matrix(0.3629 0.9145 -0.9295 0.3688 447.4525 233.5143)">2h 16m</text>
+			<text class="Sao-Paulo" style="display:none;" transform="matrix(0.4119 0.8879 -0.9072 0.4208 443.7923 233.2697)">2h 15m</text>
+			<text class="Paris" style="display:none;" transform="matrix(0.4936 0.8492 -0.8646 0.5025 432.9697 219.9368)">2h 11m</text>	
+			<text class="Hong-Kong" style="display:none;" transform="matrix(0.4616 0.8811 -0.8858 0.4641 433.5267 220.6253)">2h 9m</text>
+			<text class="Toronto" style="display:none;" transform="matrix(0.6632 0.7414 -0.7453 0.6667 410.2435 193.0163)">1h 45m</text>
+			<text class="Delhi" style="display:none;" transform="matrix(0.8448 0.5253 -0.528 0.8492 374.4294 171.3135)">1h 16m</text>
+			<text class="Sydney" style="display:none;" transform="matrix(0.8637 0.4934 -0.496 0.8683 372.0231 170.2293)">1h 11m</text>
+			<text class="New-York" style="display:none;" transform="matrix(0.8672 0.4873 -0.4899 0.8718 370.96 170.5467)">1h 8m</text>
+			<text class="London" style="display:none;" transform="matrix(0.949 0.2981 -0.2997 0.954 338.933 158.0239)">40m</text>
+		</g>
+		<rect id="start_line_1_" x="298.9" y="115.8" style="fill:#FFFFFF;" width="1" height="28"/>
+		<text class="Lahore" transform="matrix(0.9735 0.2285 -0.2285 0.9735 315.6704 154.6906)" style="fill:#84A394; font-family:'MyriadPro-Regular'; font-size:10px;">23m</text>
+		<text class="Madrid" transform="matrix(0.2905 0.9569 -0.9569 0.2905 470.3955 244.3364)">2h 19m</text>
+	</g>
+	<g class="Brussels city">
+		<g class="arcs">
+			<path class="Sao-Paulo" d="M299.8,47.7c138.4,0,250.9,112.3,250.9,250.7c0,44.1-7.4,75.9-31.4,121.6"/>
+			<path class="Toronto" d="M299.8,51.8c38.9,0,75.7,9,108.4,25.1"/>
+			<path class="San-Francisco" d="M299.8,56c33.4,0,65.3,6.8,94.3,19"/>
+			<path class="Delhi" d="M299.8,60.2c28.5,0,55.9,5,81.3,14.2"/>
+			<path class="New-York" d="M299.8,64.4c22.3,0,43.9,3.1,64.4,9"/>
+			<path class="Tokyo" d="M299.8,68.6c19.2,0,37.8,2.3,55.6,6.8"/>
+			<path class="Hong-Kong" d="M299.8,72.7c16.1,0,31.7,1.7,46.8,4.9"/>
+			<path class="Sydney" d="M299.8,76.9c14.4,0,28.4,1.4,42.1,4"/>
+			<path class="Madrid" d="M299.8,81.1c11.6,0,22.9,0.9,34,2.6"/>
+			<path class="Berlin" d="M299.8,85.3c10,0,19.9,0.7,29.5,2"/>
+			<path class="London" d="M299.8,89.5c3.6,0,7.1,0.1,10.7,0.3"/>
+			<path class="Paris" d="M296.2,93.7c1,0,2,0,2.9,0"/>
+			<path class="Brussels" d="M289.3,98.1c3.3-0.2,6.5-0.3,9.8-0.3"/>
+		</g>
+		<g class="circles">
+			<circle class="Sao-Paulo" cx="519.1" cy="420" r="1.2"/>
+			<circle class="Toronto" cx="407.7" cy="76.7" r="1.2"/>
+			<circle class="San-Francisco" cx="394.3" cy="75.1" r="1.2"/>
+			<circle class="Delhi" cx="380.9" cy="74.4" r="1.2"/>
+			<circle class="New-York" cx="364" cy="73.3" r="1.2"/>
+			<circle class="Tokyo" cx="355.1" cy="75.3" r="1.2"/>
+			<circle class="Hong-Kong" cx="346.5" cy="77.6" r="1.2"/>
+			<circle class="Sydney" cx="341.8" cy="80.9" r="1.2"/>
+			<circle class="Madrid" cx="333.5" cy="83.7" r="1.2"/>
+			<circle class="Berlin" cx="329.3" cy="87.3" r="1.2"/>
+			<circle class="London" cx="310.3" cy="89.7" r="1.2"/>
+			<circle class="Paris" cx="295.9" cy="93.7" r="1.2"/>
+			<circle class="Brussels" cx="288.9" cy="98" r="1.2"/>
+		</g>
+		<g class="times">	
+				<text class="Toronto" style="display:none;" transform="matrix(0.8974 0.4413 -0.4413 0.8974 378.4675 123.9637)">51m</text>			
+				<text class="San-Francisco" style="display:none;" transform="matrix(0.9278 0.3732 -0.3732 0.9278 365.2069 118.4932)">46m</text>			
+				<text class="Delhi" style="display:none;" transform="matrix(0.94 0.3411 -0.3411 0.94 358.9609 116.3062)">40m</text>			
+				<text class="New-York" style="display:none;" transform="matrix(0.9614 0.2753 -0.2753 0.9614 346.1935 112.5656)">32m</text>			
+				<text class="Tokyo" style="display:none;" transform="matrix(0.9696 0.2446 -0.2446 0.9696 340.246 111.1441)">27m</text>			
+				<text class="Hong-Kong" style="display:none;" transform="matrix(0.9768 0.2142 -0.2142 0.9768 334.3492 109.9301)">24m</text>			
+				<text class="Sydney" style="display:none;" transform="matrix(0.9804 0.1972 -0.1972 0.9804 331.0607 109.3363)">22m</text>		
+				<text class="Madrid" style="display:none;" transform="matrix(0.987 0.1605 -0.1605 0.987 323.9701 108.2546)">18m</text>		
+				<text class="Berlin" style="display:none;" transform="matrix(0.9894 0.1451 -0.1451 0.9894 320.9916 107.8805)">16m</text>			
+				<text class="London" style="display:none;" transform="matrix(0.9986 5.237455e-02 -5.237455e-02 0.9986 303.1072 106.6168)">6m</text>			
+				<text class="Paris" style="display:none;" transform="matrix(0.9995 -3.183100e-02 3.183100e-02 0.9995 282.4998 89.9998)">2m</text>
+		</g>
+		<text class="Sao-Paulo" transform="matrix(-0.4059 0.9139 -0.9139 -0.4059 535.8184 400.2988)">3h 57m</text>
+		<text class="Brussels" transform="matrix(0.9987 -5.177000e-02 5.177000e-02 0.9987 280.3148 110.0283)">7m</text>
+		<rect id="start_line" x="299" y="44.1" style="fill:#FFFFFF;" width="0.8" height="55.7"/>
+	</g>
+</g>
+</svg>
+
+
+</div>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.4/d3.min.js"></script>
+<script>
+if (!window.d3) {
+    document.write('<script src="js/d3.min.js"><\/script>');
+}
+</script>
+
+
+<script type="text/javascript">
+//Paris Attacks namespace
+var BA = BA || {};
+
+BA.duration = 499;
+
+BA.animateLineDrawing = function(path, callback, reverse) {
+  var totalLength = path.node().getTotalLength();
+  path
+    .attr("stroke-dasharray", totalLength + " " + totalLength)
+    .attr("stroke-dashoffset", (reverse == true ? -1 : 1 ) * totalLength)
+    .transition()
+      .duration(BA.duration)
+      .ease("linear")
+      .attr("stroke-dashoffset", 0)
+    .each("end", callback);   
+}
+
+
+d3.selectAll('.city').on("click", function(){
+  var city = d3.select(this).attr('id');
+
+  d3.selectAll('.question-groups .city').style("display", "none");
+  d3.selectAll('.question-groups .' + city).style("display", "block");
+  
+  d3.selectAll('.the-attacks .city .times text').style("display", "none");
+  var times = d3.selectAll('.the-attacks .city .times text.' + city);
+  
+  d3.selectAll('.the-attacks .city .arcs path').classed("arc-selected", false);
+  d3.selectAll('.the-attacks .city .arcs path.' + city).classed("arc-selected", true);
+
+
+  var questions = d3.selectAll('.' + city + ' .questions');
+  questions.style("display", "none");
+  
+  var connectorSelector = '.question-groups .' + city + ' .connectors path';
+  var paths = d3.selectAll(connectorSelector).each(function(d, i) {
+    var path = d3.select(this);
+    path.style("display", "block");
+    BA.animateLineDrawing(path, function(){
+      if (questions.style('display') == 'none') questions.style("display", "block");
+    });
+  });
+  
+  var arcSelector = '.the-attacks .city .arcs path.' + city;
+  var arcs = d3.selectAll(arcSelector).each(function(d, i) {
+    var path = d3.select(this);
+    path.style("display", "block");
+    BA.animateLineDrawing(path, function(){
+       if (times.style('display') == 'none') times.style("display", "block");
+    });
+  });
+
+});
+</script>
+
+</body>
