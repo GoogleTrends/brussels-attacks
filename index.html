@@ -168,11 +168,19 @@ body {
 }
 
 .city circle.Istanbul, .city text.Istanbul{
- fill:#898e66 ;
+ fill:#dfeaa7 ;
 }
 .city path.Istanbul{
- stroke:#898e66;
+ stroke:#dfeaa7;
 }
+
+.city circle.Iskandariya, .city text.Iskandariya{
+ fill:#f6a4b7 ;
+}
+.city path.Iskandariya{
+ stroke:#f6a4b7;
+}
+
 </style>
 
 
@@ -217,9 +225,9 @@ body {
   stroke-width:3.5; stroke-miterlimit:10; stroke:#B7ABB0;
 }
 
-.city:hover { cursor: pointer; }
+.desktop .city:hover, .desktop .attack-city:hover { cursor: pointer; }
 
-.desktop .cities .city ellipse:hover {
+.desktop .cities .city ellipse:hover, .attack-city circle:hover {
   opacity: 0.7;
 }
 
@@ -324,7 +332,7 @@ body {
 	</g>
 	<g>
 		<rect x="15.2" y="582.7" fill="none" width="101.6" height="8.5"/>
-		<text transform="matrix(1.0003 0 0 1 15.1851 586.4062)" fill="#4C5160" font-size="5px">visualized by Anna Vital</text>
+		<text transform="matrix(1.0003 0 0 1 15.1851 586.4062)" fill="#4C5160" font-size="6px">visualized by Anna Vital</text>
 	</g>
 </g>
 <g id="Main">
@@ -439,59 +447,30 @@ body {
 		</g>
 	</g>
 
-	<g id="city_icon" class="icon">
-		<g>
-			<polygon points="98.6,81 99.4,80.7 100.9,85.2 100.1,85.5 "/>
-			<polygon points="93.1,82.7 93.7,82.1 97.7,85.8 97.1,86.4 "/>
-			<polygon points="91.3,87.4 91.5,86.6 96.6,88.3 96.3,89.1 "/>
-		</g>
-		<g>
-			<path d="M78.7,93.4c0.9,0.2,1.8-0.4,2-1.3c0.2-0.9-0.4-1.8-1.3-2c-0.9-0.2-1.8,0.4-2,1.3
-				C77.2,92.4,77.7,93.3,78.7,93.4"/>
-			<path d="M77.4,96.4l1.5,2.9c0.1,0.3,0.4,0.5,0.7,0.5c0,0,0.1,0,0.1,0c0.4-0.1,0.6-0.3,0.7-0.7l0.2-1.3l1.8,1.8
-				c-0.5,0.6-1.9,2.4-1.9,2.4c-0.2,0.3-0.3,0.8-0.3,1.1l-0.6,4.1c-0.1,0.6,0.1,1.2,0.7,1.3c0.1,0,0.1,0,0.2,0v0h9.2v-0.7h-8.3
-				c0-0.1,0.1-0.2,0.1-0.3l0.8-4.2c0.6-0.8,2.1-2.3,2.1-2.3s0.5,1.9,0.7,2.9c0.1,0.3,0.4,0.9,1.1,1c0.9,0,4.4-0.6,4.4-0.6
-				s1.2-0.1,1-1.1c-0.1-0.5-0.6-0.7-1.1-0.7l-3.2,0.4l-0.6-3.5c-0.2-1-1.2-2-1.4-2.1l-3.7-3.7c-0.2-0.3-0.5-0.4-0.9-0.4
-				c-0.4,0-0.7,0.1-0.9,0.4c0,0-0.2,0.3-0.3,0.5l-0.4,2.1l-0.3-0.7c-0.2-0.4-0.7-0.6-1.1-0.4C77.4,95.4,77.2,96,77.4,96.4z"/>
-		</g>
-		<g>
-			<path d="M107.8,105.6v-6.8h-3.1v-2.3h-3v5.2h-2.5l0,6.8l8.6,0 M101.4,106.4h-1.2v-1.2h1.2V106.4z M101.4,104h-1.2
-				v-1.2h1.2V104z M104.1,106.4h-1.2v-1.2h1.2V106.4z M104.1,104h-1.2v-1.2h1.2V104z M107.1,104H106v-1.2h1.2V104z M107.1,101.5H106
-				v-1.2h1.2V101.5z"/>
-			<path d="M114.7,97.5H112V91h-3v-6.4h-4.5v10.6h1.3v2.2h3.2v7l5.7,0L114.7,97.5z M108,96.2h-1.2V95h1.2V96.2z
-				 M108,93.7h-1.2v-1.2h1.2V93.7z M110.6,93.7h-1.2v-1.2h1.2V93.7z"/>
-			<path d="M98.7,87.9v9.1h-3.5l0,7.5h2.9l0-3.8h2.5v-5.4h2.8v-7.4H98.7z M98.4,99.4h-1.2v-1.2h1.2V99.4z
-				 M101.9,93.9h-1.2v-1.2h1.2V93.9z M101.9,91.5h-1.2v-1.2h1.2V91.5z"/>
-		</g>
-	</g>
-	<g id="Extra_cities">
-		<g>
-			<ellipse fill="#F6A4B7" cx="77.7" cy="325.4" rx="3.3" ry="3.2"/>
-			<text transform="matrix(1 0 0 1 83.4741 328.1855)" fill="#5E6272" font-size="8.8244px">Iskandariya</text>
+
+	<g id="extra-cities">
+		<g id="Iskandariya" class="attack-city">
+			<circle stroke="#936473" stroke-width="3.5" fill="#F6A4B7" cx="72.7" cy="325.4" r="5.4"/>
+			<text transform="matrix(1 0 0 1 83.4741 328.1855)" fill="#C5C1C6" font-size="8.8244px" font-weight="bold">Iskandariya</text>
 			<text transform="matrix(1 0 0 1 136.4261 327.9595)" fill="#FFFFFF" font-size="6.6936px">16:15 GMT</text>
-			<g>
-				<text transform="matrix(1 0 0 1 83.5669 336.5049)" fill="#475055" font-size="6px">March 19, 2016</text>
-			</g>
+		  <text transform="matrix(1 0 0 1 83.5669 336.5049)" fill="#475055" font-size="6px">March 19, 2016</text>
 		</g>
-		<g>
-			<ellipse fill="#DFEAA7" cx="77.7" cy="265.5" rx="3.3" ry="3.2"/>
-			<text transform="matrix(1 0 0 1 83.4741 267.9513)" fill="#5E6272" font-size="8.8244px">Istanbul</text>
+		<g id="Istanbul" class="attack-city">
+			<circle stroke="#878967" stroke-width="3.5" fill="#DFEAA7" cx="72.7" cy="265.5" r="5.4"/>
+			<text transform="matrix(1 0 0 1 83.4741 267.9513)" fill="#C5C1C6" font-size="8.8244px" font-weight="bold">Istanbul</text>
 			<text transform="matrix(1 0 0 1 136.4262 268.019)" fill="#FFFFFF" font-size="6.6936px">09:00 GMT</text>
-			<g>
-				<text transform="matrix(1 0 0 1 83.5669 276.2771)" fill="#475055" font-size="6px">March 25, 2016</text>
-			</g>
+			<text transform="matrix(1 0 0 1 83.5669 276.2771)" fill="#475055" font-size="6px">March 25, 2016</text>
+
 		</g>
-		<g>
-			<ellipse fill="#84A394" cx="77.6" cy="224" rx="3.3" ry="3.2"/>
-			<text transform="matrix(1 0 0 1 83.4741 226.3267)" fill="#5E6272" font-size="8.8244px">Lahore</text>
+		<g id="Lahore" class="attack-city">
+			<circle stroke="#56695f" stroke-width="3.5" fill="#84A394" cx="72.6" cy="224" r="5.4"/>
+			<text transform="matrix(1 0 0 1 83.4741 226.3267)" fill="#C5C1C6" font-size="8.8244px">Lahore</text>
 			<text transform="matrix(1 0 0 1 136.4262 226.3519)" fill="#FFFFFF" font-size="6.6936px">13:30 GMT</text>
-			<g>
-				<text transform="matrix(1 0 0 1 83.5667 236.0223)" fill="#475055" font-size="6px">March 27, 2016</text>
-			</g>
+			<text transform="matrix(1 0 0 1 83.5667 236.0223)" fill="#475055" font-size="6px">March 27, 2016</text>
 		</g>
-		<g>
-			<ellipse fill="#E42468" cx="77.7" cy="144.4" rx="3.3" ry="3.2"/>
-			<text transform="matrix(1 0 0 1 83.4742 146.6909)" fill="#5E6272" font-size="8.8244px">Brussels</text>
+		<g id="Brussels" class="attack-city">
+			<circle stroke="#913356" stroke-width="3.5" fill="#E42468" cx="72.7" cy="144.4" r="5.4"/>
+			<text transform="matrix(1 0 0 1 83.4742 146.6909)" fill="#C5C1C6" font-size="8.8244px">Brussels</text>
 			<text transform="matrix(1 0 0 1 136.4261 146.8635)" fill="#FFFFFF" font-size="6.6936px">6:58 GMT</text>
 			<g>
 				<text transform="matrix(1 0 0 1 83.5668 156.0847)" fill="#475055" font-size="6px">March 22, 2016</text>
@@ -532,8 +511,9 @@ body {
 	</g>
 </g>
 <g id="Title">
-	<text transform="matrix(1 0 0 1 152.6409 43.0685)" fill="#C5C1C6" font-size="15.801px">How Fast the News Spread About</text>
-	<text transform="matrix(1 0 0 1 179.265 70.7922)" fill="#C5C1C6" font-size="18.3979px">TERRORIST ATTACKS</text>
+	<text transform="matrix(1 0 0 1 19.6409 33.0685)" fill="#C5C1C6" font-size="15.801px">Eight Days in March:</text>
+	<text transform="matrix(1 0 0 1 19.265 60.7922)" fill="#C5C1C6" font-size="18.3979px">HOW THE WORLD SEARCHED FOR TERROR ATTACKS</text>
+  <text transform="matrix(1 0 0 1 75.6409 123.0685)" fill="#C5C1C6" font-size="12.801px">Terror Attacks</text>
 </g>
 <g class="question-groups">
 	<g class="Brussels city">
@@ -1032,6 +1012,7 @@ body {
 
 <g class="the-attacks">
 	<g class="Iskandariya city">
+	  <rect id="start_line" x="171.2" y="340" fill="#FFFFFF" width="0.9" height="22.2"/>
 		<g class="circles">			
 				<circle class="New-York" cx="234.8" cy="395.4" r="1.2"/>		
 				<circle class="Paris" cx="241.7" cy="407.4" r="1.2"/>		
@@ -1046,6 +1027,7 @@ body {
 				<circle class="Brussels" cx="138.6" cy="516.4" r="1.2"/>			
 				<circle class="Madrid" cx="230.8" cy="392.1" r="1.2"/>			
 				<circle class="Berlin" cx="228.6" cy="392" r="1.2"/>
+				<circle class="Iskandariya" fill="#F6A4B7" cx="171.6" cy="362.2" r="0"/>
 		</g>
 		<g class="arcs">
 			<path class="Berlin" d="M172,361.5c23.7,0,44.5,12.1,56.6,30.6"/>
@@ -1077,7 +1059,6 @@ body {
         <text class="Berlin" style="display:none;" transform="matrix(0.657 0.7539 -0.7539 0.657 216.7114 388.2363)">1h 54m</text>	
 	  </g>
 		<text class="Hong-Kong" transform="matrix(0.404 0.9148 -0.9148 0.404 76.9339 469.3604)">20h 3m</text>	
-		<rect id="start_line" x="171.2" y="340" fill="#FFFFFF" width="0.9" height="22.2"/>
 	</g>
 	
 	<g class="Istanbul city">
@@ -1237,26 +1218,32 @@ body {
 
 <g id="graph_legend">
 	<g id="unique_circles">
-		<circle fill="#85AF40" cx="833" cy="25.7" r="5.1"/>
-		<circle fill="#E42868" cx="825.3" cy="25.7" r="5.1"/>
-		<circle fill="#EA8266" cx="856.1" cy="25.7" r="5.1"/>
-		<circle fill="#ABAC86" cx="840.7" cy="25.7" r="5.1"/>
-		<circle fill="#AA74B2" cx="871.6" cy="25.7" r="5.1"/>
-		<circle fill="#4A5696" cx="863.9" cy="25.7" r="5.1"/>
-		<circle fill="#48B9E0" cx="848.4" cy="25.7" r="5.1"/>
+		<circle fill="#85AF40" cx="833" cy="500.7" r="5.1"/>
+		<circle fill="#E42868" cx="825.3" cy="500.7" r="5.1"/>
+		<circle fill="#EA8266" cx="856.1" cy="500.7" r="5.1"/>
+		<circle fill="#ABAC86" cx="840.7" cy="500.7" r="5.1"/>
+		<circle fill="#AA74B2" cx="871.6" cy="500.7" r="5.1"/>
+		<circle fill="#4A5696" cx="863.9" cy="500.7" r="5.1"/>
+		<circle fill="#48B9E0" cx="848.4" cy="500.7" r="5.1"/>
 	</g>
 	<g id="legend_1_">
 		<g>
-			<circle fill="#D9D3D3" cx="728" cy="25.7" r="5.4"/>
-			<text transform="matrix(1 0 0 1 722.6149 43.4825)" fill="#D9D3D3" font-size="7px"><tspan x="0" y="0">universally</tspan><tspan x="0" y="8.4">asked </tspan><tspan x="0" y="16.8">questions</tspan></text>
+			<circle fill="#D9D3D3" cx="728" cy="500.7" r="5.4"/>
+			<text transform="matrix(1 0 0 1 722.6149 518.4825)" fill="#D9D3D3" font-size="7px"><tspan x="0" y="0">universally</tspan><tspan x="0" y="8.4">asked </tspan><tspan x="0" y="16.8">questions</tspan></text>
 		</g>
 		<g>
-			<circle fill="#878686" cx="779.6" cy="25.7" r="5.4"/>
-			<text transform="matrix(1 0 0 1 774.8522 43.4825)" fill="#D9D3D3" font-size="7px"><tspan x="0" y="0">common</tspan><tspan x="0" y="8.4">questions</tspan></text>
+			<circle fill="#878686" cx="779.6" cy="500.7" r="5.4"/>
+			<text transform="matrix(1 0 0 1 774.8522 518.4825)" fill="#D9D3D3" font-size="7px"><tspan x="0" y="0">common</tspan><tspan x="0" y="8.4">questions</tspan></text>
 		</g>
 		<g>
-			<text transform="matrix(1 0 0 1 821.5261 41.9454)" fill="#D9D3D3" font-size="7px"><tspan x="0" y="0" >unique</tspan><tspan x="0" y="8.4">questions</tspan></text>
+			<text transform="matrix(1 0 0 1 821.5261 516.9454)" fill="#D9D3D3" font-size="7px"><tspan x="0" y="0" >unique</tspan><tspan x="0" y="8.4">questions</tspan></text>
 		</g>
+	</g>
+	<g class="hint">
+		<rect x="693.7" y="25.8" fill="none" width="185.3" height="70"/>
+		<text transform="matrix(0.9822 0 0 1 697.3018 32.5833)" fill="#5E6272" font-size="9px"><tspan x="0" y="0">Click on a city to see when it started searching </tspan><tspan x="19.4" y="10.8">for each attack — and the top questions it </tspan><tspan x="52.4" y="21.6">asked about the Brussels attacks</tspan></text>
+		
+			<line fill="none" stroke="#5E6272" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="0,14" x1="617" y1="29.5" x2="692.5" y2="29.5"/>
 	</g>
 </g>
 </svg>
@@ -1285,7 +1272,7 @@ body {
   font-size:14px;
 }
 
-.city:hover {
+.mobile .city:hover, .mobile .attack-city:hover {
   cursor: pointer;
 }
 
@@ -1385,35 +1372,44 @@ body {
 		<rect x="514.8" y="930.8" style="fill:#36A851;" width="2" height="13"/>
 	</g>
 	<g id="Graph_Legend">
+    <g class="hint">
+      <g>
+        <rect x="33" y="406.3" style="fill:none;" width="153.5" height="90"/>
+        <text transform="matrix(1 0 0 1 33 414.583)" style="fill:#434356; font-size:11px;"><tspan x="0" y="0" >Click on a city to see </tspan><tspan x="0" y="13.2">when it started searching </tspan><tspan x="0" y="26.4" >for each attack — and the top </tspan><tspan x="0" y="39.6" >questions it asked about the </tspan><tspan x="0" y="52.8">Brussels attacks</tspan></text>
+      </g>
+      <line style="fill:none;stroke:#5E6272;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,14;" x1="51.1" y1="552" x2="51.1" y2="468.5"/>
+    </g>
+    
+
+
 		<g id="legend_3_">
 			<g>
-				<circle style="fill:#D9D3D3;" cx="238.7" cy="926.9" r="4.1"/>
-				<text transform="matrix(1 0 0 1 234.5933 940.3226)" style="fill:#D9D3D3; font-size:5.2873px;"><tspan x="0" y="0">universally</tspan><tspan x="0" y="6.3">asked </tspan><tspan x="0" y="12.7">questions</tspan></text>
+				<circle style="fill:#D9D3D3;" cx="240.2" cy="921" r="6.2"/>
+				<text transform="matrix(1 0 0 1 234.0273 941.1865)"><tspan x="0" y="0" style="fill:#D9D3D3; font-family:'Roboto-Italic'; font-size:7.9739px;">universally</tspan><tspan x="0" y="9.6" style="fill:#D9D3D3; font-family:'Roboto-Italic'; font-size:7.9739px;">asked </tspan><tspan x="0" y="19.1" style="fill:#D9D3D3; font-family:'Roboto-Italic'; font-size:7.9739px;">questions</tspan></text>
 			</g>
 			<g>
-				<circle style="fill:#878686;" cx="277.6" cy="926.9" r="4.1"/>
-				<text transform="matrix(1 0 0 1 274.0504 940.3226)"style="fill:#D9D3D3; font-size:5.2873px;"><tspan x="0" y="0">common</tspan><tspan x="0" y="6.3">questions</tspan></text>
+				<circle style="fill:#878686;" cx="298.9" cy="921" r="6.2"/>
+				<text transform="matrix(1 0 0 1 293.5332 941.1865)"><tspan x="0" y="0" style="fill:#D9D3D3; font-family:'Roboto-Italic'; font-size:7.9739px;">common</tspan><tspan x="0" y="9.6" style="fill:#D9D3D3; font-family:'Roboto-Italic'; font-size:7.9739px;">questions</tspan></text>
 			</g>
 			<g>
-				<text transform="matrix(1 0 0 1 309.3043 939.1614)" style="fill:#D9D3D3; font-size:5.2873px;"><tspan x="0" y="0">unique</tspan><tspan x="0" y="6.3">questions</tspan></text>
+				<text transform="matrix(1 0 0 1 346.7002 939.4355)"><tspan x="0" y="0" style="fill:#D9D3D3; font-family:'Roboto-Italic'; font-size:7.9739px;">unique</tspan><tspan x="0" y="9.6" style="fill:#D9D3D3; font-family:'Roboto-Italic'; font-size:7.9739px;">questions</tspan></text>
 			</g>
 		</g>
 		<g id="Methodology_1_">
-			<rect x="28" y="923.6" style="fill:none;" width="123.3" height="29.1"/>
-			<text transform="matrix(1.0003 0 0 1 28.0096 928.8553)" style="fill:#5E6272; font-size:7px;"><tspan x="0" y="0">Methodology: First minute searched is </tspan><tspan x="0" y="8.4">defined as the first minute where a </tspan><tspan x="0" y="16.8">related search showed up.</tspan></text>
+			<text transform="matrix(1.0003 0 0 1 28.0096 921.9257)" style="fill:#5E6272; font-size:9px;"><tspan x="0" y="0">Methodology: First minute searched is </tspan><tspan x="0" y="10.8">defined as the first minute where a </tspan><tspan x="0" y="21.6">related search showed up.</tspan></text>
 		</g>
 		<g id="circles_3_">
-			<circle style="opacity:0.61;fill:#85AF40;" cx="318" cy="926.9" r="3.9"/>
-			<circle style="opacity:0.61;fill:#E42868;" cx="312.1" cy="926.9" r="3.9"/>
-			<circle style="opacity:0.61;fill:#EA8266;" cx="335.4" cy="926.9" r="3.9"/>
-			<circle style="opacity:0.61;fill:#ABAC86;" cx="323.8" cy="926.9" r="3.9"/>
-			<circle style="opacity:0.61;fill:#AA74B2;" cx="347.1" cy="926.9" r="3.9"/>
-			<circle style="opacity:0.61;fill:#4A5696;" cx="341.3" cy="926.9" r="3.9"/>
-			<circle style="opacity:0.61;fill:#48B9E0;" cx="329.6" cy="926.9" r="3.9"/>
+			<circle style="opacity:0.61;fill:#85AF40;" cx="359.7" cy="921" r="5.8"/>
+			<circle style="opacity:0.61;fill:#E42868;" cx="351" cy="921" r="5.8"/>
+			<circle style="opacity:0.61;fill:#EA8266;" cx="386.1" cy="921" r="5.8"/>
+			<circle style="opacity:0.61;fill:#ABAC86;" cx="368.5" cy="921" r="5.8"/>
+			<circle style="opacity:0.61;fill:#AA74B2;" cx="403.7" cy="921" r="5.8"/>
+			<circle style="opacity:0.61;fill:#4A5696;" cx="394.9" cy="921" r="5.8"/>
+			<circle style="opacity:0.61;fill:#48B9E0;" cx="377.3" cy="921" r="5.8"/>
 		</g>
 		<g>
 			<rect x="27.7" y="956.2" style="fill:none;" width="62.1" height="8.5"/>
-			<text transform="matrix(1.0003 0 0 1 27.6851 959.9062)" style="fill:#4C5160; font-size:5px;">visualized by Anna Vital</text>
+			<text transform="matrix(1.0003 0 0 1 27.6851 959.9062)" style="fill:#4C5160; font-size:8px;">visualized by Anna Vital</text>
 		</g>
 	</g>
 </g>
@@ -1490,15 +1486,6 @@ body {
 		<polygon points="308.9,304.2 310.1,303.7 309.4,302.5 299.6,299 304.7,284.2 304.2,283.3 303.3,283.7 
 			298.4,298.6 295.6,297.6 295,299.2 297.9,300.3 296.7,303.8 297.8,304.1 299,300.7 		"/>
 	</g>
-	<g id="Attack_start_times" style="fill:#FFFFFF; font-size:8px;">
-		<text transform="matrix(1 0 0 1 281.0424 74.1678)">6:58</text>
-		<text transform="matrix(1 0 0 1 274.5694 131.9974)">13:30 </text>
-		<text transform="matrix(1 0 0 1 281.0424 182.0908)">9:00</text>
-		<text transform="matrix(1 0 0 1 276.5493 235.2062)">16:15</text>
-		<g>
-			<text transform="matrix(1 0 0 1 270.3904 47.7893)">in GMT</text>
-		</g>
-	</g>
 	<g id="outer-arc-times" fill="#5D5D7F" font-size="10.2462px">
 		<path fill="none" d="M297.5,33c148.2,0,268.3,120.1,268.3,268.3"/>
 			<text transform="matrix(0.9982 6.029474e-02 -6.029474e-02 0.9982 311.0391 33.3301)">10m</text>
@@ -1509,36 +1496,31 @@ body {
 			<text transform="matrix(0.5221 0.8529 -0.8529 0.5221 524.9805 158.98)">2hrs</text>
 			<text transform="matrix(6.897520e-02 0.9976 -0.9976 6.897520e-02 564.9414 279.6655)">3hrs</text>
 	</g>
-	<g id="Extra_cities">
-		<g>
-			<g>
-				<text transform="matrix(1 0 0 1 66.3981 236.3946)" style="fill:#7D858E; font-size:17.5343px;">Iskandariya</text>
-			</g>
-			<text transform="matrix(1 0 0 1 66.865 251.0242)" style="fill:#434356; font-size:11px;">March 19, 2016</text>
-			<ellipse style="fill:#F6A4B7;" cx="51.1" cy="229.6" rx="4.8" ry="4.9"/>
+	<g id="extra-cities">
+		<g id="Iskandariya" class="attack-city">
+		  <circle  stroke="#936473" stroke-width="4.5" fill="#F6A4B7" cx="51.1" cy="259.6" r="6.9"/>
+			<text transform="matrix(1 0 0 1 66.3981 266.3946)" style="fill:#FFFFFF; font-size:17.5343px;">Iskandariya</text>
+			<text transform="matrix(1 0 0 1 66.865 281.0242)" style="fill:#434356; font-size:11px;">March 19, 2016</text>
+			<text transform="matrix(1 0 0 1 66.865 295.0242)" style="fill:#5e6272; font-size:11px;">16:15 GMT</text>
 		</g>
-		<g>
-			<g>
-				<text transform="matrix(1 0 0 1 66.3981 190.2467)" style="fill:#7D858E; font-size:17.5343px;">Istanbul</text>
-			</g>
-			<text transform="matrix(1 0 0 1 66.8654 204.6985)" style="fill:#434356; font-size:11px;">March 25, 2016</text>
-			<g>
-				<ellipse style="fill:#DFEAA7;" cx="51.1" cy="184.5" rx="4.8" ry="4.9"/>
-			</g>
+		<g id="Istanbul" class="attack-city">
+			<circle stroke="#878967" stroke-width="4.5" fill="#DFEAA7" cx="51.1" cy="204.5" r="6.9"/>
+			<text transform="matrix(1 0 0 1 66.3981 210.2467)" style="fill:#FFFFFF; font-size:17.5343px;">Istanbul</text>
+			<text transform="matrix(1 0 0 1 66.8654 224.6985)" style="fill:#434356; font-size:11px;">March 25, 2016</text>
+			<text transform="matrix(1 0 0 1 66.8654 238.6985)" style="fill:#5e6272; font-size:11px;">9:00 GMT</text>
 		</g>
-		<g>
-			<ellipse style="fill:#84A394;" cx="51.1" cy="138.7" rx="4.8" ry="4.9"/>
-			<text transform="matrix(1 0 0 1 66.8652 158.3253)" style="fill:#434356; font-size:11px;">March 27, 2016</text>
-			<g>
-				<text transform="matrix(1 0 0 1 66.3985 143.7797)" style="fill:#7D858E; font-size:17.5343px;">Lahore</text>
-			</g>
+		<g id="Lahore" class="attack-city">
+			<circle stroke="#56695f" stroke-width="4.5" fill="#84A394" cx="51.1" cy="148.7" r="6.9"/>
+			<text transform="matrix(1 0 0 1 66.3985 153.7797)" style="fill:#FFFFFF; font-size:17.5343px;">Lahore</text>
+			<text transform="matrix(1 0 0 1 66.8652 168.3253)" style="fill:#434356; font-size:11px;">March 27, 2016</text>
+			<text transform="matrix(1 0 0 1 66.8652 182.3253)" style="fill:#5e6272; font-size:11px;">13:30 GMT</text>
 		</g>
-		<g>
+		<g id="Brussels" class="attack-city">
+			<circle stroke="#913356" stroke-width="4.5" fill="#E42468" cx="51.1" cy="94.3" r="6.9"/>
+			<text transform="matrix(1 0 0 1 66.3984 99.4158)" style="fill:#FFFFFF; font-size:17.5343px;">Brussels</text>
 			<text transform="matrix(1 0 0 1 66.8647 113.932)" style="fill:#434356; font-size:11px;">March 22, 2016</text>
-			<ellipse style="fill:#E42468;" cx="51.1" cy="94.3" rx="4.8" ry="4.9"/>
-			<g>
-				<text transform="matrix(1 0 0 1 66.3984 99.4158)" style="fill:#7D858E; font-size:17.5343px;">Brussels</text>
-			</g>
+			<text transform="matrix(1 0 0 1 66.8647 127.932)" style="fill:#5e6272; font-size:11px;">6:58 GMT</text>
+
 		</g>
 	</g>
 	<g id="search_legend_2_">
@@ -1593,8 +1575,8 @@ body {
 	</g>
 </g>
 <g id="Title">
-	<text transform="matrix(1 0 0 1 42.9326 29.7395)" style="fill:#C5C1C6; font-size:12.7516px;">How Fast the News Spread About</text>
-	<text transform="matrix(1 0 0 1 43.7119 56.0757)" style="fill:#C5C1C6; font-size:19.0313px;">TERRORIST ATTACKS</text>
+	<text transform="matrix(1 0 0 1 42.9326 29.7395)" style="fill:#C5C1C6; font-size:12.7516px;">How The World Searched For</text>
+	<text transform="matrix(1 0 0 1 43.7119 56.0757)" style="fill:#C5C1C6; font-size:19.0313px;">TERROR ATTACKS</text>
 </g>
 <g id="static-connectors">
 	<g id="bottom">
@@ -2291,7 +2273,8 @@ body {
 	</g>
 </g>
 <g class="the-attacks">
-	<g class="Iskandaria city">
+	<g class="Iskandariya city">
+	  <circle class="Iskandariya" cx="299.4" cy="240" r="0"/>
 		<g class="arcs">
 			<path class="Berlin" style="fill:none;" d="M299.7,239.4c20.7,0,39,10.6,49.6,26.7"/>
 			<path class="Madrid" style="fill:none;" d="M299.7,237.9c21.3,0,40,10.9,50.8,27.4c0.2,0.4,0.5,0.7,0.7,1.1"/>
@@ -2310,19 +2293,19 @@ body {
 			<path class="Hong-Kong" d="M299.8,221c42.8,0,77.6,34.8,77.6,77.6c0,42.9-34.8,77.6-77.6,77.6s-77.6-34.8-77.6-77.6s34.6-82.3,77.5-82.3v0c45.7,0,82.7,37.1,82.7,82.8s-37.1,82.8-82.8,82.8c-31.4,0-58.8-17.5-72.8-43.3"/>
 		</g>
 		<g class="circles">			
-				<circle class="Berlin" style="fill:#46B9DF;" cx="349.3" cy="266.1" r="1"/>
-				<circle class="Madrid" style="fill:#4A5696;" cx="351.2" cy="266.2" r="1"/>
-				<circle class="New-York" style="fill:#AD9731;" cx="354.7" cy="269.1" r="1"/>
-				<circle class="Paris" style="fill:#85AF40;" cx="360.6" cy="279.6" r="1"/>
-				<circle class="London" style="fill:#186C8D;" cx="363.1" cy="282.5" r="1"/>
-				<circle class="Toronto" style="fill:#E3BC22;" cx="366.4" cy="303" r="1"/>
-				<circle class="Sydney" style="fill:#81236B;" cx="286.3" cy="365.8" r="1"/>
-				<circle class="San-Francisco" style="fill:#4CBD9A;" cx="229.9" cy="302.2" r="1"/>
-				<circle class="Toronto" style="fill:#DD5E26;" cx="242.6" cy="255.7" r="1"/>
-				<circle class="Sao-Paulo" style="fill:#EA8267;" cx="253.6" cy="242" r="1"/>
-				<circle class="Delhi" style="fill:#ABAC86;" cx="363.4" cy="346.5" r="1"/>
-				<circle class="Brussels" style="fill:#E42867;" cx="270.3" cy="374.8" r="1"/>
-				<circle class="Hong-Kong" style="fill:#AA74B2;" cx="226.6" cy="338.5" r="1"/>
+				<circle class="Berlin" cx="349.3" cy="266.1" r="1"/>
+				<circle class="Madrid" cx="351.2" cy="266.2" r="1"/>
+				<circle class="New-York" cx="354.7" cy="269.1" r="1"/>
+				<circle class="Paris" cx="360.6" cy="279.6" r="1"/>
+				<circle class="London" cx="363.1" cy="282.5" r="1"/>
+				<circle class="Toronto" cx="366.4" cy="303" r="1"/>
+				<circle class="Sydney" cx="286.3" cy="365.8" r="1"/>
+				<circle class="San-Francisco" cx="229.9" cy="302.2" r="1"/>
+				<circle class="Toronto" cx="242.6" cy="255.7" r="1"/>
+				<circle class="Sao-Paulo" cx="253.6" cy="242" r="1"/>
+				<circle class="Delhi" cx="363.4" cy="346.5" r="1"/>
+				<circle class="Brussels" cx="270.3" cy="374.8" r="1"/>
+				<circle class="Hong-Kong" cx="226.6" cy="338.5" r="1"/>
 		</g>
 		<g class="times">
 			<text class="Brussels" transform="matrix(0.9294 0.3691 -0.3691 0.9294 246.658 381.8053)" style="display:none;fill:#E42867; font-size:10px;">18h 43m</text>
@@ -2337,14 +2320,22 @@ body {
 			<text class="New-York" transform="matrix(0.5464 0.8375 -0.8375 0.5464 334.2507 265.4094)" style="display:none;fill:#AD9731; font-size:10px;">2h 05m</text>
 			<text class="Madrid" transform="matrix(0.5023 0.8647 -0.8647 0.5023 331.0177 260.275)" style="display:none;fill:#4A5696; font-size:10px;">1h 56m</text>
 			<text class="Berlin" transform="matrix(0.7071 0.7071 -0.7071 0.7071 327.5593 261.573)" style="display:block;fill:#46B9DF; font-size:10px;">1h 54m</text>
-		</g>
-		
+		</g>	
 		<rect id="start_line_2_" x="299" y="220.5" style="fill:#FFFFFF;" width="0.8" height="19.5"/>
-		<g id="end_20h_3m">
-				<text transform="matrix(0.4552 0.8904 -0.8904 0.4552 207.8271 329.7538)" style="fill:#AA74B2; font-size:10px;">20h 3m</text>
-		</g>
+		<text id="end_20h_3m" transform="matrix(0.4552 0.8904 -0.8904 0.4552 207.8271 329.7538)" style="fill:#AA74B2; font-size:10px;">20h 3m</text>
 	</g>
 	<g class="Istanbul city">
+		<path id="end_x5F_12h_x5F_14m_x5F_1_x5F_" style="fill:none;" d="M215.8,196.9c22.4-19.7,51.7-31.9,83.9-32.5
+			c21.8-0.4,42.5,4.6,60.7,13.7"/>
+    <text id="end_12h_14m">		<textPath  xlink:href="#end_x5F_12h_x5F_14m_x5F_1_x5F_" startOffset="32.373%">
+    <tspan  style="fill:#EA8267; font-size:10px;">12h 14m</tspan>		</textPath>
+    </text>
+        <path id="start_x5F_13m_x5F_1_x5F_" style="fill:none;" d="M236.1,221.3c12.7-10.4,28.1-17.8,45.3-20.9
+          c23.4-4.2,46.3,0.1,65.6,10.7"/>
+        <text id="start_13m">		<textPath  xlink:href="#start_x5F_13m_x5F_1_x5F_" startOffset="40.088%">
+    <tspan  style="fill:#DFEAA7; font-size:10px;">13m</tspan>		</textPath>
+    </text>
+		<rect id="start_line_3_" x="299" y="169.3" style="fill:#FFFFFF;" width="0.8" height="20.1"/>	
 		<g class="arcs">
 			<path class="Sao-Paulo" d="M299,169.9c71.7,0,129.8,58.1,129.8,129.8
 				S370.7,429.5,299,429.5s-129.8-58.1-129.8-129.8c0-71.5,61.8-131,133.3-131.2"/>
@@ -2377,44 +2368,22 @@ body {
         <text class="London" style="display:none;" transform="matrix(0.9956 9.411229e-02 -9.411229e-02 0.9956 304.4778 197.8899)">12m</text>
 				<text class="Berlin" style="display:none;" transform="matrix(0.9964 8.524001e-02 -8.524001e-02 0.9964 302.5634 198.953)">8m</text>
 		</g>
-		<g class="circles">
-			
-				<circle class="Sao-Paulo" transform="matrix(0.7663 -0.6425 0.6425 0.7663 -37.4789 233.669)" style="fill:#EA8267;" cx="302.5" cy="168.4" r="1.2"/>
-			
-				<circle class="San-Francisco" transform="matrix(0.7663 -0.6425 0.6425 0.7663 -62.4351 326.0003)" style="fill:#4CBD9A;" cx="416.9" cy="248.8" r="1.2"/>
-			
-				<circle class="Hong-Kong" transform="matrix(0.5463 -0.8376 0.8376 0.5463 -15.4751 454.4537)" style="fill:#AA74B2;" cx="411.8" cy="241.5" r="1.2"/>
-			
-				<circle class="Brussels" transform="matrix(0.5463 -0.8376 0.8376 0.5463 -8.4958 437.1953)" style="fill:#E42867;" cx="399.3" cy="226.4" r="1.2"/>
-			
-				<circle class="Delhi" transform="matrix(0.5463 -0.8376 0.8376 0.5463 -7.418 437.7543)" style="fill:#ABAC86;" cx="400.4" cy="225.7" r="1.2"/>
-			
-				<circle class="Toronto" transform="matrix(0.5463 -0.8376 0.8376 0.5463 -2.6482 417.3407)" style="fill:#E3BC22;" cx="383.9" cy="211.1" r="1.2"/>
-			
-				<circle class="Tokyo" transform="matrix(0.2245 -0.9745 0.9745 0.2245 86.1272 485.9551)" style="fill:#DD5E26;" cx="348.4" cy="188.9" r="1.2"/>
-			
-				<circle class="Sydney" transform="matrix(0.1741 -0.9847 0.9847 0.1741 97.617 491.9167)" style="fill:#81236B;" cx="342.1" cy="187.8" r="1.2"/>
-			
-				<circle class="Madrid" transform="matrix(0.1402 -0.9901 0.9901 0.1402 104.4556 495.5671)" style="fill:#4A5696;" cx="337.6" cy="187.6" r="1.2"/>
-			<circle class="Paris_6" style="fill:#85AF40;" cx="323.7" cy="185.4" r="1.2"/>
-			<circle class="New-York" style="fill:#AD9731;" cx="321.8" cy="186.3" r="1.2"/>
-			
-				<circle class="London" transform="matrix(0.866 -0.5 0.5 0.866 -51.4457 180.6515)" style="fill:#186C8D;" cx="311.4" cy="186.3" r="1.2"/>
-			
-				<circle class="Berlin" transform="matrix(0.9925 -0.1224 0.1224 0.9925 -20.6286 39.0388)" style="fill:#46B9DF;" cx="307.4" cy="187.4" r="1.2"/>
-			<circle class="Istanbul" style="fill:#DFEAA7;" cx="288.2" cy="189.2" r="1.2"/>
+		<g class="circles">			
+				<circle class="Sao-Paulo" cx="302.5" cy="168.4" r="1.2"/>		
+				<circle class="San-Francisco" cx="416.9" cy="248.8" r="1.2"/>		
+				<circle class="Hong-Kong" cx="411.8" cy="241.5" r="1.2"/>		
+				<circle class="Brussels" cx="399.3" cy="226.4" r="1.2"/>	
+				<circle class="Delhi" cx="400.4" cy="225.7" r="1.2"/>	
+				<circle class="Toronto" cx="383.9" cy="211.1" r="1.2"/>		
+				<circle class="Tokyo" cx="348.4" cy="188.9" r="1.2"/>		
+				<circle class="Sydney" cx="342.1" cy="187.8" r="1.2"/>			
+				<circle class="Madrid" cx="337.6" cy="187.6" r="1.2"/>
+		  	<circle class="Paris" cx="323.7" cy="185.4" r="1.2"/>
+			  <circle class="New-York" cx="321.8" cy="186.3" r="1.2"/>
+				<circle class="London" cx="311.4" cy="186.3" r="1.2"/>
+				<circle class="Berlin" cx="307.4" cy="187.4" r="1.2"/>
+			  <circle class="Istanbul" cx="288.2" cy="189.2" r="1.2"/>
 		</g>
-		<path id="end_x5F_12h_x5F_14m_x5F_1_x5F_" style="fill:none;" d="M215.8,196.9c22.4-19.7,51.7-31.9,83.9-32.5
-			c21.8-0.4,42.5,4.6,60.7,13.7"/>
-		<text id="end_12h_14m">		<textPath  xlink:href="#end_x5F_12h_x5F_14m_x5F_1_x5F_" startOffset="32.373%">
-<tspan  style="fill:#EA8267; font-size:10px;">12h 14m</tspan>		</textPath>
-</text>
-		<path id="start_x5F_13m_x5F_1_x5F_" style="fill:none;" d="M236.1,221.3c12.7-10.4,28.1-17.8,45.3-20.9
-			c23.4-4.2,46.3,0.1,65.6,10.7"/>
-		<text id="start_13m">		<textPath  xlink:href="#start_x5F_13m_x5F_1_x5F_" startOffset="40.088%">
-<tspan  style="fill:#DFEAA7; font-size:10px;">13m</tspan>		</textPath>
-</text>
-		<rect id="start_line_3_" x="299" y="169.3" style="fill:#FFFFFF;" width="0.8" height="20.1"/>
 	</g>
 	<g class="Lahore city">
 		<g class="arcs">
@@ -2549,7 +2518,26 @@ BA.animateLineDrawing = function(path, callback, reverse) {
 }
 
 
+BA.pulse = function(){
+  circle = d3.select(this);
+  var prevR = circle.attr("r");
+  circle.transition()
+      .duration(BA.duration*0.66)
+      .attr("r", 6)
+      .transition()
+      .duration(BA.duration*0.66)
+      .attr("r", 1)
+      .transition()
+      .duration(BA.duration*0.66)
+      .attr("r", 4)
+      .transition()
+      .duration(BA.duration*0.66)
+      .attr("r", prevR)
+      .ease('sine')
+}
+
 d3.selectAll('.city').on("click", function(){
+  d3.selectAll(".hint").transition().duration(BA.duration).style("opacity", "0");
   var city = d3.select(this).attr('id');
 
   d3.selectAll('.question-groups .city').style("display", "none");
@@ -2583,6 +2571,13 @@ d3.selectAll('.city').on("click", function(){
     });
   });
 
+});
+
+
+d3.selectAll('.attack-city').on("click", function(){
+  var city = d3.select(this).attr('id');
+  var theCity = d3.selectAll('.the-attacks .' + city + '.city circle.' + city);
+  theCity.each(BA.pulse);
 });
 </script>
 
